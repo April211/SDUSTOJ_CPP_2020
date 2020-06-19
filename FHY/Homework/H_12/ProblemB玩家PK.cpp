@@ -33,13 +33,13 @@ void Role::attack(const Role& tt)const
      cout << this->name$ << " attacks " << tt.name$ << ':' << tt.name$ <<  " hp=" << tt.hp$ << ",de=" << tt.de$ << endl;
 }
 
-Role& Role::facmps(Role& another)//·µ»ØÏÈ¹¥ÖµÐ¡µÄÒ»·½
+Role& Role::facmps(Role& another)//è¿”å›žå…ˆæ”»å€¼å°çš„ä¸€æ–¹
 {
     if((*this).fa$ < another.fa$) { return *this;}
     else {return another;}  
 }
 
-Role& Role::facmpb(Role& another)//·µ»ØÏÈ¹¥Öµ´óµÄÒ»·½
+Role& Role::facmpb(Role& another)//è¿”å›žå…ˆæ”»å€¼å¤§çš„ä¸€æ–¹
 {
     if((*this).fa$ > another.fa$) { return *this;}
     else {return another;}  
@@ -49,37 +49,37 @@ void Role::combat(Role& another)
 {
     while(1)
     {
-        //ÏÈÊÖ¾Ö£¨µÚÒ»¾Ö£©
-        if((*this).facmps(another).de$ >= (*this).facmpb(another).ce$)//µ±ÊÜ¹¥»÷Õß·ÀÓùÁ¦´óÓÚµÈÓÚ¹¥»÷Õß¹¥»÷Á¦Ê±
+        //å…ˆæ‰‹å±€ï¼ˆç¬¬ä¸€å±€ï¼‰
+        if((*this).facmps(another).de$ >= (*this).facmpb(another).ce$)//å½“å—æ”»å‡»è€…é˜²å¾¡åŠ›å¤§äºŽç­‰äºŽæ”»å‡»è€…æ”»å‡»åŠ›æ—¶
         {
-            if((--(*this).facmps(another).hp$)<0) { (*this).facmps(another).hp$ = 0;}//¿ÛÒ»µÎÑª£¬¿ÛÒ»µã·ÀÓùÁ¦
-            if((--(*this).facmps(another).de$)<0) { (*this).facmps(another).de$ = 0;}//±£Ö¤ÑªÁ¿ºÍ·ÀÓùÁ¦µÄ·Ç¸ºÐÔ
-            (*this).facmpb(another).attack((*this).facmps(another));            //Êä³öÕâ´Î¹¥»÷µÄ½á¹û
-            if(this->whowins(another)) break;                                       //ÅÐ¶ÏÒ»ÏÂÏÈÊÖ¾ÖµÄÊäÓ®
+            if((--(*this).facmps(another).hp$)<0) { (*this).facmps(another).hp$ = 0;}//æ‰£ä¸€æ»´è¡€ï¼Œæ‰£ä¸€ç‚¹é˜²å¾¡åŠ›
+            if((--(*this).facmps(another).de$)<0) { (*this).facmps(another).de$ = 0;}//ä¿è¯è¡€é‡å’Œé˜²å¾¡åŠ›çš„éžè´Ÿæ€§
+            (*this).facmpb(another).attack((*this).facmps(another));            //è¾“å‡ºè¿™æ¬¡æ”»å‡»çš„ç»“æžœ
+            if(this->whowins(another)) break;                                       //åˆ¤æ–­ä¸€ä¸‹å…ˆæ‰‹å±€çš„è¾“èµ¢
         }
         else//(*this).facmps(another).de$ < (*this).facmpb(another).ce$
         {
             (*this).facmps(another).hp$ -= (*this).facmpb(another).ce$ - (*this).facmps(another).de$;
             if((*this).facmps(another).hp$<0)     { (*this).facmps(another).hp$ = 0;}
             if((--(*this).facmps(another).de$)<0) { (*this).facmps(another).de$ = 0;}
-            (*this).facmpb(another).attack((*this).facmps(another));            //Êä³öÕâ´Î¹¥»÷µÄ½á¹û
-            if(this->whowins(another)) break;                                       //ÅÐ¶ÏÒ»ÏÂÏÈÊÖ¾ÖµÄÊäÓ®
+            (*this).facmpb(another).attack((*this).facmps(another));            //è¾“å‡ºè¿™æ¬¡æ”»å‡»çš„ç»“æžœ
+            if(this->whowins(another)) break;                                       //åˆ¤æ–­ä¸€ä¸‹å…ˆæ‰‹å±€çš„è¾“èµ¢
         }
-        //µÚ¶þ¾Ö£¬ÏÈÊÖÁ¦Ð¡µÄ¹¥»÷ÏÈÊÖÁ¦´óµÄ£¬ÏÈÊÖÁ¦´óµÄÊÇÊÜ¹¥»÷Õß
-        if((*this).facmpb(another).de$ >= (*this).facmps(another).ce$)//µ±ÊÜ¹¥»÷Õß·ÀÓùÁ¦´óÓÚµÈÓÚ¹¥»÷Õß¹¥»÷Á¦Ê±
+        //ç¬¬äºŒå±€ï¼Œå…ˆæ‰‹åŠ›å°çš„æ”»å‡»å…ˆæ‰‹åŠ›å¤§çš„ï¼Œå…ˆæ‰‹åŠ›å¤§çš„æ˜¯å—æ”»å‡»è€…
+        if((*this).facmpb(another).de$ >= (*this).facmps(another).ce$)//å½“å—æ”»å‡»è€…é˜²å¾¡åŠ›å¤§äºŽç­‰äºŽæ”»å‡»è€…æ”»å‡»åŠ›æ—¶
         {
-            if((--(*this).facmpb(another).hp$)<0) { (*this).facmpb(another).hp$ = 0;}//¿ÛÒ»µÎÑª£¬¿ÛÒ»µã·ÀÓùÁ¦
-            if((--(*this).facmpb(another).de$)<0) { (*this).facmpb(another).de$ = 0;}//±£Ö¤ÑªÁ¿ºÍ·ÀÓùÁ¦µÄ·Ç¸ºÐÔ
-            (*this).facmps(another).attack((*this).facmpb(another));          //µÚ¶þ¾Ö±Ø¶¨ÊÇÏÈÊÖÁ¦Ð¡µÄ¹¥»÷ÏÈÊÖÁ¦´óµÄ
-            if(this->whowins(another)) break;                                       //ÅÐ¶ÏÒ»ÏÂÊäÓ®
+            if((--(*this).facmpb(another).hp$)<0) { (*this).facmpb(another).hp$ = 0;}//æ‰£ä¸€æ»´è¡€ï¼Œæ‰£ä¸€ç‚¹é˜²å¾¡åŠ›
+            if((--(*this).facmpb(another).de$)<0) { (*this).facmpb(another).de$ = 0;}//ä¿è¯è¡€é‡å’Œé˜²å¾¡åŠ›çš„éžè´Ÿæ€§
+            (*this).facmps(another).attack((*this).facmpb(another));          //ç¬¬äºŒå±€å¿…å®šæ˜¯å…ˆæ‰‹åŠ›å°çš„æ”»å‡»å…ˆæ‰‹åŠ›å¤§çš„
+            if(this->whowins(another)) break;                                       //åˆ¤æ–­ä¸€ä¸‹è¾“èµ¢
         }
         else//(*this).facmpb(another).de$ < (*this).facmps(another).ce$
         {
             (*this).facmpb(another).hp$ -= (*this).facmps(another).ce$ - (*this).facmpb(another).de$;
             if((*this).facmpb(another).hp$<0)     { (*this).facmpb(another).hp$ = 0;}
             if((--(*this).facmpb(another).de$)<0) { (*this).facmpb(another).de$ = 0;}
-            (*this).facmps(another).attack((*this).facmpb(another));            //Êä³öÕâ´Î¹¥»÷µÄ½á¹û
-            if(this->whowins(another)) break;                                       //ÅÐ¶ÏÒ»ÏÂÏÈÊÖ¾ÖµÄÊäÓ®
+            (*this).facmps(another).attack((*this).facmpb(another));            //è¾“å‡ºè¿™æ¬¡æ”»å‡»çš„ç»“æžœ
+            if(this->whowins(another)) break;                                       //åˆ¤æ–­ä¸€ä¸‹è¾“èµ¢
         }
     }
 }
@@ -98,33 +98,33 @@ int main()
 }
 /* 
 
-Problem B: Íæ¼ÒPK
+Problem B: çŽ©å®¶PK
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 1434  Solved: 385
 [Submit][Status]
 Description
-ÔÚºÜ¶àÓÎÏ·ÖÐ£¬Á½¸öÍæ¼Ò½øÐÐPK£¨Player Killing£¬ÓÎÏ·ÖÐÍæ¼ÒÏà»¥Õ½¶·µÄÄ£Ê½£©ÊÇÅÐ¶Ï×Ô¼ºÕ½Á¦µÄÖØÒª·½·¨¡£ÕâÀï¼ò»¯Ò»ÏÂ¡£¶¨ÒåÒ»¸öÀàRoleÀ´±íÊ¾ÓÎÏ·Íæ¼Ò¡£¾ßÓÐ4¸ö·Ç¸ºÕûÊýÊôÐÔ£ºÑªÁ¿£¨hp£©¡¢¹¥»÷Á¦£¨ce£©¡¢·ÀÓùÁ¦£¨de£©ºÍÏÈ¹¥Öµ£¨fa£©£¬ÒÔ¼°Ò»¸ö´ú±íÍæ¼ÒêÇ³ÆµÄstringÊôÐÔname¡£
-PK²ÉÓÃ»ØºÏÖÆ¡£¼ÙÉèÓÐÁ½¸öÍæ¼ÒAºÍB£¬µ±AÓëB½øÐÐPKÊ±£¬ÏÈ¹¥Öµ¸ßµÄÒ»·½Ê×ÏÈ·¢¶¯¹¥»÷¡£ÈçAµÄÏÈ¹¥Öµ´óÓÚB£¬ÄÇÃ´µÚÒ»»ØºÏÖÐ£¬AÊ×ÏÈ¹¥»÷B£¬B·ÀÓù£»½Ó×Å£¬Èç¹ûBÃ»ÓÐËÀÍö£¬Ôò¹¥»÷A£¬A´¦ÓÚ·ÀÓù×´Ì¬¡£Èç¹ûAÃ»ÓÐËÀÍö£¬Ôò½øÈëµÚ¶þ»ØºÏ¡£Ò»Ö±ÖØ¸´½øÐÐÏÂÈ¥£¬Ö±µ½Ò»·½ËÀÍöÎªÖ¹¡£
-µ±Ò»·½±»¹¥»÷Ê±£¬ÆäÑªÁ¿±ä»¯×ñÑ­ÈçÏÂ¹æÔò£º£¨1£©Èç¹ûÆä·ÀÓùÁ¦²»Ð¡ÓÚ¹¥»÷·½µÄ¹¥»÷Á¦£¬ÄÇÃ´ÆäÑªÁ¿¼õÉÙ1¡££¨2£©Èç¹ûÆä·ÀÓùÁ¦Ð¡ÓÚ¹¥»÷·½µÄ¹¥»÷Á¦£¬ÄÇÃ´ÆäÑªÁ¿¼õÉÙ£¨¶Ô·½µÄ¹¥»÷Á¦-×Ô¼ºµÄ·ÀÓùÁ¦£©¡£Í¬Ê±£¬Ã¿Ò»·½±»¹¥»÷Ò»´Î£¬Æä·ÀÓùÁ¦¼õÉÙ1¡£
-±ÈÈç£ºµ±A¹¥»÷BÊ±£¬Èç¹ûAµÄ¹¥»÷Á¦Îª10£¬BµÄ·ÀÓùÁ¦Îª4£¬ÔòBµÄÑªÁ¿¼õÉÙ6£¬·ÀÓùÁ¦¼õÉÙ1¡£Èç¹ûAµÄ¹¥»÷Á¦Îª10£¬BµÄ·ÀÓùÁ¦´óÓÚµÈÓÚ10£¬ÔòBµÄÑªÁ¿ºÍ·ÀÓùÁ¦¶¼¼õÉÙ1¡£
-ÔÚRoleÖÐ£¬¶¨ÒåÁ½¸ö·½·¨£º
-£¨1£©Role(string n, int h, int c, int d, int f)£ºÒÀ´Î³õÊ¼»¯êÇ³Æ¡¢ÑªÁ¿¡¢¹¥»÷Á¦¡¢·ÀÓùÁ¦ºÍÏÈ¹¥Öµ¡£Á½¸öÍæ¼ÒµÄÏÈ¹¥Öµ²»Í¬¡£
-£¨2£©void combat(Role &another)£º¸ù¾ÝPK¹æÔòÕ¹Ê¾PK¹ý³Ì¡£¼ÙÉèPKµÄÁ½¸öÍæ¼Ò·Ö±ðÊÇAºÍB£¬µ±A¹¥»÷BÊ±£¬ÏÔÊ¾£º
+åœ¨å¾ˆå¤šæ¸¸æˆä¸­ï¼Œä¸¤ä¸ªçŽ©å®¶è¿›è¡ŒPKï¼ˆPlayer Killingï¼Œæ¸¸æˆä¸­çŽ©å®¶ç›¸äº’æˆ˜æ–—çš„æ¨¡å¼ï¼‰æ˜¯åˆ¤æ–­è‡ªå·±æˆ˜åŠ›çš„é‡è¦æ–¹æ³•ã€‚è¿™é‡Œç®€åŒ–ä¸€ä¸‹ã€‚å®šä¹‰ä¸€ä¸ªç±»Roleæ¥è¡¨ç¤ºæ¸¸æˆçŽ©å®¶ã€‚å…·æœ‰4ä¸ªéžè´Ÿæ•´æ•°å±žæ€§ï¼šè¡€é‡ï¼ˆhpï¼‰ã€æ”»å‡»åŠ›ï¼ˆceï¼‰ã€é˜²å¾¡åŠ›ï¼ˆdeï¼‰å’Œå…ˆæ”»å€¼ï¼ˆfaï¼‰ï¼Œä»¥åŠä¸€ä¸ªä»£è¡¨çŽ©å®¶æ˜µç§°çš„stringå±žæ€§nameã€‚
+PKé‡‡ç”¨å›žåˆåˆ¶ã€‚å‡è®¾æœ‰ä¸¤ä¸ªçŽ©å®¶Aå’ŒBï¼Œå½“Aä¸ŽBè¿›è¡ŒPKæ—¶ï¼Œå…ˆæ”»å€¼é«˜çš„ä¸€æ–¹é¦–å…ˆå‘åŠ¨æ”»å‡»ã€‚å¦‚Açš„å…ˆæ”»å€¼å¤§äºŽBï¼Œé‚£ä¹ˆç¬¬ä¸€å›žåˆä¸­ï¼ŒAé¦–å…ˆæ”»å‡»Bï¼ŒBé˜²å¾¡ï¼›æŽ¥ç€ï¼Œå¦‚æžœBæ²¡æœ‰æ­»äº¡ï¼Œåˆ™æ”»å‡»Aï¼ŒAå¤„äºŽé˜²å¾¡çŠ¶æ€ã€‚å¦‚æžœAæ²¡æœ‰æ­»äº¡ï¼Œåˆ™è¿›å…¥ç¬¬äºŒå›žåˆã€‚ä¸€ç›´é‡å¤è¿›è¡Œä¸‹åŽ»ï¼Œç›´åˆ°ä¸€æ–¹æ­»äº¡ä¸ºæ­¢ã€‚
+å½“ä¸€æ–¹è¢«æ”»å‡»æ—¶ï¼Œå…¶è¡€é‡å˜åŒ–éµå¾ªå¦‚ä¸‹è§„åˆ™ï¼šï¼ˆ1ï¼‰å¦‚æžœå…¶é˜²å¾¡åŠ›ä¸å°äºŽæ”»å‡»æ–¹çš„æ”»å‡»åŠ›ï¼Œé‚£ä¹ˆå…¶è¡€é‡å‡å°‘1ã€‚ï¼ˆ2ï¼‰å¦‚æžœå…¶é˜²å¾¡åŠ›å°äºŽæ”»å‡»æ–¹çš„æ”»å‡»åŠ›ï¼Œé‚£ä¹ˆå…¶è¡€é‡å‡å°‘ï¼ˆå¯¹æ–¹çš„æ”»å‡»åŠ›-è‡ªå·±çš„é˜²å¾¡åŠ›ï¼‰ã€‚åŒæ—¶ï¼Œæ¯ä¸€æ–¹è¢«æ”»å‡»ä¸€æ¬¡ï¼Œå…¶é˜²å¾¡åŠ›å‡å°‘1ã€‚
+æ¯”å¦‚ï¼šå½“Aæ”»å‡»Bæ—¶ï¼Œå¦‚æžœAçš„æ”»å‡»åŠ›ä¸º10ï¼ŒBçš„é˜²å¾¡åŠ›ä¸º4ï¼Œåˆ™Bçš„è¡€é‡å‡å°‘6ï¼Œé˜²å¾¡åŠ›å‡å°‘1ã€‚å¦‚æžœAçš„æ”»å‡»åŠ›ä¸º10ï¼ŒBçš„é˜²å¾¡åŠ›å¤§äºŽç­‰äºŽ10ï¼Œåˆ™Bçš„è¡€é‡å’Œé˜²å¾¡åŠ›éƒ½å‡å°‘1ã€‚
+åœ¨Roleä¸­ï¼Œå®šä¹‰ä¸¤ä¸ªæ–¹æ³•ï¼š
+ï¼ˆ1ï¼‰Role(string n, int h, int c, int d, int f)ï¼šä¾æ¬¡åˆå§‹åŒ–æ˜µç§°ã€è¡€é‡ã€æ”»å‡»åŠ›ã€é˜²å¾¡åŠ›å’Œå…ˆæ”»å€¼ã€‚ä¸¤ä¸ªçŽ©å®¶çš„å…ˆæ”»å€¼ä¸åŒã€‚
+ï¼ˆ2ï¼‰void combat(Role &another)ï¼šæ ¹æ®PKè§„åˆ™å±•ç¤ºPKè¿‡ç¨‹ã€‚å‡è®¾PKçš„ä¸¤ä¸ªçŽ©å®¶åˆ†åˆ«æ˜¯Aå’ŒBï¼Œå½“Aæ”»å‡»Bæ—¶ï¼Œæ˜¾ç¤ºï¼š
 A attacks B:B hp=#,de=$
-ÆäÖÐ#ºÍ$·Ö±ðÊÇB±»¹¥»÷ºóµÄÊ£ÓàÑªÁ¿ºÍ·ÀÓùÁ¦¡£µ±Ê£ÓàÑªÁ¿Ð¡ÓÚ0Ê±£¬Ò²ÏÔÊ¾Îª0£¬²»ÄÜÏÔÊ¾¸ºÊý¡£
-µ±B¹¥»÷AÊ±£¬ÏÔÊ¾£º
+å…¶ä¸­#å’Œ$åˆ†åˆ«æ˜¯Bè¢«æ”»å‡»åŽçš„å‰©ä½™è¡€é‡å’Œé˜²å¾¡åŠ›ã€‚å½“å‰©ä½™è¡€é‡å°äºŽ0æ—¶ï¼Œä¹Ÿæ˜¾ç¤ºä¸º0ï¼Œä¸èƒ½æ˜¾ç¤ºè´Ÿæ•°ã€‚
+å½“Bæ”»å‡»Aæ—¶ï¼Œæ˜¾ç¤ºï¼š
 B attacks A:A hp=%,de=&
-ÆäÖÐ%ºÍ&·Ö±ðÊÇA±»¹¥»÷ºóµÄÊ£ÓàÑªÁ¿ºÍ·ÀÓùÁ¦¡£µ±Ê£ÓàÑªÁ¿Ð¡ÓÚ0Ê±£¬Ò²ÏÔÊ¾Îª0£¬²»ÄÜÏÔÊ¾¸ºÊý¡£
-×îºó£¬µ±AµÄÑªÁ¿Îª0Ê±£¬Êä³ö£º
+å…¶ä¸­%å’Œ&åˆ†åˆ«æ˜¯Aè¢«æ”»å‡»åŽçš„å‰©ä½™è¡€é‡å’Œé˜²å¾¡åŠ›ã€‚å½“å‰©ä½™è¡€é‡å°äºŽ0æ—¶ï¼Œä¹Ÿæ˜¾ç¤ºä¸º0ï¼Œä¸èƒ½æ˜¾ç¤ºè´Ÿæ•°ã€‚
+æœ€åŽï¼Œå½“Açš„è¡€é‡ä¸º0æ—¶ï¼Œè¾“å‡ºï¼š
 B wins.
-µ±BµÄÑªÁ¿Îª0Ê±£¬Êä³ö£º
+å½“Bçš„è¡€é‡ä¸º0æ—¶ï¼Œè¾“å‡ºï¼š
 A wins.
 
 Input
-ÓÐÁ½ÐÐ£¬Ã¿ÐÐ°üÀ¨1¸ö×Ö·û´®£¨Íæ¼ÒêÇ³Æ£©¡¢4¸öÕýÕûÊý£¨¶ÔÓ¦Íæ¼ÒµÄÑªÁ¿¡¢¹¥»÷Á¦¡¢·ÀÓùÁ¦ºÍÏÈ¹¥Öµ¡£
+æœ‰ä¸¤è¡Œï¼Œæ¯è¡ŒåŒ…æ‹¬1ä¸ªå­—ç¬¦ä¸²ï¼ˆçŽ©å®¶æ˜µç§°ï¼‰ã€4ä¸ªæ­£æ•´æ•°ï¼ˆå¯¹åº”çŽ©å®¶çš„è¡€é‡ã€æ”»å‡»åŠ›ã€é˜²å¾¡åŠ›å’Œå…ˆæ”»å€¼ã€‚
 
 Output
-ÈçÇ°ËùÊö£¬¼ûÑùÀý¡£
+å¦‚å‰æ‰€è¿°ï¼Œè§æ ·ä¾‹ã€‚
 
 Sample Input
 A 30 10 4 1
