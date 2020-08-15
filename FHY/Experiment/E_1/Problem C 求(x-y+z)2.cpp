@@ -3,7 +3,7 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-int f(int x,int y = 1,int z = 0)
+int f(int x, int y = 1, int z = 0)
 {
     int ans;
     ans = 2*(x - y + z);
