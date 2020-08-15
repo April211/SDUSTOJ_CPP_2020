@@ -14,14 +14,14 @@ int main()
         cntl = 0, cntr = 0;
         for (int i = 0; i < str.length(); i++)
         {
-            if (ku.empty())//ÅĞ¶Ï¶ÑÕ»ÊÇ·ñÎª¿Õ
+            if (ku.empty())
             {
                 ku.push(str[i]);
             }
             else if (str[i] == ')')
             {
                 cntl++;
-                if (ku.top() == '(') {cntr++; ku.pop();}//Åä¶ÔÉ¾³ı
+                if (ku.top() == '(') {cntr++; ku.pop();}
             }
             else//noempty || (
             {

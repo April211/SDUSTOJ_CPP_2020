@@ -39,22 +39,22 @@ int main()
 }
 
 
-/* Problem C: »¹»áÓÃ¼Ì³ÐÂð£¿
+/* Problem C: è¿˜ä¼šç”¨ç»§æ‰¿å—ï¼Ÿ
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 3934  Solved: 2898
 [Submit][Status]
 Description
-¶¨ÒåÒ»¸öBaseÀà£¬°üÀ¨1¸öintÀàÐÍµÄÊôÐÔ£¬ÒÔ¼°Âú×ãÊä³ö¸ñÊ½ÒªÇóµÄ¹¹Ôìº¯Êý¡¢¿½±´¹¹Ôìº¯ÊýºÍÎö¹¹º¯Êý¡£
+å®šä¹‰ä¸€ä¸ªBaseç±»ï¼ŒåŒ…æ‹¬1ä¸ªintç±»åž‹çš„å±žæ€§ï¼Œä»¥åŠæ»¡è¶³è¾“å‡ºæ ¼å¼è¦æ±‚çš„æž„é€ å‡½æ•°ã€æ‹·è´æž„é€ å‡½æ•°å’Œæžæž„å‡½æ•°ã€‚
 
-¶¨ÒåBaseÀàµÄ×ÓÀàDerived£¬°üÀ¨1¸öintÀàÐÍµÄÊôÐÔ£¬ ÒÔ¼°Âú×ãÊä³ö¸ñÊ½ÒªÇóµÄ¹¹Ôìº¯Êý¡¢¿½±´¹¹Ôìº¯ÊýºÍÎö¹¹º¯Êý¡£
+å®šä¹‰Baseç±»çš„å­ç±»Derivedï¼ŒåŒ…æ‹¬1ä¸ªintç±»åž‹çš„å±žæ€§ï¼Œ ä»¥åŠæ»¡è¶³è¾“å‡ºæ ¼å¼è¦æ±‚çš„æž„é€ å‡½æ•°ã€æ‹·è´æž„é€ å‡½æ•°å’Œæžæž„å‡½æ•°ã€‚
 
 Input
-µÚ1ÐÐN>0±íÊ¾²âÊÔÓÃÀý¸öÊý¡£
+ç¬¬1è¡ŒN>0è¡¨ç¤ºæµ‹è¯•ç”¨ä¾‹ä¸ªæ•°ã€‚
 
-Ã¿¸ö²âÊÔ°üÀ¨2¸öintÀàÐÍµÄÕûÊý¡£
+æ¯ä¸ªæµ‹è¯•åŒ…æ‹¬2ä¸ªintç±»åž‹çš„æ•´æ•°ã€‚
 
 Output
-¼ûÑùÀý¡£
+è§æ ·ä¾‹ã€‚
 
 Sample Input
 1

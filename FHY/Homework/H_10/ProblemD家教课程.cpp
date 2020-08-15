@@ -59,28 +59,28 @@ int main()
 /* 
 
 
-Problem D: ¼Ò½Ì¿Î³Ì
+Problem D: å®¶æ•™è¯¾ç¨‹
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 3634  Solved: 2321
 [Submit][Status]
 Description
-ÀÏÊ¦¶¼ÊÇÇîÈË£¬ËùÒÔÐèÒª¾­³£È¥ÍâÃæ¸ãµã¼æÖ°É¶µÄ¡£¿ÉÊÇ³ýÁËÉÏ¿Î£¬É¶Ò²²»»á°¡¡£ËùÒÔ¾ÍÖ»ºÃ×ö¼Ò½ÌÁË¡£ÏÖÔÚÇëÀûÓÃÃæÏò¶ÔÏóµÄË¼ÏëÉè¼ÆÕâÑùÒ»¸öÏµÍ³¡£¾ßÓÐÈçÏÂÀà£º
+è€å¸ˆéƒ½æ˜¯ç©·äººï¼Œæ‰€ä»¥éœ€è¦ç»å¸¸åŽ»å¤–é¢æžç‚¹å…¼èŒå•¥çš„ã€‚å¯æ˜¯é™¤äº†ä¸Šè¯¾ï¼Œå•¥ä¹Ÿä¸ä¼šå•Šã€‚æ‰€ä»¥å°±åªå¥½åšå®¶æ•™äº†ã€‚çŽ°åœ¨è¯·åˆ©ç”¨é¢å‘å¯¹è±¡çš„æ€æƒ³è®¾è®¡è¿™æ ·ä¸€ä¸ªç³»ç»Ÿã€‚å…·æœ‰å¦‚ä¸‹ç±»ï¼š
 
-1. PersonÀà£ºÓÐÒ»¸östringÀàÐÍµÄÊôÐÔ£¬±íÃ÷¶ÔÏóµÄÃû×Ö¡£ÊÇStudentºÍTeacherµÄ¸¸Àà¡£
+1. Personç±»ï¼šæœ‰ä¸€ä¸ªstringç±»åž‹çš„å±žæ€§ï¼Œè¡¨æ˜Žå¯¹è±¡çš„åå­—ã€‚æ˜¯Studentå’ŒTeacherçš„çˆ¶ç±»ã€‚
 
-2. StudentÀà£ºÊÇPersonÀàµÄ×ÓÀà£¬ÓµÓÐÒ»¸öintÀàÐÍµÄÊôÐÔ£¬±íÃ÷¶ÔÏóµÄÐòºÅ¡£
+2. Studentç±»ï¼šæ˜¯Personç±»çš„å­ç±»ï¼Œæ‹¥æœ‰ä¸€ä¸ªintç±»åž‹çš„å±žæ€§ï¼Œè¡¨æ˜Žå¯¹è±¡çš„åºå·ã€‚
 
-3. TeacherÀà£ºÊÇPersonÀàµÄ×ÓÀà£¬ÓµÓÐÒ»¸östringÀàÐÍµÄÊôÐÔ£¬±íÃ÷¶ÔÏóµÄÖ°³Æ¡£
+3. Teacherç±»ï¼šæ˜¯Personç±»çš„å­ç±»ï¼Œæ‹¥æœ‰ä¸€ä¸ªstringç±»åž‹çš„å±žæ€§ï¼Œè¡¨æ˜Žå¯¹è±¡çš„èŒç§°ã€‚
 
-4. CourseÀà£ºÊÇÒ»¸ö×éºÏÀà£¬ÓÐ1¸öTeacherÀàµÄ¶ÔÏó¡¢1¸öStudentÀàÐÍµÄ¶ÔÏó£¬ÒÔ¼°Ò»¸östringÀàÐÍµÄÊôÐÔ£¨±íÃ÷¶ÔÏóµÄÃû³Æ£©×é³É¡£
+4. Courseç±»ï¼šæ˜¯ä¸€ä¸ªç»„åˆç±»ï¼Œæœ‰1ä¸ªTeacherç±»çš„å¯¹è±¡ã€1ä¸ªStudentç±»åž‹çš„å¯¹è±¡ï¼Œä»¥åŠä¸€ä¸ªstringç±»åž‹çš„å±žæ€§ï¼ˆè¡¨æ˜Žå¯¹è±¡çš„åç§°ï¼‰ç»„æˆã€‚
 
-Çë¶¨ÒåÉÏÊöÀàµÄ¹¹Ôìº¯ÊýºÍÎö¹¹º¯Êý£¬²¢ÔÚº¯ÊýÖÐÊä³öÏàÓ¦µÄ×Ö·û´®¡£¾ßÌå¸ñÊ½Çë²ÎÕÕÑùÀýÊä³ö¡£
+è¯·å®šä¹‰ä¸Šè¿°ç±»çš„æž„é€ å‡½æ•°å’Œæžæž„å‡½æ•°ï¼Œå¹¶åœ¨å‡½æ•°ä¸­è¾“å‡ºç›¸åº”çš„å­—ç¬¦ä¸²ã€‚å…·ä½“æ ¼å¼è¯·å‚ç…§æ ·ä¾‹è¾“å‡ºã€‚
 
 Input
-ÊäÈë5ÐÐ£¬Ç°4¸öÊÇ4¸ö×Ö·û´®£¬·Ö±ðÊÇÀÏÊ¦µÄÃû×Ö¡¢Ñ§ÉúµÄÃû×Ö¡¢ÀÏÊ¦µÄÖ°³Æ¡¢¿Î³ÌµÄÃû×Ö¡£×îºóÒ»ÐÐÊÇÒ»¸öÕûÊý£¬±íÊ¾Ñ§ÉúµÄÐòºÅ¡£
+è¾“å…¥5è¡Œï¼Œå‰4ä¸ªæ˜¯4ä¸ªå­—ç¬¦ä¸²ï¼Œåˆ†åˆ«æ˜¯è€å¸ˆçš„åå­—ã€å­¦ç”Ÿçš„åå­—ã€è€å¸ˆçš„èŒç§°ã€è¯¾ç¨‹çš„åå­—ã€‚æœ€åŽä¸€è¡Œæ˜¯ä¸€ä¸ªæ•´æ•°ï¼Œè¡¨ç¤ºå­¦ç”Ÿçš„åºå·ã€‚
 
 Output
-¼ûÑùÀý~
+è§æ ·ä¾‹~
 
 Sample Input
 Tom
@@ -112,7 +112,7 @@ Person Tom is erased.
 Person Jack is erased.
 Person Tom is erased.
 HINT
-×¢Òâ¸ù¾Ýmainº¯Êý·ÖÎö¸÷¸ö¹¹Ôìº¯ÊýµÄÃ¿¸ö²ÎÊýµÄº¬Òå¡£
+æ³¨æ„æ ¹æ®mainå‡½æ•°åˆ†æžå„ä¸ªæž„é€ å‡½æ•°çš„æ¯ä¸ªå‚æ•°çš„å«ä¹‰ã€‚
 
 Append Code
 append.cc,

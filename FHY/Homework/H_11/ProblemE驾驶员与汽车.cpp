@@ -151,26 +151,26 @@ int main()
 /* 
 
 
-Problem E: ¼ÝÊ»Ô±ÓëÆû³µ
+Problem E: é©¾é©¶å‘˜ä¸Žæ±½è½¦
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 6394  Solved: 2872
 [Submit][Status]
 Description
-ÎÒÃÇÖªµÀ£¬Ä¿Ç°ÎÒ¹úµÄ¼ÝÕÕ´óÖÂ¿É·ÖÎªA¡¢B¡¢CÈýÖÖ£¬ÆäÖÐCÖ¤Ö»ÄÜ¿ªÐ¡ÐÍ¿Í³µ£¨»õ³µ£©£¬BÖ¤¿É¿ªÖÐ¡¢Ð¡ÐÍ¿Í³µ£¨»õ³µ£©£¬AÖ¤Ã»ÓÐÏÞÖÆ¡£ÏÖÔÚÇë¶¨ÒåÈçÏÂ¼¸¸öÀà£º
+æˆ‘ä»¬çŸ¥é“ï¼Œç›®å‰æˆ‘å›½çš„é©¾ç…§å¤§è‡´å¯åˆ†ä¸ºAã€Bã€Cä¸‰ç§ï¼Œå…¶ä¸­Cè¯åªèƒ½å¼€å°åž‹å®¢è½¦ï¼ˆè´§è½¦ï¼‰ï¼ŒBè¯å¯å¼€ä¸­ã€å°åž‹å®¢è½¦ï¼ˆè´§è½¦ï¼‰ï¼ŒAè¯æ²¡æœ‰é™åˆ¶ã€‚çŽ°åœ¨è¯·å®šä¹‰å¦‚ä¸‹å‡ ä¸ªç±»ï¼š
 
-1. Automobile£º³éÏóÀà£¬¾ßÓÐÊý¾Ý³ÉÔ±double speed£¬´¿Ðéº¯Êývirtual void run() const = 0¡£
+1. Automobileï¼šæŠ½è±¡ç±»ï¼Œå…·æœ‰æ•°æ®æˆå‘˜double speedï¼Œçº¯è™šå‡½æ•°virtual void run() const = 0ã€‚
 
-2. ÁùÖÖ³µÐÍ£¬¼´Ð¡ÐÍ³µBenz¡¢Buick£»ÖÐÐÍ³µZhongba¡¢Beiqi£»ÒÔ¼°´óÐÍ³µDayu¡¢Jianghuai¡£ËüÃÇ¶¼ÊÇAutomobileµÄ×ÓÀà¡£
+2. å…­ç§è½¦åž‹ï¼Œå³å°åž‹è½¦Benzã€Buickï¼›ä¸­åž‹è½¦Zhongbaã€Beiqiï¼›ä»¥åŠå¤§åž‹è½¦Dayuã€Jianghuaiã€‚å®ƒä»¬éƒ½æ˜¯Automobileçš„å­ç±»ã€‚
 
-3. DriverÀà£¬¾ßÓÐstring nameºÍchar typeÁ½¸öÊý¾Ý³ÉÔ±£¬Ç°ÕßÊÇË¾»úµÄÃû×Ö£¬ºóÕßÊÇË¾»ú³ÖÓÐµÄ¼ÝÕÕÀàÐÍ£¨A¡¢B»òC£©¡£Ìá¹©Drive(Automobile *)·½·¨£¬¸ù¾Ý¼ÝÕÕÀàÐÍÅÐ¶¨¸ÃË¾»úÊÇ·ñ¿ÉÒÔ¼ÝÊ»Ö¸¶¨µÄÆû³µ¡£
+3. Driverç±»ï¼Œå…·æœ‰string nameå’Œchar typeä¸¤ä¸ªæ•°æ®æˆå‘˜ï¼Œå‰è€…æ˜¯å¸æœºçš„åå­—ï¼ŒåŽè€…æ˜¯å¸æœºæŒæœ‰çš„é©¾ç…§ç±»åž‹ï¼ˆAã€Bæˆ–Cï¼‰ã€‚æä¾›Drive(Automobile *)æ–¹æ³•ï¼Œæ ¹æ®é©¾ç…§ç±»åž‹åˆ¤å®šè¯¥å¸æœºæ˜¯å¦å¯ä»¥é©¾é©¶æŒ‡å®šçš„æ±½è½¦ã€‚
 
 Input
-ÊäÈë·Ö¶àÐÐ¡£µÚÒ»ÐÐÊÇÒ»¸öÕûÊýM>0£¬±íÊ¾Ö®ºóÓÐM¸ö²âÊÔÓÃÀý¡£
+è¾“å…¥åˆ†å¤šè¡Œã€‚ç¬¬ä¸€è¡Œæ˜¯ä¸€ä¸ªæ•´æ•°M>0ï¼Œè¡¨ç¤ºä¹‹åŽæœ‰Mä¸ªæµ‹è¯•ç”¨ä¾‹ã€‚
 
-Ã¿¸ö²âÊÔÓÃÀý°üÀ¨ËÄ²¿·Ö£ºË¾»úÐÕÃû£¨²»º¬¿Õ°×·û£©¡¢¼ÝÕÕÀàÐÍ£¨A¡¢B»òC£©¡¢³µÐÍ£¨·Ö±ðÓÃ×ÖÄ¸a~f±íÊ¾ÁùÖÖ³µÐÍ£¬¶ÔÓ¦µÄ³µÐÍ¿ÉÒÔ´Ómain()ÖÐ¿´³ö£©ÒÔ¼°¸Ã³µµÄÐÐÊ»ËÙ¶È£¨doubleÀàÐÍ·¶Î§ÄÚµÄÕýÊý£©¡£
+æ¯ä¸ªæµ‹è¯•ç”¨ä¾‹åŒ…æ‹¬å››éƒ¨åˆ†ï¼šå¸æœºå§“åï¼ˆä¸å«ç©ºç™½ç¬¦ï¼‰ã€é©¾ç…§ç±»åž‹ï¼ˆAã€Bæˆ–Cï¼‰ã€è½¦åž‹ï¼ˆåˆ†åˆ«ç”¨å­—æ¯a~fè¡¨ç¤ºå…­ç§è½¦åž‹ï¼Œå¯¹åº”çš„è½¦åž‹å¯ä»¥ä»Žmain()ä¸­çœ‹å‡ºï¼‰ä»¥åŠè¯¥è½¦çš„è¡Œé©¶é€Ÿåº¦ï¼ˆdoubleç±»åž‹èŒƒå›´å†…çš„æ­£æ•°ï¼‰ã€‚
 
 Output
-Êä³ö¹²MÐÐ£¬Ã¿¸ö²âÊÔÓÃÀý¶ÔÓ¦Ò»ÐÐÊäÈë£¬¾ßÌå¸ñÊ½²Î¼ûÑùÀý¡£
+è¾“å‡ºå…±Mè¡Œï¼Œæ¯ä¸ªæµ‹è¯•ç”¨ä¾‹å¯¹åº”ä¸€è¡Œè¾“å…¥ï¼Œå…·ä½“æ ¼å¼å‚è§æ ·ä¾‹ã€‚
 
 Sample Input
 4
@@ -192,10 +192,10 @@ Driver Tom can drive Dayu at speed of 300.00km/h.
 A Dayu is erased!
 An automobile is erased!
 HINT
-1.Ê¹ÓÃtypeidÀ´ÅÐ¶¨Ò»¸ö»ùÀàÖ¸ÕëÊµ¼ÊÖ¸ÏòµÄ¶ÔÏóµÄÀàÐÍ¡£
+1.ä½¿ç”¨typeidæ¥åˆ¤å®šä¸€ä¸ªåŸºç±»æŒ‡é’ˆå®žé™…æŒ‡å‘çš„å¯¹è±¡çš„ç±»åž‹ã€‚
 
 
-2.×¢Òâ£ºappend.ccÖÐÒÑ¾­¸ø³öÁËDriverÀàµÄÒ»¸ö·½·¨£¬²»ÒªÔÚDriverÀàÖØ¸´¶¨ÒåÁË¡£
+2.æ³¨æ„ï¼šappend.ccä¸­å·²ç»ç»™å‡ºäº†Driverç±»çš„ä¸€ä¸ªæ–¹æ³•ï¼Œä¸è¦åœ¨Driverç±»é‡å¤å®šä¹‰äº†ã€‚
 
 
 Append Code

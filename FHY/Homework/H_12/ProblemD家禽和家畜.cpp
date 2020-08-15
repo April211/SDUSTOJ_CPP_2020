@@ -66,23 +66,23 @@ int main()
 /* 
 
 
-Problem D: ¼ÒÇİºÍ¼ÒĞó
+Problem D: å®¶ç¦½å’Œå®¶ç•œ
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 1218  Solved: 1032
 [Submit][Status]
 Description
-Å©»§¼ÒÀïÍ¨³£ÒªÑøÒ»Ğ©¼ÒÇİ¡¢¼ÒĞó£¬ËüÃÇ³ÔµÄ¶«Î÷ºÍ×÷ÓÃ²»Í¬¡£ÏÖÔÚÓÃ¶àÌ¬À´ÃèÊöÕâÖÖÇé¿ö¡£
-¶¨ÒåÀàAnimal£¬ÊÇÒ»¸ö³éÏóÀà£¬ÓĞ´¿Ğéº¯Êıvoid eat()ºÍvoid fun()£¬·Ö±ğÓÃÓÚÕ¹Ê¾¶¯Îï³ÔµÄĞĞÎªºÍ×÷ÓÃ¡£
-¶¨ÒåAnimalµÄ×ÓÀàCat¡¢DogºÍRooster£¬·Ö±ğÊÇÃ¨¡¢¹·ºÍ¹«¼¦Àà¡£
-¶ÔÓÚCatÀà£¬eat()Êä³ö¡°Cat eats fishes.¡±£»fun()Êä³ö¡°Cat catches mouses.¡±¡£
-¶ÔÓÚDogÀà£¬eat()Êä³ö¡°Dog eats bones.¡±£»fun()Êä³ö¡°Dog can be housekeeping.¡±¡£
-¶ÔÓÚRoosterÀà£¬eat()Êä³ö¡°Rooster eats corns.¡±£»fun()Êä³ö¡°Rooster crows.¡±¡£
+å†œæˆ·å®¶é‡Œé€šå¸¸è¦å…»ä¸€äº›å®¶ç¦½ã€å®¶ç•œï¼Œå®ƒä»¬åƒçš„ä¸œè¥¿å’Œä½œç”¨ä¸åŒã€‚ç°åœ¨ç”¨å¤šæ€æ¥æè¿°è¿™ç§æƒ…å†µã€‚
+å®šä¹‰ç±»Animalï¼Œæ˜¯ä¸€ä¸ªæŠ½è±¡ç±»ï¼Œæœ‰çº¯è™šå‡½æ•°void eat()å’Œvoid fun()ï¼Œåˆ†åˆ«ç”¨äºå±•ç¤ºåŠ¨ç‰©åƒçš„è¡Œä¸ºå’Œä½œç”¨ã€‚
+å®šä¹‰Animalçš„å­ç±»Catã€Dogå’ŒRoosterï¼Œåˆ†åˆ«æ˜¯çŒ«ã€ç‹—å’Œå…¬é¸¡ç±»ã€‚
+å¯¹äºCatç±»ï¼Œeat()è¾“å‡ºâ€œCat eats fishes.â€ï¼›fun()è¾“å‡ºâ€œCat catches mouses.â€ã€‚
+å¯¹äºDogç±»ï¼Œeat()è¾“å‡ºâ€œDog eats bones.â€ï¼›fun()è¾“å‡ºâ€œDog can be housekeeping.â€ã€‚
+å¯¹äºRoosterç±»ï¼Œeat()è¾“å‡ºâ€œRooster eats corns.â€ï¼›fun()è¾“å‡ºâ€œRooster crows.â€ã€‚
 
 Input
-ÊäÈëÓĞÈô¸ÉĞĞ£¬Ã¿ĞĞÒ»¸ö×ÖÄ¸c»òd»òr£¬·Ö±ğ±íÊ¾Ã¨¡¢¹·¡¢¹«¼¦¡£
+è¾“å…¥æœ‰è‹¥å¹²è¡Œï¼Œæ¯è¡Œä¸€ä¸ªå­—æ¯cæˆ–dæˆ–rï¼Œåˆ†åˆ«è¡¨ç¤ºçŒ«ã€ç‹—ã€å…¬é¸¡ã€‚
 
 Output
-¼ûÑùÀı¡£
+è§æ ·ä¾‹ã€‚
 
 Sample Input
 c

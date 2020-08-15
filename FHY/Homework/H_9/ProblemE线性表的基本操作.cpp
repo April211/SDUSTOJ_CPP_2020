@@ -17,8 +17,8 @@ class MyList
 {
 protected:
     Cell *head$; // head
-    int len$;    //×î´óÈÝÁ¿
-    int curLen$; //ÏÖÓÐÔªËØ
+    int len$;    //æœ€å¤§å®¹é‡
+    int curLen$; //çŽ°æœ‰å…ƒç´ 
 public:
     MyList(int len) : head$(0), len$(len), curLen$(0)
     {
@@ -47,7 +47,7 @@ public:
     ~MyList()
     {
         Cell *tp = NULL;
-        while ((head$->next$) != NULL)//Ñ­»·Îö¹¹Í·ÔªËØ
+        while ((head$->next$) != NULL)//å¾ªçŽ¯æžæž„å¤´å…ƒç´ 
         {
             tp = head$->next$;
             delete head$;
@@ -146,9 +146,9 @@ void MyList::erase(int p)
             ttl = ttl->next$;
             cnt++;
         }
-        tt = ttl->next$; //ÒªÉ¾³ýµÄ
+        tt = ttl->next$; //è¦åˆ é™¤çš„
         ttr = tt->next$;
-        delete tt;//delete ptÉ¾³ý¶ÑÔªËØ¡£Èç¹ûnewÊÇÓÃµÄ[], ¾ÍÐèÒªÓÃdelete []ptÁË¡£·ñÔò»á¿¨¿Ç
+        delete tt;//delete ptåˆ é™¤å †å…ƒç´ ã€‚å¦‚æžœnewæ˜¯ç”¨çš„[], å°±éœ€è¦ç”¨delete []ptäº†ã€‚å¦åˆ™ä¼šå¡å£³
         ttl->next$ = ttr;
     }
 
@@ -221,52 +221,52 @@ int main()
 
 /* 
 
-Problem E: ÏßÐÔ±íµÄ»ù±¾²Ù×÷
+Problem E: çº¿æ€§è¡¨çš„åŸºæœ¬æ“ä½œ
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 2143  Solved: 1424
 [Submit][Status]
 Description
-ÏßÐÔ±íÊÇÒ»ÀàÖØÒªµÄÇÒ»ù´¡µÄÊý¾Ý½á¹¹¡£Çë¶¨ÒåMyListÀà£¬À´Ä£ÄâÕë¶ÔÏßÐÔ±íµÄ²åÈë¡¢É¾³ýµÈ²Ù×÷£º
+çº¿æ€§è¡¨æ˜¯ä¸€ç±»é‡è¦çš„ä¸”åŸºç¡€çš„æ•°æ®ç»“æž„ã€‚è¯·å®šä¹‰MyListç±»ï¼Œæ¥æ¨¡æ‹Ÿé’ˆå¯¹çº¿æ€§è¡¨çš„æ’å…¥ã€åˆ é™¤ç­‰æ“ä½œï¼š
 
-1. Êý¾Ý³ÉÔ±int *elements£ºÏßÐÔ±íÔªËØ¡£
+1. æ•°æ®æˆå‘˜int *elementsï¼šçº¿æ€§è¡¨å…ƒç´ ã€‚
 
-2. Êý¾Ý³ÉÔ±int len£ºÏßÐÔ±íÈÝÁ¿£¬¼´ÏßÐÔ±íµÄ×î´ó³¤¶È¡£
+2. æ•°æ®æˆå‘˜int lenï¼šçº¿æ€§è¡¨å®¹é‡ï¼Œå³çº¿æ€§è¡¨çš„æœ€å¤§é•¿åº¦ã€‚
 
-3. Êý¾Ý³ÉÔ±int curLen£ºÏßÐÔ±íµÄµ±Ç°ÈÝÁ¿£¬¼´µ±Ç°ÓµÓÐµÄÔªËØ¸öÊý¡£
+3. æ•°æ®æˆå‘˜int curLenï¼šçº¿æ€§è¡¨çš„å½“å‰å®¹é‡ï¼Œå³å½“å‰æ‹¥æœ‰çš„å…ƒç´ ä¸ªæ•°ã€‚
 
-4. ¹¹Ôìº¯ÊýMyList(int _len)£º¹¹Ôì×î´óÈÝÁ¿Îª_lenµÄÏßÐÔ±í¡£
+4. æž„é€ å‡½æ•°MyList(int _len)ï¼šæž„é€ æœ€å¤§å®¹é‡ä¸º_lençš„çº¿æ€§è¡¨ã€‚
 
-5. void append(int d)£ºÔÚÏßÐÔ±íµÄÄ©Î²×·¼ÓÔªËØd¡£
+5. void append(int d)ï¼šåœ¨çº¿æ€§è¡¨çš„æœ«å°¾è¿½åŠ å…ƒç´ dã€‚
 
-6. void insert(int p, int d)£ºÔÚÏßÐÔ±íµÄµÚp¸öÎ»ÖÃ£¨0<=p<curLen£©²åÈëÔªËØd¡£
+6. void insert(int p, int d)ï¼šåœ¨çº¿æ€§è¡¨çš„ç¬¬pä¸ªä½ç½®ï¼ˆ0<=p<curLenï¼‰æ’å…¥å…ƒç´ dã€‚
 
-7. void erase(int p)£ºÉ¾³ýÏßÐÔ±íµÄµÚp¸öÎ»ÖÃ£¨0<=p<curLen£©ÉÏµÄÔªËØ¡£
+7. void erase(int p)ï¼šåˆ é™¤çº¿æ€§è¡¨çš„ç¬¬pä¸ªä½ç½®ï¼ˆ0<=p<curLenï¼‰ä¸Šçš„å…ƒç´ ã€‚
 
-8. void set(int p, int d)£ºÉèÖÃÏßÐÔ±íµÄµÚp¸öÎ»ÖÃ£¨0<=p<curLen£©ÔªËØÎªd¡£
+8. void set(int p, int d)ï¼šè®¾ç½®çº¿æ€§è¡¨çš„ç¬¬pä¸ªä½ç½®ï¼ˆ0<=p<curLenï¼‰å…ƒç´ ä¸ºdã€‚
 
-9. void show()£ºÏÔÊ¾µ±Ç°ÏßÐÔ±íµÄËùÓÐÔªËØ¡£Êä³öÊ±£¬Á½Á½Ö®¼äÓÃÒ»¸ö¿Õ¸ñ¸ô¿ª£¬Ê×Î²²»ÄÜÓÐ¿Õ¸ñ¡£
+9. void show()ï¼šæ˜¾ç¤ºå½“å‰çº¿æ€§è¡¨çš„æ‰€æœ‰å…ƒç´ ã€‚è¾“å‡ºæ—¶ï¼Œä¸¤ä¸¤ä¹‹é—´ç”¨ä¸€ä¸ªç©ºæ ¼éš”å¼€ï¼Œé¦–å°¾ä¸èƒ½æœ‰ç©ºæ ¼ã€‚
 
-ÉÏÊö¡°p¡±ÊÇÖ¸ÏÂ±ê£¬´Ó0¿ªÊ¼¼ÆËã¡£
+ä¸Šè¿°â€œpâ€æ˜¯æŒ‡ä¸‹æ ‡ï¼Œä»Ž0å¼€å§‹è®¡ç®—ã€‚
 
 Input
-µÚ1ÐÐµÄÕûÊýN>0£¬±íÊ¾ÏßÐÔ±íµÄ×î´óÈÝÁ¿¡£
+ç¬¬1è¡Œçš„æ•´æ•°N>0ï¼Œè¡¨ç¤ºçº¿æ€§è¡¨çš„æœ€å¤§å®¹é‡ã€‚
 
-µÚ2ÐÐµÄÕûÊýM>0£¬±íÊ¾Ö®ºóÓÐM¸ö²Ù×÷¡£
+ç¬¬2è¡Œçš„æ•´æ•°M>0ï¼Œè¡¨ç¤ºä¹‹åŽæœ‰Mä¸ªæ“ä½œã€‚
 
-Ã¿¸ö²Ù×÷µÄÀàÐÍÓÃ×ÖÄ¸A¡¢I¡¢E¡¢S·Ö±ð±íÊ¾×·¼Ó¡¢²åÈë¡¢²Á³ýºÍÉèÖÃ¡£
+æ¯ä¸ªæ“ä½œçš„ç±»åž‹ç”¨å­—æ¯Aã€Iã€Eã€Såˆ†åˆ«è¡¨ç¤ºè¿½åŠ ã€æ’å…¥ã€æ“¦é™¤å’Œè®¾ç½®ã€‚
 
-Èç¹û²Ù×÷ÊÇA£¬ÔòÖ®ºóÊäÈë×·¼ÓµÄÔªËØÖµ¡£
+å¦‚æžœæ“ä½œæ˜¯Aï¼Œåˆ™ä¹‹åŽè¾“å…¥è¿½åŠ çš„å…ƒç´ å€¼ã€‚
 
-Èç¹û²Ù×÷ÊÇI£¬ÔòÖ®ºóÊäÈë²åÈëµÄÎ»ÖÃ¼°ÔªËØÖµ¡£
+å¦‚æžœæ“ä½œæ˜¯Iï¼Œåˆ™ä¹‹åŽè¾“å…¥æ’å…¥çš„ä½ç½®åŠå…ƒç´ å€¼ã€‚
 
-Èç¹û²Ù×÷ÊÇE£¬ÔòÖ®ºóÊäÈë²Á³ýµÄÎ»ÖÃ¡£
+å¦‚æžœæ“ä½œæ˜¯Eï¼Œåˆ™ä¹‹åŽè¾“å…¥æ“¦é™¤çš„ä½ç½®ã€‚
 
-Èç¹û²Ù×÷ÊÇS£¬ÔòÖ®ºóÊäÈëÉèÖÃµÄÎ»ÖÃ¼°ÔªËØÖµ¡£
+å¦‚æžœæ“ä½œæ˜¯Sï¼Œåˆ™ä¹‹åŽè¾“å…¥è®¾ç½®çš„ä½ç½®åŠå…ƒç´ å€¼ã€‚
 
-ËùÓÐÊäÈë¾ùÔÚÕë¶ÔÏßÐÔ±íµÄºÏ·¨²Ù×÷·¶Î§ÄÚ¡£
+æ‰€æœ‰è¾“å…¥å‡åœ¨é’ˆå¯¹çº¿æ€§è¡¨çš„åˆæ³•æ“ä½œèŒƒå›´å†…ã€‚
 
 Output
-Ã¿´Î²Ù×÷ºó£¬Êä³öÏßÐÔ±íµÄËùÓÐÔªËØ¡£
+æ¯æ¬¡æ“ä½œåŽï¼Œè¾“å‡ºçº¿æ€§è¡¨çš„æ‰€æœ‰å…ƒç´ ã€‚
 
 Sample Input
 10
@@ -293,7 +293,7 @@ Sample Output
 1 2 3 10 4 5 7
 1 15 3 10 4 5 7
 HINT
-²»ÄÜÊ¹ÓÃvector¡¢setµÈÈÝÆ÷¡£
+ä¸èƒ½ä½¿ç”¨vectorã€setç­‰å®¹å™¨ã€‚
 
 
 Append Code

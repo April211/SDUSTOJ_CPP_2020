@@ -13,8 +13,8 @@ int main()
     {
         for (int i = 0; i < cnto; i++)
         {
-            cin >> str2 >> str1;                  //Öµ£¬ ¼ü
-            source.insert(make_pair(str1, str2)); //¼ü, Öµ
+            cin >> str2 >> str1;                  //å€¼ï¼Œ é”®
+            source.insert(make_pair(str1, str2)); //é”®, å€¼
         }
 
         cin >> cnts;
@@ -40,24 +40,24 @@ int main()
 }
 
 /* 
-Problem F: STL¡ª¡ª×Öµä
+Problem F: STLâ€”â€”å­—å…¸
 Time Limit: 10 Sec  Memory Limit: 128 MB
 Submit: 9507  Solved: 2536
 [Submit][Status]
 Description
-ÊäÈën¸ö×Ö·û´®¶Ô£¨str1,str2£©£¬ÔÙÊäÈëk¸ö²éÑ¯×Ö·û´®str£¬´Ó×Ö·û´®¶ÔÖÐ²éÕÒ²éÑ¯×Ö·û´®£¬¼´Èç¹ûstr=str2,ÔòÊä³östr1£¬Èç¹û²éÑ¯²»µ½ÔòÊä³ö"eh"£¨²»°üº¬ÒýºÅ£©¡£ÊäÈë±£Ö¤ËùÓÐ×Ö·û´®¶ÔµÄstr2²»ÏàÍ¬,×Ö·û´®Ö»º¬ÓÐ×ÖÄ¸ºÍÊý×Ö,³¤¶ÈÐ¡ÓÚ20£¡
+è¾“å…¥nä¸ªå­—ç¬¦ä¸²å¯¹ï¼ˆstr1,str2ï¼‰ï¼Œå†è¾“å…¥kä¸ªæŸ¥è¯¢å­—ç¬¦ä¸²strï¼Œä»Žå­—ç¬¦ä¸²å¯¹ä¸­æŸ¥æ‰¾æŸ¥è¯¢å­—ç¬¦ä¸²ï¼Œå³å¦‚æžœstr=str2,åˆ™è¾“å‡ºstr1ï¼Œå¦‚æžœæŸ¥è¯¢ä¸åˆ°åˆ™è¾“å‡º"eh"ï¼ˆä¸åŒ…å«å¼•å·ï¼‰ã€‚è¾“å…¥ä¿è¯æ‰€æœ‰å­—ç¬¦ä¸²å¯¹çš„str2ä¸ç›¸åŒ,å­—ç¬¦ä¸²åªå«æœ‰å­—æ¯å’Œæ•°å­—,é•¿åº¦å°äºŽ20ï¼
 
 Input
-ÊäÈë°üº¬¶à×éÊý¾Ý£¬Ö±µ½ÎÄ¼þ½áÎ²¡£
+è¾“å…¥åŒ…å«å¤šç»„æ•°æ®ï¼Œç›´åˆ°æ–‡ä»¶ç»“å°¾ã€‚
 
-Ã¿×éÊý¾ÝµÚÒ»ÐÐ°üº¬Ò»¸öÕûÊýn£¨0¡Ün¡Ü10^5£©¡£½ÓÏÂÀ´nÐÐ£¬Ã¿ÐÐÃèÊöÒ»¸ö×Ö·û´®¶Ô¡£
+æ¯ç»„æ•°æ®ç¬¬ä¸€è¡ŒåŒ…å«ä¸€ä¸ªæ•´æ•°nï¼ˆ0â‰¤nâ‰¤10^5ï¼‰ã€‚æŽ¥ä¸‹æ¥nè¡Œï¼Œæ¯è¡Œæè¿°ä¸€ä¸ªå­—ç¬¦ä¸²å¯¹ã€‚
 
-½ÓÏÂÀ´°üº¬Ò»¸öÕûÊým£¨0¡Üm¡Ü10^5£©¡£½ÓÏÂÀ´mÐÐ£¬Ã¿ÐÐÃèÊöÒ»¸ö²éÑ¯×Ö·û´®¡£
+æŽ¥ä¸‹æ¥åŒ…å«ä¸€ä¸ªæ•´æ•°mï¼ˆ0â‰¤mâ‰¤10^5ï¼‰ã€‚æŽ¥ä¸‹æ¥mè¡Œï¼Œæ¯è¡Œæè¿°ä¸€ä¸ªæŸ¥è¯¢å­—ç¬¦ä¸²ã€‚
 
-¼ûÑùÀý
+è§æ ·ä¾‹
 
 Output
-Êä³öÃ¿¸ö²éÑ¯µÄ½á¹û¡£
+è¾“å‡ºæ¯ä¸ªæŸ¥è¯¢çš„ç»“æžœã€‚
 
 Sample Input
 5
@@ -75,7 +75,7 @@ cat
 eh
 loops
 HINT
-ÓÃSTLµÄmapÈÝÒ×ÊµÏÖ
+ç”¨STLçš„mapå®¹æ˜“å®žçŽ°
 
 
 Append Code */

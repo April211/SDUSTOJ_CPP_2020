@@ -41,7 +41,7 @@ int main()
         }
         cin >> op;// =
         double ans = 0;
-        int st = mem.size();//Ëæ×ÅÔªËØµÄÉ¾³ý£¬sizeÔÚ²»¶Ï±ä»¯£¬±ØÐëÈ¡¸ö³õÖµ
+        int st = mem.size();//éšç€å…ƒç´ çš„åˆ é™¤ï¼Œsizeåœ¨ä¸æ–­å˜åŒ–ï¼Œå¿…é¡»å–ä¸ªåˆå€¼
         for(int i = 0; i< st; i++)
         {
             ans = ans + mem.top();
@@ -60,18 +60,18 @@ int main()
 }
 
 
-/* Problem D: STL¡ª¡ª±í´ïÊ½ÇóÖµ
+/* Problem D: STLâ€”â€”è¡¨è¾¾å¼æ±‚å€¼
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 4945  Solved: 3100
 [Submit][Status]
 Description
-¸ø³öÒ»¸ö±í´ïÊ½£¬Çó³öÆäÖµ¡£±í´ïÊ½ÖÐÖ»´æÔÚ +¡¢-¡¢*¡¢ÈýÖÖÔËËã£¬ÎÒÃÇ¼ÙÉè±í´ïÊ½ÊÇÕýÈ·µÄ£¬
-      ÇÒ²»´æÔÚ³ýÊýÎªÁãµÄÇé¿ö¡£
+ç»™å‡ºä¸€ä¸ªè¡¨è¾¾å¼ï¼Œæ±‚å‡ºå…¶å€¼ã€‚è¡¨è¾¾å¼ä¸­åªå­˜åœ¨ +ã€-ã€*ã€ä¸‰ç§è¿ç®—ï¼Œæˆ‘ä»¬å‡è®¾è¡¨è¾¾å¼æ˜¯æ­£ç¡®çš„ï¼Œ
+      ä¸”ä¸å­˜åœ¨é™¤æ•°ä¸ºé›¶çš„æƒ…å†µã€‚
 Input
-µÚÒ»ÐÐÊäÈëÒ»¸öÕýÕûÊý n£¨1<=n<=30£© £¬±íÊ¾ÓÐ±í´ïÊ½ n ¸öÊý£¨Ã¿¸öÊý¾ùÐ¡ÓÚ100£©£¬±í´ïÊ½ÖÐÖ»ÓÐÊýÖµ£¨¶¼ÊÇ´óÓÚÁãµÄÊý£©
-      ºÍÔËËã·û£¨°üÀ¨+¡¢-¡¢*¡¢=ËÄÖÖÔËËã·û£¬ÆäÖÐ = Ö»ÔÚ±í´ïÊ½×îºó£¬±íÊ¾Ò»¸ö±í´ïÊ½Êä³ö½áÊø£¬ÇÒÕû¸ö±í´ïÊ½²»´æÔÚ¿Õ¸ñ£©
+ç¬¬ä¸€è¡Œè¾“å…¥ä¸€ä¸ªæ­£æ•´æ•° nï¼ˆ1<=n<=30ï¼‰ ï¼Œè¡¨ç¤ºæœ‰è¡¨è¾¾å¼ n ä¸ªæ•°ï¼ˆæ¯ä¸ªæ•°å‡å°äºŽ100ï¼‰ï¼Œè¡¨è¾¾å¼ä¸­åªæœ‰æ•°å€¼ï¼ˆéƒ½æ˜¯å¤§äºŽé›¶çš„æ•°ï¼‰
+      å’Œè¿ç®—ç¬¦ï¼ˆåŒ…æ‹¬+ã€-ã€*ã€=å››ç§è¿ç®—ç¬¦ï¼Œå…¶ä¸­ = åªåœ¨è¡¨è¾¾å¼æœ€åŽï¼Œè¡¨ç¤ºä¸€ä¸ªè¡¨è¾¾å¼è¾“å‡ºç»“æŸï¼Œä¸”æ•´ä¸ªè¡¨è¾¾å¼ä¸å­˜åœ¨ç©ºæ ¼ï¼‰
 Output
-±í´ïÊ½µÄÖµ£¨±í´ïÊ½µÄÖµ²»»á³¬³ö double µÄ·¶Î§²¢±£ÁôÁ½Î»Ð¡Êý£©
+è¡¨è¾¾å¼çš„å€¼ï¼ˆè¡¨è¾¾å¼çš„å€¼ä¸ä¼šè¶…å‡º double çš„èŒƒå›´å¹¶ä¿ç•™ä¸¤ä½å°æ•°ï¼‰
 Sample Input
 5
 1*2*3*4*5=
@@ -81,7 +81,7 @@ Sample Output
 120.00
 9.00
 HINT
-Ê¹ÓÃSTLµÄstackÈÝÒ×ÊµÏÖ¡£
+ä½¿ç”¨STLçš„stackå®¹æ˜“å®žçŽ°ã€‚
 
 
 Append Code */

@@ -57,30 +57,30 @@ int main()
 }
 
 
-/* Problem D: ³É¼¨ÅÅÐò
+/* Problem D: æˆç»©æŽ’åº
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 3971  Solved: 3101
 [Submit][Status]
 Description
-¶¨ÒåStudentÀà£º
+å®šä¹‰Studentç±»ï¼š
 
-1. Êý¾Ý³ÉÔ±string nameºÍint score±íÊ¾Ò»¸öÑ§ÉúµÄÐÕÃû¡¢³É¼¨¡£
+1. æ•°æ®æˆå‘˜string nameå’Œint scoreè¡¨ç¤ºä¸€ä¸ªå­¦ç”Ÿçš„å§“åã€æˆç»©ã€‚
 
-2. ÎÞ²Î¹¹Ôìº¯Êý¡£
+2. æ— å‚æž„é€ å‡½æ•°ã€‚
 
-3. void setStudent(string,int)·½·¨£¬ÓÃÓÚÉèÖÃÒ»¸öÑ§ÉúµÄÊôÐÔÖµ¡£
+3. void setStudent(string,int)æ–¹æ³•ï¼Œç”¨äºŽè®¾ç½®ä¸€ä¸ªå­¦ç”Ÿçš„å±žæ€§å€¼ã€‚
 
-4. ÖØÔØ>£¨´óÓÚÔËËã·û£©¡£StudentÀàµÄ¶ÔÏóAºÍBµÄ´óÐ¡¹ØÏµ£¬A>B¶¨ÒåÎªA.score>B.score£¬»òÕßA.score=B.scoreµ«A.name<B.name¡£
+4. é‡è½½>ï¼ˆå¤§äºŽè¿ç®—ç¬¦ï¼‰ã€‚Studentç±»çš„å¯¹è±¡Aå’ŒBçš„å¤§å°å…³ç³»ï¼ŒA>Bå®šä¹‰ä¸ºA.score>B.scoreï¼Œæˆ–è€…A.score=B.scoreä½†A.name<B.nameã€‚
 
-5.ÖØÔØÔËËã·û<<ÓÃÓÚÊä³öÑ§ÉúÐÅÏ¢£ºÏÈÊä³ö³É¼¨ÔÙÊä³öÐÕÃû£¬ÖÐ¼äÓÃÒ»¸ö¿Õ¸ñ¸ô¿ª¡£
+5.é‡è½½è¿ç®—ç¬¦<<ç”¨äºŽè¾“å‡ºå­¦ç”Ÿä¿¡æ¯ï¼šå…ˆè¾“å‡ºæˆç»©å†è¾“å‡ºå§“åï¼Œä¸­é—´ç”¨ä¸€ä¸ªç©ºæ ¼éš”å¼€ã€‚
 
 Input
-·Ö¶àÐÐ¡£µÚÒ»¸öM>0±íÊ¾ÓÐM¸öÑ§ÉúÐÅÏ¢¡£
+åˆ†å¤šè¡Œã€‚ç¬¬ä¸€ä¸ªM>0è¡¨ç¤ºæœ‰Mä¸ªå­¦ç”Ÿä¿¡æ¯ã€‚
 
-Ö®ºóÓÐMÐÐ£¬Ã¿Ò»ÐÐÊÇÒ»¸öÑ§ÉúÐÅÏ¢¡£µÚÒ»²¿·ÖÊÇÑ§ÉúÐÕÃû£¬µÚ¶þ²¿·ÖÊÇÑ§Éú³É¼¨¡£
+ä¹‹åŽæœ‰Mè¡Œï¼Œæ¯ä¸€è¡Œæ˜¯ä¸€ä¸ªå­¦ç”Ÿä¿¡æ¯ã€‚ç¬¬ä¸€éƒ¨åˆ†æ˜¯å­¦ç”Ÿå§“åï¼Œç¬¬äºŒéƒ¨åˆ†æ˜¯å­¦ç”Ÿæˆç»©ã€‚
 
 Output
-Êä³öÎªMÐÐ£¬°´ÕÕ´Ó´óµ½Ð¡µÄË³ÐòÒÀ´ÎÊä³öÃ¿¸öÑ§ÉúµÄ³É¼¨¡¢ÐÕÃû¡£¼Ù¶¨²»´æÔÚÖØÃûµÄÑ§Éú¡£
+è¾“å‡ºä¸ºMè¡Œï¼ŒæŒ‰ç…§ä»Žå¤§åˆ°å°çš„é¡ºåºä¾æ¬¡è¾“å‡ºæ¯ä¸ªå­¦ç”Ÿçš„æˆç»©ã€å§“åã€‚å‡å®šä¸å­˜åœ¨é‡åçš„å­¦ç”Ÿã€‚
 
 Sample Input
 5
@@ -96,7 +96,7 @@ Sample Output
 97 Dock
 97 Jack
 HINT
-stringÀàÓÐ¸ö·½·¨£ºint compare(const string &s) const;ÓÃÓÚ±È½Ïµ±Ç°×Ö·û´®ºÍsµÄ´óÐ¡£¬ÆäÔ­ÀíµÈÍ¬ÓÚCÓïÑÔµÄ¿âº¯Êýstrcmp¡£
+stringç±»æœ‰ä¸ªæ–¹æ³•ï¼šint compare(const string &s) const;ç”¨äºŽæ¯”è¾ƒå½“å‰å­—ç¬¦ä¸²å’Œsçš„å¤§å°ï¼Œå…¶åŽŸç†ç­‰åŒäºŽCè¯­è¨€çš„åº“å‡½æ•°strcmpã€‚
 
 
 Append Code

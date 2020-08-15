@@ -12,7 +12,7 @@ int main()
         int i;
         for (i = 0; i < s1.length(); i++)
         {
-            if (s1[i] == '(') //
+            if (s1[i] == '(') 
                 s.push(1);
             else if (!s.empty())
                 s.pop();

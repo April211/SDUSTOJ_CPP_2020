@@ -32,18 +32,18 @@ int main()
 
 /* 
 
-Problem C: ʱ��֮��
+Problem C: 时间之差
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 2405  Solved: 1381
 [Submit][Status]
 Description
-����һ����Time������Сʱ�����ӡ����������ԡ������乹�캯��Time(int, int, int)�ֱ��ʼ����Сʱ�����ӡ��롣���ؼ��������������������ʱ��֮�������������Ǹ���������
+定义一个类Time，包含小时、分钟、秒三个属性。定义其构造函数Time(int, int, int)分别初始化其小时、分钟、秒。重载减法运算符，用于求两个时间之间相差的秒数（非负整数）。
 
 Input
-������2�С�ÿ�б�ʾ1��ʱ�䣬����Сʱ�����ӡ�������ֵ�����붼�ǺϷ���24Сʱ�Ƶ�ʱ�䡣
+输入有2行。每行表示1个时间，包括小时、分钟、秒三个值。输入都是合法的24小时制的时间。
 
 Output
-��������
+见样例。
 
 Sample Input
 12 10 10

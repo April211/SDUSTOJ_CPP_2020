@@ -17,25 +17,25 @@ public:
 /* 
 
 
-Problem H: ĞèÒªÖØÔØÂğ£¿
+Problem H: éœ€è¦é‡è½½å—ï¼Ÿ
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 1851  Solved: 1267
 [Submit][Status]
 Description
-¶¨ÒåÒ»¸öÀàOverload£¬¾ßÓĞÒ»¸öintÀàĞÍµÄºÍÒ»¸öcharÀàĞÍÊôĞÔ¡£ÔÚ¶¨Òå¸ÃÀàµÄ¶ÔÏóÊ±£¬Èç¹û²»Ö¸¶¨ÈÎºÎ³õÊ¼Öµ£¬ÔòÊä³ö£º
+å®šä¹‰ä¸€ä¸ªç±»Overloadï¼Œå…·æœ‰ä¸€ä¸ªintç±»å‹çš„å’Œä¸€ä¸ªcharç±»å‹å±æ€§ã€‚åœ¨å®šä¹‰è¯¥ç±»çš„å¯¹è±¡æ—¶ï¼Œå¦‚æœä¸æŒ‡å®šä»»ä½•åˆå§‹å€¼ï¼Œåˆ™è¾“å‡ºï¼š
 Default constructor is called to make a = 0, c = '0'.
-Èç¹ûÖ»¸ø³öÒ»¸öintÀàĞÍµÄ³õÊ¼Öµ#£¬ÔòÊä³ö£º
+å¦‚æœåªç»™å‡ºä¸€ä¸ªintç±»å‹çš„åˆå§‹å€¼#ï¼Œåˆ™è¾“å‡ºï¼š
 First constructor is called to make a = #, c = '0'.
-Èç¹ûÖ»¸ø³öÒ»¸öcharÀàĞÍ³õÊ¼Öµ$£¬ÔòÊä³ö£º
+å¦‚æœåªç»™å‡ºä¸€ä¸ªcharç±»å‹åˆå§‹å€¼$ï¼Œåˆ™è¾“å‡ºï¼š
 Second constructor is called to make a = 0, c = '$'.
-Èç¹û¸ø³öÒ»¸öintÀàĞÍ³õÊ¼Öµ#ºÍÒ»¸öcharÀàĞÍ³õÊ¼Öµ$£¬ÔòÊä³ö£º
+å¦‚æœç»™å‡ºä¸€ä¸ªintç±»å‹åˆå§‹å€¼#å’Œä¸€ä¸ªcharç±»å‹åˆå§‹å€¼$ï¼Œåˆ™è¾“å‡ºï¼š
 Third constructor is called to make a = #, c = '$'.
 
 Input
-Ò»¸öintÀàĞÍµÄÖµºÍÒ»¸öcharÀàĞÍµÄÖµ¡£
+ä¸€ä¸ªintç±»å‹çš„å€¼å’Œä¸€ä¸ªcharç±»å‹çš„å€¼ã€‚
 
 Output
-¼ûÑùÀı¡£
+è§æ ·ä¾‹ã€‚
 
 Sample Input
 10 a

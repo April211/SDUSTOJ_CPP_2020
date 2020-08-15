@@ -88,41 +88,41 @@ int main()
 
 /* 
 
-Problem A: Á¢Ìå¿Õ¼äÖÐµÄµã£¨II£©
+Problem A: ç«‹ä½“ç©ºé—´ä¸­çš„ç‚¹ï¼ˆIIï¼‰
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 5109  Solved: 4044
 [Submit][Status]
 Description
-Éè¼ÆÒ»¸öÆ½ÃæÉÏµÄµãPointÀàºÍ3Î¬µÄµãPoint_3DÀà£¬Âú×ãPoint_3DÀà¼Ì³Ð×ÔPointÀà£¬ÓÃÓÚ¶ÁÈ¡ÊäÈëµÄÊý¾Ý£¬Êä³öËù¹¹ÔìµÄÁ½ÖÖµãµÄ×ø±ê¡£²¢Í³¼ÆÊäÈëµÄÁ½ÖÖµãµÄ¸öÊý¡£
-Éè¼ÆPointÀàÐèÖ§³ÖÒ»ÏÂ²Ù×÷£º
-Point::Point()ÎÞ²Î¹¹Ôì¡£
-Point::Point(double,double)Á½¸ö×ø±ê²ÎÊý¹¹Ôì¡£
-Point::x()·µ»Øx×ø±ê
-Point::y()·µ»Øy×ø±ê
-Point::x(int)ÐÞ¸Äx×ø±ê²¢·µ»Ø
-Point::y(int)ÐÞ¸Äy×ø±ê²¢·µ»Ø
-Point::showPoint()°´¸ñÊ½Êä³öPoint¶ÔÏó
-Point::showNumber()·µ»ØPoint¶ÔÏó×ÜÊýµÄ¾²Ì¬º¯Êý
-Éè¼ÆPoint_3DÀàÐèÖ§³ÖÒ»ÏÂ²Ù×÷£º
-Point_3D::Point_3D()ÎÞ²Î¹¹Ôì¡£
-Point_3D::Point_3D(double,double,double)Èý¸ö×ø±ê²ÎÊý¹¹Ôì¡£
-Point_3D::z()·µ»Øz×ø±ê¡£
-Point_3D::z(int)ÐÞ¸Äz×ø±ê²¢·µ»Ø¡£
-Point_3D::showPoint()°´¸ñÊ½Êä³öPoint_3D¶ÔÏó¡£
-Point_3D::setPoint(double,double,double)¸ù¾ÝÈý¸ö×ø±ê²ÎÊýÐÞ¸ÄPoint_3D¶ÔÏóµÄ×ø±ê¡£
-Point_3D::showNumber()·µ»ØPoint_3D¶ÔÏó×ÜÊýµÄ¾²Ì¬º¯Êý¡£
+è®¾è®¡ä¸€ä¸ªå¹³é¢ä¸Šçš„ç‚¹Pointç±»å’Œ3ç»´çš„ç‚¹Point_3Dç±»ï¼Œæ»¡è¶³Point_3Dç±»ç»§æ‰¿è‡ªPointç±»ï¼Œç”¨äºŽè¯»å–è¾“å…¥çš„æ•°æ®ï¼Œè¾“å‡ºæ‰€æž„é€ çš„ä¸¤ç§ç‚¹çš„åæ ‡ã€‚å¹¶ç»Ÿè®¡è¾“å…¥çš„ä¸¤ç§ç‚¹çš„ä¸ªæ•°ã€‚
+è®¾è®¡Pointç±»éœ€æ”¯æŒä¸€ä¸‹æ“ä½œï¼š
+Point::Point()æ— å‚æž„é€ ã€‚
+Point::Point(double,double)ä¸¤ä¸ªåæ ‡å‚æ•°æž„é€ ã€‚
+Point::x()è¿”å›žxåæ ‡
+Point::y()è¿”å›žyåæ ‡
+Point::x(int)ä¿®æ”¹xåæ ‡å¹¶è¿”å›ž
+Point::y(int)ä¿®æ”¹yåæ ‡å¹¶è¿”å›ž
+Point::showPoint()æŒ‰æ ¼å¼è¾“å‡ºPointå¯¹è±¡
+Point::showNumber()è¿”å›žPointå¯¹è±¡æ€»æ•°çš„é™æ€å‡½æ•°
+è®¾è®¡Point_3Dç±»éœ€æ”¯æŒä¸€ä¸‹æ“ä½œï¼š
+Point_3D::Point_3D()æ— å‚æž„é€ ã€‚
+Point_3D::Point_3D(double,double,double)ä¸‰ä¸ªåæ ‡å‚æ•°æž„é€ ã€‚
+Point_3D::z()è¿”å›žzåæ ‡ã€‚
+Point_3D::z(int)ä¿®æ”¹zåæ ‡å¹¶è¿”å›žã€‚
+Point_3D::showPoint()æŒ‰æ ¼å¼è¾“å‡ºPoint_3Då¯¹è±¡ã€‚
+Point_3D::setPoint(double,double,double)æ ¹æ®ä¸‰ä¸ªåæ ‡å‚æ•°ä¿®æ”¹Point_3Då¯¹è±¡çš„åæ ‡ã€‚
+Point_3D::showNumber()è¿”å›žPoint_3Då¯¹è±¡æ€»æ•°çš„é™æ€å‡½æ•°ã€‚
 -----------------------------------------------------------------------------
-ÄãÉè¼ÆPointÀàºÍPoint_3DÀà£¬Ê¹µÃmain()º¯ÊýÄÜ¹»ÕýÈ·ÔËÐÐ¡£
-º¯Êýµ÷ÓÃ¸ñÊ½¼ûappend.cc¡£
-append.ccÖÐÒÑ¸ø³ömain()º¯Êý¡£
+ä½ è®¾è®¡Pointç±»å’ŒPoint_3Dç±»ï¼Œä½¿å¾—main()å‡½æ•°èƒ½å¤Ÿæ­£ç¡®è¿è¡Œã€‚
+å‡½æ•°è°ƒç”¨æ ¼å¼è§append.ccã€‚
+append.ccä¸­å·²ç»™å‡ºmain()å‡½æ•°ã€‚
 Input
-ÊäÈëµÄµÚÒ»¸öÕûÊýn£¬±íÊ¾ÓÐn×é²âÊÔÊý¾Ý£¬ºóÃæµÄÊäÈëÃ¿ÐÐÎªÒ»×é²âÊÔÊý¾Ý¡£Ã¿×é²âÊÔÊý¾ÝµÄµÚÒ»ÐÐÊÇÒ»¸öÕûÊým£¬mÓÐÁ½ÖÖÈ¡Öµ£º2¡¢3£»mÎª2Ê±£¬ºóÃæÓÐÁ½¸ö¸¡µãÊýx¡¢y£¬±íÊ¾Ò»¸öÆ½ÃæÉÏµÄµãµÄ×ø±ê(x,y)£»mÎª3Ê±ºóÃæÓÐ3¸ö¸¡µãÊýx¡¢y¡¢z£¬±íÊ¾Ò»¸ö3Î¬µÄµãµÄ×ø±ê(x,y,z)¡£
+è¾“å…¥çš„ç¬¬ä¸€ä¸ªæ•´æ•°nï¼Œè¡¨ç¤ºæœ‰nç»„æµ‹è¯•æ•°æ®ï¼ŒåŽé¢çš„è¾“å…¥æ¯è¡Œä¸ºä¸€ç»„æµ‹è¯•æ•°æ®ã€‚æ¯ç»„æµ‹è¯•æ•°æ®çš„ç¬¬ä¸€è¡Œæ˜¯ä¸€ä¸ªæ•´æ•°mï¼Œmæœ‰ä¸¤ç§å–å€¼ï¼š2ã€3ï¼›mä¸º2æ—¶ï¼ŒåŽé¢æœ‰ä¸¤ä¸ªæµ®ç‚¹æ•°xã€yï¼Œè¡¨ç¤ºä¸€ä¸ªå¹³é¢ä¸Šçš„ç‚¹çš„åæ ‡(x,y)ï¼›mä¸º3æ—¶åŽé¢æœ‰3ä¸ªæµ®ç‚¹æ•°xã€yã€zï¼Œè¡¨ç¤ºä¸€ä¸ª3ç»´çš„ç‚¹çš„åæ ‡(x,y,z)ã€‚
 Output
-¿ªÊ¼²¿·ÖÎªÓÉmain()º¯Êý²úÉúµÄ¹Ì¶¨Êä³ö£¬ÓÃÓÚ²âÊÔ¶ÔÏóµÄÄ³Ð©·½·¨µÄµ÷ÓÃÇé¿ö¡£Êä³ö¡°Test data output :¡±Ö®ºóÎª²âÊÔÊý¾Ý¶ÔÓ¦µÄÊä³ö£º
-Ã¿×é²âÊÔÊý¾Ý¶ÔÓ¦Ò»ÐÐÊä³ö¡£
-ÈôÊäÈëÎªÆ½ÃæÉÏµÄµã£¬ÔòÊä³ö£º¡°2D Point (x,y)¡±£¬xºÍyÎªÊäÈëµÄ×ø±êÖµ¡£
-ÈôÊäÈëÎª3Î¬µÄµã£¬ÔòÊä³ö£º¡°3D Point (x,y,y)¡±£¬x¡¢yºÍzÎªÊäÈëµÄ×ø±êÖµ¡£
-×îºó£¬·Ö±ðÊä³ö×Ü¹²ÊäÈëµÄÆ½ÃæÉÏµÄµãÊýºÍ3Î¬µÄµãÊý¡£
+å¼€å§‹éƒ¨åˆ†ä¸ºç”±main()å‡½æ•°äº§ç”Ÿçš„å›ºå®šè¾“å‡ºï¼Œç”¨äºŽæµ‹è¯•å¯¹è±¡çš„æŸäº›æ–¹æ³•çš„è°ƒç”¨æƒ…å†µã€‚è¾“å‡ºâ€œTest data output :â€ä¹‹åŽä¸ºæµ‹è¯•æ•°æ®å¯¹åº”çš„è¾“å‡ºï¼š
+æ¯ç»„æµ‹è¯•æ•°æ®å¯¹åº”ä¸€è¡Œè¾“å‡ºã€‚
+è‹¥è¾“å…¥ä¸ºå¹³é¢ä¸Šçš„ç‚¹ï¼Œåˆ™è¾“å‡ºï¼šâ€œ2D Point (x,y)â€ï¼Œxå’Œyä¸ºè¾“å…¥çš„åæ ‡å€¼ã€‚
+è‹¥è¾“å…¥ä¸º3ç»´çš„ç‚¹ï¼Œåˆ™è¾“å‡ºï¼šâ€œ3D Point (x,y,y)â€ï¼Œxã€yå’Œzä¸ºè¾“å…¥çš„åæ ‡å€¼ã€‚
+æœ€åŽï¼Œåˆ†åˆ«è¾“å‡ºæ€»å…±è¾“å…¥çš„å¹³é¢ä¸Šçš„ç‚¹æ•°å’Œ3ç»´çš„ç‚¹æ•°ã€‚
 Sample Input
 5
 3 1 2 3

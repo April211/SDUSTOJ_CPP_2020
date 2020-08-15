@@ -24,18 +24,18 @@ int main()
 
 
 /* 
-Problem I: ���ѵ���
+Problem I: 很难的题
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 1621  Solved: 1375
 [Submit][Status]
 Description
-����һ����Difficult��ֻ��һ��int���͵����ݳ�Ա�������乹�캯�����Լ�����������ݳ�Ա�ľ���ֵ�ĳ�Ա������void show()�����ݳ�Ա�������ֵ����int���ͷ�Χ�ڡ�
+定义一个类Difficult，只有一个int类型的数据成员。定义其构造函数，以及用于输出数据成员的绝对值的成员名函数void show()。数据成员及其绝对值都在int类型范围内。
 
 Input
-һ��int���ͷ�Χ�ڵ�������
+一个int类型范围内的整数。
 
 Output
-��������ݵľ���ֵ��
+输入的数据的绝对值。
 
 Sample Input
 -100

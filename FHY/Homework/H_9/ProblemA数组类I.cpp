@@ -49,25 +49,25 @@ int main()
 }
 
 
-/* Problem A: Êý×éÀà£¨I£©
+/* Problem A: æ•°ç»„ç±»ï¼ˆIï¼‰
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 4680  Solved: 3529
 [Submit][Status]
 Description
-·â×°Ò»¸öÕûÐÍÊý×éÀà£¬ÓÃÓÚ´æ´¢ÕûÊýºÍ´¦ÀíµÄÏà¹Ø¹¦ÄÜ£¬Ö§³ÖÒÔÏÂ²Ù×÷£º
-1. Array::Array()ÎÞ²Î¹¹Ôì·½·¨£º´´½¨Ò»¸ö¿ÕÊý×é¶ÔÏó¡£
-2. Array::size()·½·¨£º·µ»ØArray¶ÔÏóÖÐÔªËØ¸öÊý¡£
-3. Array::get(int n)·½·¨£º°´¸ñÊ½´ÓÊäÈë¶ÁÈ¡nÔªËØ¡£
-4. ÏÂ±êÔËËã·û£º·µ»ØÏÂ±êËùÖ¸µÄÔªËØ¡£
+å°è£…ä¸€ä¸ªæ•´åž‹æ•°ç»„ç±»ï¼Œç”¨äºŽå­˜å‚¨æ•´æ•°å’Œå¤„ç†çš„ç›¸å…³åŠŸèƒ½ï¼Œæ”¯æŒä»¥ä¸‹æ“ä½œï¼š
+1. Array::Array()æ— å‚æž„é€ æ–¹æ³•ï¼šåˆ›å»ºä¸€ä¸ªç©ºæ•°ç»„å¯¹è±¡ã€‚
+2. Array::size()æ–¹æ³•ï¼šè¿”å›žArrayå¯¹è±¡ä¸­å…ƒç´ ä¸ªæ•°ã€‚
+3. Array::get(int n)æ–¹æ³•ï¼šæŒ‰æ ¼å¼ä»Žè¾“å…¥è¯»å–nå…ƒç´ ã€‚
+4. ä¸‹æ ‡è¿ç®—ç¬¦ï¼šè¿”å›žä¸‹æ ‡æ‰€æŒ‡çš„å…ƒç´ ã€‚
 -----------------------------------------------------------------------------
-ÄãÉè¼ÆÒ»¸öÊý×éÀàArray£¬Ê¹µÃmain()º¯ÊýÄÜ¹»ÕýÈ·ÔËÐÐ¡£
-º¯Êýµ÷ÓÃ¸ñÊ½¼ûappend.cc¡£
-append.ccÖÐÒÑ¸ø³ömain()º¯Êý
+ä½ è®¾è®¡ä¸€ä¸ªæ•°ç»„ç±»Arrayï¼Œä½¿å¾—main()å‡½æ•°èƒ½å¤Ÿæ­£ç¡®è¿è¡Œã€‚
+å‡½æ•°è°ƒç”¨æ ¼å¼è§append.ccã€‚
+append.ccä¸­å·²ç»™å‡ºmain()å‡½æ•°
 Input
-ÊäÈëµÄµÚÒ»¸öÕûÊýn£¬±íÊ¾ÓÐn×é²âÊÔÊý¾Ý¡£
-ºóÃæµÄÃ¿ÐÐÒÔÒ»¸öÕûÊýk¿ªÍ·£¬±íÊ¾ºóÃæÓÐk¸öÕûÊý¡£
+è¾“å…¥çš„ç¬¬ä¸€ä¸ªæ•´æ•°nï¼Œè¡¨ç¤ºæœ‰nç»„æµ‹è¯•æ•°æ®ã€‚
+åŽé¢çš„æ¯è¡Œä»¥ä¸€ä¸ªæ•´æ•°kå¼€å¤´ï¼Œè¡¨ç¤ºåŽé¢æœ‰kä¸ªæ•´æ•°ã€‚
 Output
-°ÑÊäÈëµÄÊý×é£¬Êä³ö³öÀ´¡£Ã¿ÐÐÊý¾Ý¶ÔÓ¦Ò»¸öÊä³ö¡£¸ñÊ½¼ûsample¡£
+æŠŠè¾“å…¥çš„æ•°ç»„ï¼Œè¾“å‡ºå‡ºæ¥ã€‚æ¯è¡Œæ•°æ®å¯¹åº”ä¸€ä¸ªè¾“å‡ºã€‚æ ¼å¼è§sampleã€‚
 Sample Input
 4
 2 10 20

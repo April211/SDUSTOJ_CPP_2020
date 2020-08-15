@@ -50,17 +50,17 @@ int main()
 }
 
 
-/* Problem E: STL¡ª¡ªÀ¨ºÅÆ¥Åä
+/* Problem E: STLâ€”â€”æ‹¬å·åŒ¹é…
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 5667  Solved: 3648
 [Submit][Status]
 Description
-¸ø³öÒ»¶ÑÀ¨ºÅ£¬¿´ÆäÊÇ·ñÆ¥Åä£¬ÀýÈç ()¡¢()()¡¢(()) ÕâÑùµÄÀ¨ºÅ¾ÍÆ¥Åä£¬
-      )(¡¢)()) ¶øÕâÑùµÄÀ¨ºÅ¾Í²»Æ¥Åä
+ç»™å‡ºä¸€å †æ‹¬å·ï¼Œçœ‹å…¶æ˜¯å¦åŒ¹é…ï¼Œä¾‹å¦‚ ()ã€()()ã€(()) è¿™æ ·çš„æ‹¬å·å°±åŒ¹é…ï¼Œ
+      )(ã€)()) è€Œè¿™æ ·çš„æ‹¬å·å°±ä¸åŒ¹é…
 Input
-Ã¿Ò»ÐÐ´ú±íÒ»×é²âÊÔÑùÀý£¬Ã¿×é²âÊÔÑùÀýÖ»°üº¬'('ºÍ')'£¬ÑùÀý³¤¶È²»³¬¹ý100¸ö×Ö·û
+æ¯ä¸€è¡Œä»£è¡¨ä¸€ç»„æµ‹è¯•æ ·ä¾‹ï¼Œæ¯ç»„æµ‹è¯•æ ·ä¾‹åªåŒ…å«'('å’Œ')'ï¼Œæ ·ä¾‹é•¿åº¦ä¸è¶…è¿‡100ä¸ªå­—ç¬¦
 Output
-Èç¹ûËùÓÐµÄÀ¨ºÅ¶¼Æ¥Åä£¬ÄÇÃ´Êä³öYES£¬·ñÔòÊä³öNO
+å¦‚æžœæ‰€æœ‰çš„æ‹¬å·éƒ½åŒ¹é…ï¼Œé‚£ä¹ˆè¾“å‡ºYESï¼Œå¦åˆ™è¾“å‡ºNO
 Sample Input
 ()
 )(
@@ -68,7 +68,7 @@ Sample Output
 YES
 NO
 HINT
-Ê¹ÓÃSTLµÄstackÈÝÒ×ÊµÏÖ¡£
+ä½¿ç”¨STLçš„stackå®¹æ˜“å®žçŽ°ã€‚
 
 
 Append Code */

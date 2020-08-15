@@ -108,26 +108,26 @@ int main()
 }
 
 
-/* Problem F: Ê±¼äÀàµÄ¼Ó¡¢¼õ·¨¸³ÖµÔËËã
+/* Problem F: æ—¶é—´ç±»çš„åŠ ã€å‡æ³•èµ‹å€¼è¿ç®—
 Time Limit: 3 Sec  Memory Limit: 128 MB
 Submit: 8239  Solved: 5199
 [Submit][Status]
 Description
-·â×°Ò»¸öÊ±¼äÀàTime£¬ÔÚÀàÉÏÖØÔØÒÔÏÂÔËËã·û£¬Ê¹µÃmain()º¯ÊýÄÜ¹»ÕýÈ·ÔËÐÐ¡£
-1. Time::Time()ÎÞ²Î¹¹Ôì·½·¨¡£
-2. Time::inputTime()·½·¨£º°´¸ñÊ½´Ó±ê×¼ÊäÈë¶ÁÈ¡Êý¾ÝÐÞ¸ÄTime¶ÔÏóµÄÊ±·ÖÃëÊýÖµ¡£¸Ã·½·¨·µ»ØÐÞ¸ÄºóµÄ¶ÔÏó¡£
-3. Time::showTime()·½·¨£ºÊä³ö¡°hh:mm:ss¡±£¬²»×ãÁ½Î»µÄÒªÇ°Ãæ²¹0¡£Èç¹û¶ÔÏó²»ÊÇºÏ·¨µÄÊ±¼ä£¬ÔòÊä³ö¡°Time error¡±¡£
-4. ÔËËã·û
-¼Ó·¨¸³ÖµÔËËã·û¡°+=¡±ºÍ¼õ·¨¸³ÖµÔËËã·û¡°-=¡±£º°ÑÒ»¸öÕûÊým¼Óµ½Time¶ÔÏó×ÔÉí£¬²¢ÇÒ½ö¶ÔºÏ·¨µÄÊ±¼ä²Ù×÷£¬²»»á²úÉú²»ºÏ·¨µÄÊ±¼ä£¬±ÈÈç£º
-ÈôÔ­Ê±¼ä¶ÔÏóÎª¡°00:00:00¡±£¬¼õÈ¥2ºóµÄ¶ÔÏóÎª¡°23:59:58¡±;
-ÈôÔ­Ê±¼ä¶ÔÏóÎª¡°23:59:59¡±£¬¼ÓÉÏ1ºóµÄ¶ÔÏóÎª¡°00:00:00¡±;
-ÈôÔ­Ê±¼ä¶ÔÏóÎª¡°24:60:60¡±£¬¼Ó¼õºóµÄ¶ÔÏóÈÔÎª¡°24:60:60¡±
-º¯Êýµ÷ÓÃ¸ñÊ½¼ûappend.cc¡£
-append.ccÖÐÒÑ¸ø³ömain()º¯Êý
+å°è£…ä¸€ä¸ªæ—¶é—´ç±»Timeï¼Œåœ¨ç±»ä¸Šé‡è½½ä»¥ä¸‹è¿ç®—ç¬¦ï¼Œä½¿å¾—main()å‡½æ•°èƒ½å¤Ÿæ­£ç¡®è¿è¡Œã€‚
+1. Time::Time()æ— å‚æž„é€ æ–¹æ³•ã€‚
+2. Time::inputTime()æ–¹æ³•ï¼šæŒ‰æ ¼å¼ä»Žæ ‡å‡†è¾“å…¥è¯»å–æ•°æ®ä¿®æ”¹Timeå¯¹è±¡çš„æ—¶åˆ†ç§’æ•°å€¼ã€‚è¯¥æ–¹æ³•è¿”å›žä¿®æ”¹åŽçš„å¯¹è±¡ã€‚
+3. Time::showTime()æ–¹æ³•ï¼šè¾“å‡ºâ€œhh:mm:ssâ€ï¼Œä¸è¶³ä¸¤ä½çš„è¦å‰é¢è¡¥0ã€‚å¦‚æžœå¯¹è±¡ä¸æ˜¯åˆæ³•çš„æ—¶é—´ï¼Œåˆ™è¾“å‡ºâ€œTime errorâ€ã€‚
+4. è¿ç®—ç¬¦
+åŠ æ³•èµ‹å€¼è¿ç®—ç¬¦â€œ+=â€å’Œå‡æ³•èµ‹å€¼è¿ç®—ç¬¦â€œ-=â€ï¼šæŠŠä¸€ä¸ªæ•´æ•°måŠ åˆ°Timeå¯¹è±¡è‡ªèº«ï¼Œå¹¶ä¸”ä»…å¯¹åˆæ³•çš„æ—¶é—´æ“ä½œï¼Œä¸ä¼šäº§ç”Ÿä¸åˆæ³•çš„æ—¶é—´ï¼Œæ¯”å¦‚ï¼š
+è‹¥åŽŸæ—¶é—´å¯¹è±¡ä¸ºâ€œ00:00:00â€ï¼Œå‡åŽ»2åŽçš„å¯¹è±¡ä¸ºâ€œ23:59:58â€;
+è‹¥åŽŸæ—¶é—´å¯¹è±¡ä¸ºâ€œ23:59:59â€ï¼ŒåŠ ä¸Š1åŽçš„å¯¹è±¡ä¸ºâ€œ00:00:00â€;
+è‹¥åŽŸæ—¶é—´å¯¹è±¡ä¸ºâ€œ24:60:60â€ï¼ŒåŠ å‡åŽçš„å¯¹è±¡ä»ä¸ºâ€œ24:60:60â€
+å‡½æ•°è°ƒç”¨æ ¼å¼è§append.ccã€‚
+append.ccä¸­å·²ç»™å‡ºmain()å‡½æ•°
 Input
-ÊäÈëµÄµÚÒ»¸öÕûÊýn£¬±íÊ¾ÓÐn×é²âÊÔÊý¾Ý£¬Ã¿×é4¸öÕûÊý£¬Ç°Èý¸öÕûÊýÎª£ºhh,mm,ss£¬·Ö±ð±íÊ¾Ê±¡¢·Ö¡¢Ãë£¬ÆäÖµ¶¼ÔÚint·¶Î§ÄÚ£¬×îºóÒ»¸öÕûÊýÎªm¡£
+è¾“å…¥çš„ç¬¬ä¸€ä¸ªæ•´æ•°nï¼Œè¡¨ç¤ºæœ‰nç»„æµ‹è¯•æ•°æ®ï¼Œæ¯ç»„4ä¸ªæ•´æ•°ï¼Œå‰ä¸‰ä¸ªæ•´æ•°ä¸ºï¼šhh,mm,ssï¼Œåˆ†åˆ«è¡¨ç¤ºæ—¶ã€åˆ†ã€ç§’ï¼Œå…¶å€¼éƒ½åœ¨intèŒƒå›´å†…ï¼Œæœ€åŽä¸€ä¸ªæ•´æ•°ä¸ºmã€‚
 Output
-Ã¿¸öÊäÈë¶ÔÓ¦Á½ÐÐÊä³ö£¬·Ö±ðÎªÊ±¼ä¡°hh,mm,ss¡±¼ÓÉÏmÃëºÍ¼õÈ¥mÃëºóµÄÖµ¡£´íÎóµÄÊ±¼äÊä³ö¡°Time error¡±
+æ¯ä¸ªè¾“å…¥å¯¹åº”ä¸¤è¡Œè¾“å‡ºï¼Œåˆ†åˆ«ä¸ºæ—¶é—´â€œhh,mm,ssâ€åŠ ä¸Šmç§’å’Œå‡åŽ»mç§’åŽçš„å€¼ã€‚é”™è¯¯çš„æ—¶é—´è¾“å‡ºâ€œTime errorâ€
 Sample Input
 6
 0 0 1 2
@@ -150,15 +150,15 @@ Time error
 Time error
 Time error
 HINT
-Êä³ö¸ñÊ½ÓÃÍ·ÎÄ¼þ<iomanip>ÖÐÁ÷²Ù×÷Ëã×Ó£º
+è¾“å‡ºæ ¼å¼ç”¨å¤´æ–‡ä»¶<iomanip>ä¸­æµæ“ä½œç®—å­ï¼š
 
-setw(w)   £ºÉèÖÃÊý¾ÝµÄÊä³ö¿í¶ÈÎªw¸ö×Ö·û
+setw(w)   ï¼šè®¾ç½®æ•°æ®çš„è¾“å‡ºå®½åº¦ä¸ºwä¸ªå­—ç¬¦
 
-setfill(c)£ºÉèÖÃÓÃ×Ö·ûc×÷ÎªÌî³ä×Ö·û
+setfill(c)ï¼šè®¾ç½®ç”¨å­—ç¬¦cä½œä¸ºå¡«å……å­—ç¬¦
 
-left      £ºÉèÖÃÊä³ö×ó¶ÔÆë
+left      ï¼šè®¾ç½®è¾“å‡ºå·¦å¯¹é½
 
-right     £ºÉèÖÃÊä³öÓÅ¶ÔÆë
+right     ï¼šè®¾ç½®è¾“å‡ºä¼˜å¯¹é½
 
 Append Code
 append.cc, */
