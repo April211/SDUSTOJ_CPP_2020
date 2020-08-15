@@ -53,30 +53,30 @@ int main()
 }
 
 
-//Problem C: ¸øÎÒÒ»Ì¨¼ÆËã»ú°É£¡
+//Problem C: ç»™æˆ‘ä¸€å°è®¡ç®—æœºå§ï¼
 //Time Limit: 1 Sec  Memory Limit: 128 MB
 //Submit: 3377  Solved: 2862
 //[Submit][Status]
 //Description
-//CPUÖ÷ÆµºÍÖ÷´æÈÝÁ¿ÊÇºâÁ¿Ò»Ì¨¼ÆËã»úÐÔÄÜÖ÷ÒªÖ¸±ê¡£Çë¶¨Òå£º
+//CPUä¸»é¢‘å’Œä¸»å­˜å®¹é‡æ˜¯è¡¡é‡ä¸€å°è®¡ç®—æœºæ€§èƒ½ä¸»è¦æŒ‡æ ‡ã€‚è¯·å®šä¹‰ï¼š
 //
-//1. CPUÀà£ºÖ»ÓÐÒ»¸öintÀàÐÍµÄÊý¾Ý³ÉÔ±ÒÔ±íÊ¾ÆäÖ÷Æµ£¬²¢Çë¸ù¾ÝÊä³öºÍ¸ø¶¨µÄmain()º¯Êý±àÐ´±ØÒªµÄ³ÉÔ±º¯Êý£¨°üÀ¨¹¹Ôìº¯Êý£©¡£
+//1. CPUç±»ï¼šåªæœ‰ä¸€ä¸ªintç±»åž‹çš„æ•°æ®æˆå‘˜ä»¥è¡¨ç¤ºå…¶ä¸»é¢‘ï¼Œå¹¶è¯·æ ¹æ®è¾“å‡ºå’Œç»™å®šçš„main()å‡½æ•°ç¼–å†™å¿…è¦çš„æˆå‘˜å‡½æ•°ï¼ˆåŒ…æ‹¬æž„é€ å‡½æ•°ï¼‰ã€‚
 //
-//2. MemoryÀà£ºÖ»ÓÐÒ»¸öintÀàÐÍµÄÊý¾Ý³ÉÔ±ÒÔ±íÊ¾ÆäÈÝÁ¿£¬²¢Çë¸ù¾ÝÊä³öºÍ¸ø¶¨µÄmain()º¯Êý±àÐ´±ØÒªµÄ³ÉÔ±º¯Êý£¨°üÀ¨¹¹Ôìº¯Êý£©¡£
+//2. Memoryç±»ï¼šåªæœ‰ä¸€ä¸ªintç±»åž‹çš„æ•°æ®æˆå‘˜ä»¥è¡¨ç¤ºå…¶å®¹é‡ï¼Œå¹¶è¯·æ ¹æ®è¾“å‡ºå’Œç»™å®šçš„main()å‡½æ•°ç¼–å†™å¿…è¦çš„æˆå‘˜å‡½æ•°ï¼ˆåŒ…æ‹¬æž„é€ å‡½æ•°ï¼‰ã€‚
 //
-//3. ComputerÀà£º
+//3. Computerç±»ï¼š
 //
-//£¨1£©Èý¸öÊý¾Ý³ÉÔ±·Ö±ðÎªCPUµÄ¶ÔÏó¡¢MemoryµÄ¶ÔÏóºÍÒ»¸ö×Ö·û´®£¨±íÊ¾¸Ã¼ÆËã»úÊôÓÚË­µÄ£©¡£
+//ï¼ˆ1ï¼‰ä¸‰ä¸ªæ•°æ®æˆå‘˜åˆ†åˆ«ä¸ºCPUçš„å¯¹è±¡ã€Memoryçš„å¯¹è±¡å’Œä¸€ä¸ªå­—ç¬¦ä¸²ï¼ˆè¡¨ç¤ºè¯¥è®¡ç®—æœºå±žäºŽè°çš„ï¼‰ã€‚
 //
-//£¨2£©¸ù¾ÝÊä³öºÍ¸ø¶¨µÄmain()º¯Êý±àÐ´±ØÒªµÄ³ÉÔ±º¯Êý£¨°üÀ¨¹¹Ôìº¯Êý£©¡£
+//ï¼ˆ2ï¼‰æ ¹æ®è¾“å‡ºå’Œç»™å®šçš„main()å‡½æ•°ç¼–å†™å¿…è¦çš„æˆå‘˜å‡½æ•°ï¼ˆåŒ…æ‹¬æž„é€ å‡½æ•°ï¼‰ã€‚
 //
-//£¨3£©void show()·½·¨£¬ÓÃÓÚ°´ÕÕÑùÀýÊä³ö¸ñÊ½Êä³ö¸Ã¼ÆËã»úµÄÐÅÏ¢¡£
+//ï¼ˆ3ï¼‰void show()æ–¹æ³•ï¼Œç”¨äºŽæŒ‰ç…§æ ·ä¾‹è¾“å‡ºæ ¼å¼è¾“å‡ºè¯¥è®¡ç®—æœºçš„ä¿¡æ¯ã€‚
 //
 //Input
-//ÊäÈëÓÐ2ÐÐ¡£Ã¿ÐÐ°üÀ¨2¸öÕûÊýºÍ1¸ö×Ö·û´®£¬·Ö±ð±íÊ¾CPUµÄÖ÷Æµ¡¢ÄÚ´æÈÝÁ¿ºÍ¼ÆËã»úÖ÷ÈËÐÕÃû¡£
+//è¾“å…¥æœ‰2è¡Œã€‚æ¯è¡ŒåŒ…æ‹¬2ä¸ªæ•´æ•°å’Œ1ä¸ªå­—ç¬¦ä¸²ï¼Œåˆ†åˆ«è¡¨ç¤ºCPUçš„ä¸»é¢‘ã€å†…å­˜å®¹é‡å’Œè®¡ç®—æœºä¸»äººå§“åã€‚
 //
 //Output
-//¼ûÑùÀý¡£
+//è§æ ·ä¾‹ã€‚
 //
 //Sample Input
 //2 1000 Zhang

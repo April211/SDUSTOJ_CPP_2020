@@ -90,23 +90,23 @@ int main()
 
 /* 
 
-Problem I: Õý·½ÐÎ¡¢³¤·½ÐÎ¡¢Á¢·½Ìå Ö®¶þ
+Problem I: æ­£æ–¹å½¢ã€é•¿æ–¹å½¢ã€ç«‹æ–¹ä½“ ä¹‹äºŒ
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 1730  Solved: 1463
 [Submit][Status]
 Description
-¸ø³öÕý·½ÐÎ£¨Square£©¡¢³¤·½ÐÎ£¨Rectangle£©¡¢Á¢·½Ìå£¨Cube£©¡¢³¤·½Ìå£¨Cuboid£©µÄ±ß³¤£¬Çó£¨±í£©Ãæ»ý¡£
-Õý·½ÐÎ¡¢Á¢·½Ìå¸÷±ßÏàµÈµÄ£¬Òò´ËÖ»Ðè´æ´¢Ò»Ìõ±ß³¤¡£
-³¤·½ÐÎÐè´æ´¢Á½Ìõ±ß³¤¡£
-³¤·½ÌåÐè´æ´¢ÈýÌõ±ß³¤
-Éè¼ÆÒ»¸ö»ùÀàShape£¬ÓÃÓÚ¶àÌ¬µÄÊµÏÖÇóÇó£¨±í£©Ãæ»ý¡£
+ç»™å‡ºæ­£æ–¹å½¢ï¼ˆSquareï¼‰ã€é•¿æ–¹å½¢ï¼ˆRectangleï¼‰ã€ç«‹æ–¹ä½“ï¼ˆCubeï¼‰ã€é•¿æ–¹ä½“ï¼ˆCuboidï¼‰çš„è¾¹é•¿ï¼Œæ±‚ï¼ˆè¡¨ï¼‰é¢ç§¯ã€‚
+æ­£æ–¹å½¢ã€ç«‹æ–¹ä½“å„è¾¹ç›¸ç­‰çš„ï¼Œå› æ­¤åªéœ€å­˜å‚¨ä¸€æ¡è¾¹é•¿ã€‚
+é•¿æ–¹å½¢éœ€å­˜å‚¨ä¸¤æ¡è¾¹é•¿ã€‚
+é•¿æ–¹ä½“éœ€å­˜å‚¨ä¸‰æ¡è¾¹é•¿
+è®¾è®¡ä¸€ä¸ªåŸºç±»Shapeï¼Œç”¨äºŽå¤šæ€çš„å®žçŽ°æ±‚æ±‚ï¼ˆè¡¨ï¼‰é¢ç§¯ã€‚
 -----------------------------------------------------------------------------
-Çë×ÐÏ¸ÔÄ¶Áappend.cc´úÂë£¬²¢Éè¼ÆºÃÕý·½ÐÎ¡¢³¤·½ÐÎ¡¢Á¢·½Ìå¡¢³¤·½ÌåÅÉÉú¹ØÏµ£¬Ê¹main()º¯ÊýÄÜ¹»ÔËÐÐ²¢µÃµ½ÕýÈ·µÄÊä³ö¡£
+è¯·ä»”ç»†é˜…è¯»append.ccä»£ç ï¼Œå¹¶è®¾è®¡å¥½æ­£æ–¹å½¢ã€é•¿æ–¹å½¢ã€ç«‹æ–¹ä½“ã€é•¿æ–¹ä½“æ´¾ç”Ÿå…³ç³»ï¼Œä½¿main()å‡½æ•°èƒ½å¤Ÿè¿è¡Œå¹¶å¾—åˆ°æ­£ç¡®çš„è¾“å‡ºã€‚
 Input
-ÊäÈëµÚÒ»¸öÕûÊýn£¬±íÊ¾ºóÃæÓÐn¸öÍ¼ÐÎ¡£Ã¿¸öÍ¼ÐÎÕ¼ÓÃÒ»ÐÐÊäÈë¡£SQR±íÊ¾Õý·½ÐÎ¡¢CUB±íÊ¾Á¢·½Ìå£¬ºóÃæÖ»ÊäÈëÒ»¸ö±ß³¤£»RCT±íÊ¾³¤·½ÐÎ£¬ºóÃæÊäÈë³¤ºÍ¿í£»CBD±íÊ¾³¤·½Ìå£¬ºóÃæÊäÈë³¤¿í¸ß¡£
+è¾“å…¥ç¬¬ä¸€ä¸ªæ•´æ•°nï¼Œè¡¨ç¤ºåŽé¢æœ‰nä¸ªå›¾å½¢ã€‚æ¯ä¸ªå›¾å½¢å ç”¨ä¸€è¡Œè¾“å…¥ã€‚SQRè¡¨ç¤ºæ­£æ–¹å½¢ã€CUBè¡¨ç¤ºç«‹æ–¹ä½“ï¼ŒåŽé¢åªè¾“å…¥ä¸€ä¸ªè¾¹é•¿ï¼›RCTè¡¨ç¤ºé•¿æ–¹å½¢ï¼ŒåŽé¢è¾“å…¥é•¿å’Œå®½ï¼›CBDè¡¨ç¤ºé•¿æ–¹ä½“ï¼ŒåŽé¢è¾“å…¥é•¿å®½é«˜ã€‚
 
 Output
-´ÓÊäÈëµÄµÚ¶þÐÐ¿ªÊ¼£¬Ã¿ÐÐ¶ÔÓ¦Êä³öÒ»¸öÍ¼ÐÎµÄ£¨±í£©Ãæ»ý×Ö·û´®¡£
+ä»Žè¾“å…¥çš„ç¬¬äºŒè¡Œå¼€å§‹ï¼Œæ¯è¡Œå¯¹åº”è¾“å‡ºä¸€ä¸ªå›¾å½¢çš„ï¼ˆè¡¨ï¼‰é¢ç§¯å­—ç¬¦ä¸²ã€‚
 
 Sample Input
 6

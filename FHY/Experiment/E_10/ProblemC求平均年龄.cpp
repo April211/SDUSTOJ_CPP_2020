@@ -61,28 +61,28 @@ int main()
 /* 
 
 
-Problem C: ÇóÆ½¾ùÄêÁä
+Problem C: æ±‚å¹³å‡å¹´é¾„
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 2896  Solved: 1765
 [Submit][Status]
 Description
-¶¨ÒåÒ»¸öPersonsÀà£¬ÓÃÓÚ±£´æÈô¸É¸öÈËµÄÐÕÃû£¨stringÀàÐÍ£©ºÍÄêÁä£¨intÀàÐÍ£©£¬¶¨ÒåÆä·½·¨
+å®šä¹‰ä¸€ä¸ªPersonsç±»ï¼Œç”¨äºŽä¿å­˜è‹¥å¹²ä¸ªäººçš„å§“åï¼ˆstringç±»åž‹ï¼‰å’Œå¹´é¾„ï¼ˆintç±»åž‹ï¼‰ï¼Œå®šä¹‰å…¶æ–¹æ³•
 
 void addAPerson(string,int)
 
-ÓÃÓÚÌí¼Ó1¸öÈËµÄÐÅÏ¢£»
+ç”¨äºŽæ·»åŠ 1ä¸ªäººçš„ä¿¡æ¯ï¼›
 
 double getAveAge()
 
-ÓÃÓÚ»ñÈ¡ËùÓÐÈËµÄÆ½¾ùÄêÁä¡£
+ç”¨äºŽèŽ·å–æ‰€æœ‰äººçš„å¹³å‡å¹´é¾„ã€‚
 
 Input
-µÚ1ÐÐN>0±íÊ¾ÓÐN¸ö²âÊÔÓÃÀý¡£
+ç¬¬1è¡ŒN>0è¡¨ç¤ºæœ‰Nä¸ªæµ‹è¯•ç”¨ä¾‹ã€‚
 
-Ã¿¸ö²âÊÔÓÃÀý°üÀ¨1¸öÈËµÄÐÕÃû¼°ÆäÄêÁä¡£
+æ¯ä¸ªæµ‹è¯•ç”¨ä¾‹åŒ…æ‹¬1ä¸ªäººçš„å§“ååŠå…¶å¹´é¾„ã€‚
 
 Output
-ËùÓÐÈËµÄÆ½¾ùÄêÁä¡£¼ûÑùÀý¡£
+æ‰€æœ‰äººçš„å¹³å‡å¹´é¾„ã€‚è§æ ·ä¾‹ã€‚
 
 Sample Input
 5

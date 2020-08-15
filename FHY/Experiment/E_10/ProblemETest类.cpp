@@ -34,18 +34,18 @@ int main()
 
 
 
-Problem E: TestÀà
+Problem E: Testç±»
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 738  Solved: 557
 [Submit][Status]
 Description
-¶¨ÒåÒ»¸öÀàTest£¬Ö»ÓĞÒ»¸östringÀàĞÍµÄ²ÎÊıname¡£¶¨ÒåÆä³ÉÔ±º¯Êı£¬Ê¹Ö÷º¯ÊıÄÜµÃµ½ÑùÀıËùÊ¾µÄ½á¹û¡£
+å®šä¹‰ä¸€ä¸ªç±»Testï¼Œåªæœ‰ä¸€ä¸ªstringç±»å‹çš„å‚æ•°nameã€‚å®šä¹‰å…¶æˆå‘˜å‡½æ•°ï¼Œä½¿ä¸»å‡½æ•°èƒ½å¾—åˆ°æ ·ä¾‹æ‰€ç¤ºçš„ç»“æœã€‚
 
 Input
-ÊäÈëÒ»¸ö×Ö·û´®£¬²»°üº¬¿Õ¸ñ¡£
+è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œä¸åŒ…å«ç©ºæ ¼ã€‚
 
 Output
-¼ûÑùÀı¡£
+è§æ ·ä¾‹ã€‚
 
 Sample Input
 Computer

@@ -33,12 +33,3 @@ int main()
     cout<<"t2 is "<<t2.getMem()<<"."<<endl;
     return 0;
 }
-
-int main()
-{
-    double d;
-    cin>>d;
-    Data data(d);
-    cout<<data.getValue()<<endl;
-    data.showValue();
-}

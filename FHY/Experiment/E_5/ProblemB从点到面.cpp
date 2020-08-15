@@ -62,32 +62,32 @@ int main()
 
 
 
-/* Problem B: ´Óµãµ½Ãæ
+/* Problem B: ä»Žç‚¹åˆ°é¢
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 6022  Solved: 3307
 [Submit][Status]
 Description
-Ò»¸ö¾ØÐÎ¿ÉÒÔÓÉ×óÉÏ½ÇºÍÓÒÏÂ½ÇµÄ¶¥µã¶øÎ¨Ò»È·¶¨¡£ÏÖÔÚÇë¶¨ÒåÁ½¸öÀà£ºPointºÍRectangle¡£
+ä¸€ä¸ªçŸ©å½¢å¯ä»¥ç”±å·¦ä¸Šè§’å’Œå³ä¸‹è§’çš„é¡¶ç‚¹è€Œå”¯ä¸€ç¡®å®šã€‚çŽ°åœ¨è¯·å®šä¹‰ä¸¤ä¸ªç±»ï¼šPointå’ŒRectangleã€‚
 
-ÆäÖÐPointÀàÓÐxºÍyÁ½¸öÊôÐÔ£¨¾ùÎªintÀàÐÍ£©£¬±íÊ¾¶þÎ¬¿Õ¼äÄÚÒ»¸öµãµÄºá×Ý×ø±ê£¬²¢¾ßÓÐÏàÓ¦µÄ¹¹Ôìº¯Êý¡¢Îö¹¹º¯ÊýºÍ¿½±´¹¹Ôìº¯Êý¡£´ËÍâ£¬»¹ÓÐgetX()ºÍgetY()·½·¨ÓÃÒÔµÃµ½Ò»¸öµãµÄ×ø±êÖµ¡£
+å…¶ä¸­Pointç±»æœ‰xå’Œyä¸¤ä¸ªå±žæ€§ï¼ˆå‡ä¸ºintç±»åž‹ï¼‰ï¼Œè¡¨ç¤ºäºŒç»´ç©ºé—´å†…ä¸€ä¸ªç‚¹çš„æ¨ªçºµåæ ‡ï¼Œå¹¶å…·æœ‰ç›¸åº”çš„æž„é€ å‡½æ•°ã€æžæž„å‡½æ•°å’Œæ‹·è´æž„é€ å‡½æ•°ã€‚æ­¤å¤–ï¼Œè¿˜æœ‰getX()å’ŒgetY()æ–¹æ³•ç”¨ä»¥å¾—åˆ°ä¸€ä¸ªç‚¹çš„åæ ‡å€¼ã€‚
 
-RectangleÀàÓÐleftTopºÍrightBottomÁ½¸öÊôÐÔ£¨¾ùÎªPointÀàµÄ¶ÔÏó£©£¬±íÊ¾Ò»¸ö¾ØÐÎµÄ×óÉÏ½ÇºÍÓÒÏÂ½ÇµÄÁ½¸öµã£¬²¢¾ßÓÐÏàÓ¦µÄ¹¹Ôìº¯Êý¡¢Îö¹¹º¯Êý¡£´ËÍâ£¬»¹ÓÐgetLeftTop()¡¢getRightBottom()·½·¨ÓÃÓÚ»ñÈ¡ÏàÓ¦µÄ×óÉÏ½Çµã¡¢ÓÒÏÂ½Çµã£¬getArea()·½·¨ÓÃÒÔ»ñÈ¡Ãæ»ý¡£
+Rectangleç±»æœ‰leftTopå’ŒrightBottomä¸¤ä¸ªå±žæ€§ï¼ˆå‡ä¸ºPointç±»çš„å¯¹è±¡ï¼‰ï¼Œè¡¨ç¤ºä¸€ä¸ªçŸ©å½¢çš„å·¦ä¸Šè§’å’Œå³ä¸‹è§’çš„ä¸¤ä¸ªç‚¹ï¼Œå¹¶å…·æœ‰ç›¸åº”çš„æž„é€ å‡½æ•°ã€æžæž„å‡½æ•°ã€‚æ­¤å¤–ï¼Œè¿˜æœ‰getLeftTop()ã€getRightBottom()æ–¹æ³•ç”¨äºŽèŽ·å–ç›¸åº”çš„å·¦ä¸Šè§’ç‚¹ã€å³ä¸‹è§’ç‚¹ï¼ŒgetArea()æ–¹æ³•ç”¨ä»¥èŽ·å–é¢ç§¯ã€‚
 
 Input
-ÊäÈëÓÐ¶àÐÐ¡£
+è¾“å…¥æœ‰å¤šè¡Œã€‚
 
-µÚÒ»ÐÐÊÇÒ»¸öÕýÕûÊýM£¬±íÊ¾ºóÃæÓÐM¸ö²âÊÔÓÃÀý¡£
+ç¬¬ä¸€è¡Œæ˜¯ä¸€ä¸ªæ­£æ•´æ•°Mï¼Œè¡¨ç¤ºåŽé¢æœ‰Mä¸ªæµ‹è¯•ç”¨ä¾‹ã€‚
 
-Ã¿¸ö²âÊÔÓÃÀýÕ¼Ò»ÐÐ£¬°üÀ¨4¸öÕýÕûÊý£¬·Ö±ðÎª×óÉÏ½ÇµÄºá×ø±ê¡¢×Ý×ø±ê£¬ÓÒÏÂ½ÇµÄºá×ø±ê¡¢×Ý×ø±ê¡£
+æ¯ä¸ªæµ‹è¯•ç”¨ä¾‹å ä¸€è¡Œï¼ŒåŒ…æ‹¬4ä¸ªæ­£æ•´æ•°ï¼Œåˆ†åˆ«ä¸ºå·¦ä¸Šè§’çš„æ¨ªåæ ‡ã€çºµåæ ‡ï¼Œå³ä¸‹è§’çš„æ¨ªåæ ‡ã€çºµåæ ‡ã€‚
 
-×¢Òâ£º
+æ³¨æ„ï¼š
 
-1.Çë¸ù¾ÝÊä³öÑùÀýÅÐ¶ÏÁ½¸öÀàÖÐÏàÓ¦·½·¨µÄÊéÐ´·½·¨¡£
+1.è¯·æ ¹æ®è¾“å‡ºæ ·ä¾‹åˆ¤æ–­ä¸¤ä¸ªç±»ä¸­ç›¸åº”æ–¹æ³•çš„ä¹¦å†™æ–¹æ³•ã€‚
 
-2. ¼Ù¶¨ÆÁÄ»µÄ×óÏÂ½ÇÎª×ø±êÔ­µã¡£
+2. å‡å®šå±å¹•çš„å·¦ä¸‹è§’ä¸ºåæ ‡åŽŸç‚¹ã€‚
 
 Output
-Êä³ö¼ûÑùÀý¡£
+è¾“å‡ºè§æ ·ä¾‹ã€‚
 
 Sample Input
 1

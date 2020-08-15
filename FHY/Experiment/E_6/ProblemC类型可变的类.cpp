@@ -46,18 +46,18 @@ int main()
     return 0;
 }
 
-/* Problem C: ÀàÐÍ¿É±äµÄÀà
+/* Problem C: ç±»åž‹å¯å˜çš„ç±»
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 2890  Solved: 1484
 [Submit][Status]
 Description
-¶¨ÒåÒ»¸öDataÀà£¬ÖÁÉÙ°üº¬1¸öintÀàÐÍµÄÊý¾Ý³ÉÔ±¡¢1¸ödoubleÀàÐÍµÄÊý¾Ý³ÉÔ±£¬¶¨ÒåÆä¹¹Ôìº¯ÊýºÍÎö¹¹º¯Êý£¬Ê¹µÃ³ÌÐòÖ´ÐÐÊ±£¬ÄÜ²úÉúÑùÀýËùÊ¾µÄ½á¹û¡£
+å®šä¹‰ä¸€ä¸ªDataç±»ï¼Œè‡³å°‘åŒ…å«1ä¸ªintç±»åž‹çš„æ•°æ®æˆå‘˜ã€1ä¸ªdoubleç±»åž‹çš„æ•°æ®æˆå‘˜ï¼Œå®šä¹‰å…¶æž„é€ å‡½æ•°å’Œæžæž„å‡½æ•°ï¼Œä½¿å¾—ç¨‹åºæ‰§è¡Œæ—¶ï¼Œèƒ½äº§ç”Ÿæ ·ä¾‹æ‰€ç¤ºçš„ç»“æžœã€‚
 
 Input
-ÊäÈë2ÐÐ£¬µÚ1ÐÐÊÇ1¸öintÀàÐÍµÄÊý¾Ý£¬µÚ2ÐÐÊÇ1¸ödoubleÀàÐÍµÄÊý¾Ý¡£
+è¾“å…¥2è¡Œï¼Œç¬¬1è¡Œæ˜¯1ä¸ªintç±»åž‹çš„æ•°æ®ï¼Œç¬¬2è¡Œæ˜¯1ä¸ªdoubleç±»åž‹çš„æ•°æ®ã€‚
 
 Output
-¼ûÑùÀý¡£
+è§æ ·ä¾‹ã€‚
 
 Sample Input
 120

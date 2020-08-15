@@ -32,18 +32,18 @@ int main()
 }
 
 
-//Problem A: Äã»á¶¨ÒåÀàÂð£¿
+//Problem A: ä½ ä¼šå®šä¹‰ç±»å—ï¼Ÿ
 //Time Limit: 1 Sec  Memory Limit: 128 MB
 //Submit: 3159  Solved: 2402
 //[Submit][Status]
 //Description
-//¶¨ÒåÒ»¸öÀàDemo£¬ÓÐ¹¹Ôìº¯Êý¡¢Îö¹¹º¯ÊýºÍ³ÉÔ±º¯Êýshow()£¬ÆäÖÐshow()¸ù¾ÝÑùÀýµÄ¸ñÊ½Êä³ö¾ßÌåÊôÐÔÖµ¡£¸ÃÀàÖ»ÓÐÒ»¸öintÀàÐÍµÄ³ÉÔ±¡£
+//å®šä¹‰ä¸€ä¸ªç±»Demoï¼Œæœ‰æž„é€ å‡½æ•°ã€æžæž„å‡½æ•°å’Œæˆå‘˜å‡½æ•°show()ï¼Œå…¶ä¸­show()æ ¹æ®æ ·ä¾‹çš„æ ¼å¼è¾“å‡ºå…·ä½“å±žæ€§å€¼ã€‚è¯¥ç±»åªæœ‰ä¸€ä¸ªintç±»åž‹çš„æˆå‘˜ã€‚
 //
 //Input
-//ÊäÈëÖ»ÓÐÒ»¸öÕûÊý£¬intÀàÐÍ·¶Î§ÄÚ¡£
+//è¾“å…¥åªæœ‰ä¸€ä¸ªæ•´æ•°ï¼Œintç±»åž‹èŒƒå›´å†…ã€‚
 //
 //Output
-//¼ûÑùÀý¡£
+//è§æ ·ä¾‹ã€‚
 //
 //Sample Input
 //-100

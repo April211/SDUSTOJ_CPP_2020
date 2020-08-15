@@ -57,26 +57,26 @@ int main()
 
 
 /* 
-Problem A: ¿ËÂ¡ÈËÀ´ÁË£¡
+Problem A: å…‹éš†äººæ¥äº†ï¼
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 5917  Solved: 3225
 [Submit][Status]
 Description
-¿ËÂ¡¼¼Êõ·ÉËÙ·¢Õ¹£¬¿ËÂ¡ÈËÒÑ¾­³ÉÎªÏÖÊµÁË£¡£¡ËùÒÔ£¬ÏÖÔÚÓÉÄãÀ´±àÐ´Ò»¸öPersonÀà£¬À´Ä£ÄâÆäÖÐµÄ¿ËÂ¡¹ý³Ì¡£Õâ¸öÀà¾ßÓÐ2¸öÊôÐÔ£ºname¡ª¡ªÐÕÃû£¨char*ÀàÐÍ£©£¬ºÍage¡ª¡ªÄêÁä£¨intÀàÐÍ£©¡£
+å…‹éš†æŠ€æœ¯é£žé€Ÿå‘å±•ï¼Œå…‹éš†äººå·²ç»æˆä¸ºçŽ°å®žäº†ï¼ï¼æ‰€ä»¥ï¼ŒçŽ°åœ¨ç”±ä½ æ¥ç¼–å†™ä¸€ä¸ªPersonç±»ï¼Œæ¥æ¨¡æ‹Ÿå…¶ä¸­çš„å…‹éš†è¿‡ç¨‹ã€‚è¿™ä¸ªç±»å…·æœ‰2ä¸ªå±žæ€§ï¼šnameâ€”â€”å§“åï¼ˆchar*ç±»åž‹ï¼‰ï¼Œå’Œageâ€”â€”å¹´é¾„ï¼ˆintç±»åž‹ï¼‰ã€‚
 
-¸ÃÀà¾ßÓÐÎÞ²Î¹¹Ôìº¯Êý£¨ÈËÃûÎª¡°no name¡±£¬ÄêÁäÊÇ0£©¡¢´ø²ÎÊý¹¹Ôìº¯Êý¡¢¿½±´¹¹Ôìº¯ÊýÒÔ¼°Îö¹¹º¯ÊýÍâ£¬»¹ÓÐÒÔÏÂ3¸ö³ÉÔ±º¯Êý£º
+è¯¥ç±»å…·æœ‰æ— å‚æž„é€ å‡½æ•°ï¼ˆäººåä¸ºâ€œno nameâ€ï¼Œå¹´é¾„æ˜¯0ï¼‰ã€å¸¦å‚æ•°æž„é€ å‡½æ•°ã€æ‹·è´æž„é€ å‡½æ•°ä»¥åŠæžæž„å‡½æ•°å¤–ï¼Œè¿˜æœ‰ä»¥ä¸‹3ä¸ªæˆå‘˜å‡½æ•°ï¼š
 
-1. void Person::showPerson()£º°´ÕÕÖ¸¶¨¸ñÊ½ÏÔÊ¾ÈËµÄÐÅÏ¢¡£
+1. void Person::showPerson()ï¼šæŒ‰ç…§æŒ‡å®šæ ¼å¼æ˜¾ç¤ºäººçš„ä¿¡æ¯ã€‚
 
-2. Person& Person::setName(char *)£ºÉè¶¨ÈËµÄÐÕÃû¡£
+2. Person& Person::setName(char *)ï¼šè®¾å®šäººçš„å§“åã€‚
 
-3. Person& Person::setAge(int)£ºÉè¶¨ÈËµÄÄêÁä¡£
+3. Person& Person::setAge(int)ï¼šè®¾å®šäººçš„å¹´é¾„ã€‚
 
 Input
-ÊäÈë·Ö¶àÐÐ£¬µÚÒ»ÐÐÊÇÒ»¸öÕýÕûÊýN£¬±íÊ¾ÆäºóÓÐNÐÐÊäÈë¡£Ã¿ÐÐ·ÖÁ½²¿·Ö£ºµÚÒ»²¿·ÖÊÇÒ»¸öÃ»ÓÐ¿Õ°×·ûµÄ×Ö·û´®£¬±íÊ¾Ò»¸öÈËµÄÐÕÃû£»µÚ¶þ²¿·ÖÊÇÒ»¸öÕýÕûÊý£¬±íÊ¾ÈËµÄÄêÁä¡£
+è¾“å…¥åˆ†å¤šè¡Œï¼Œç¬¬ä¸€è¡Œæ˜¯ä¸€ä¸ªæ­£æ•´æ•°Nï¼Œè¡¨ç¤ºå…¶åŽæœ‰Nè¡Œè¾“å…¥ã€‚æ¯è¡Œåˆ†ä¸¤éƒ¨åˆ†ï¼šç¬¬ä¸€éƒ¨åˆ†æ˜¯ä¸€ä¸ªæ²¡æœ‰ç©ºç™½ç¬¦çš„å­—ç¬¦ä¸²ï¼Œè¡¨ç¤ºä¸€ä¸ªäººçš„å§“åï¼›ç¬¬äºŒéƒ¨åˆ†æ˜¯ä¸€ä¸ªæ­£æ•´æ•°ï¼Œè¡¨ç¤ºäººçš„å¹´é¾„ã€‚
 
 Output
-ßÀ~±È½Ï¸´ÔÓ£¬¼ûÑùÀý°É£¡×¢Òâ£ºÒª¸ù¾ÝÑùÀý±àÐ´ÏàÓ¦º¯ÊýÖÐµÄÊä³öÓï¾ä£¬×¢Òâ¸ñÊ½Å¶£¡
+å‘ƒ~æ¯”è¾ƒå¤æ‚ï¼Œè§æ ·ä¾‹å§ï¼æ³¨æ„ï¼šè¦æ ¹æ®æ ·ä¾‹ç¼–å†™ç›¸åº”å‡½æ•°ä¸­çš„è¾“å‡ºè¯­å¥ï¼Œæ³¨æ„æ ¼å¼å“¦ï¼
 
 Sample Input
 3
@@ -102,7 +102,7 @@ A person whose name is "Zhao" and age is 18 is erased!
 A person whose name is "Tom" and age is 16 is erased!
 A person whose name is "no name" and age is 0 is erased!
 HINT
-×¢Òâ£ºÊä³öÖÐÓÐ¡°¡±£¡
+æ³¨æ„ï¼šè¾“å‡ºä¸­æœ‰â€œâ€ï¼
 
 
 Append Code

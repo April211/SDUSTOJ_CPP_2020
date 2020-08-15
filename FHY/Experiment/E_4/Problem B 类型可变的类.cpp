@@ -6,7 +6,7 @@ class Data
 private:
     int da_int$;
     double da_dou$;
-    unsigned flg$;//×öÒ»¸ö±ê¼Ç£¬
+    unsigned flg$;//åšä¸€ä¸ªæ ‡è®°ï¼Œ
 public:
     Data():flg$(1){cout << "A default object is created." << endl;}
     Data(int ttint):da_int$(ttint), flg$(2){cout << "An integer object " << da_int$ << " is created." << endl;}
@@ -48,18 +48,18 @@ int main()
 }
 
 
-//Problem B: ÀàĞÍ¿É±äµÄÀà
+//Problem B: ç±»å‹å¯å˜çš„ç±»
 //Time Limit: 1 Sec  Memory Limit: 128 MB
 //Submit: 2498  Solved: 1209
 //[Submit][Status]
 //Description
-//¶¨ÒåÒ»¸öDataÀà£¬ÖÁÉÙ°üº¬1¸öintÀàĞÍµÄÊı¾İ³ÉÔ±¡¢1¸ödoubleÀàĞÍµÄÊı¾İ³ÉÔ±£¬¶¨ÒåÆä¹¹Ôìº¯ÊıºÍÎö¹¹º¯Êı£¬Ê¹µÃ³ÌĞòÖ´ĞĞÊ±£¬ÄÜ²úÉúÑùÀıËùÊ¾µÄ½á¹û¡£
+//å®šä¹‰ä¸€ä¸ªDataç±»ï¼Œè‡³å°‘åŒ…å«1ä¸ªintç±»å‹çš„æ•°æ®æˆå‘˜ã€1ä¸ªdoubleç±»å‹çš„æ•°æ®æˆå‘˜ï¼Œå®šä¹‰å…¶æ„é€ å‡½æ•°å’Œææ„å‡½æ•°ï¼Œä½¿å¾—ç¨‹åºæ‰§è¡Œæ—¶ï¼Œèƒ½äº§ç”Ÿæ ·ä¾‹æ‰€ç¤ºçš„ç»“æœã€‚
 //
 //Input
-//ÊäÈë2ĞĞ£¬µÚ1ĞĞÊÇ1¸öintÀàĞÍµÄÊı¾İ£¬µÚ2ĞĞÊÇ1¸ödoubleÀàĞÍµÄÊı¾İ¡£
+//è¾“å…¥2è¡Œï¼Œç¬¬1è¡Œæ˜¯1ä¸ªintç±»å‹çš„æ•°æ®ï¼Œç¬¬2è¡Œæ˜¯1ä¸ªdoubleç±»å‹çš„æ•°æ®ã€‚
 //
 //Output
-//¼ûÑùÀı¡£
+//è§æ ·ä¾‹ã€‚
 //
 //Sample Input
 //120

@@ -10,7 +10,7 @@ public:
     Thing(){cout << "A thing without name is created!" << endl;}
     Thing(const Thing &tt):ss$(tt.ss$)
     {
-        if(ss$.empty())//ÅÐ¶ÏstringÊÇ·ñÎª¿Õ
+        if(ss$.empty())
         {
             cout << "A thing without name is copied!" <<endl;
         }

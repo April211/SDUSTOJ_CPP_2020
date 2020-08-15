@@ -60,18 +60,18 @@ int main()
 /* 
 
 
-Problem J: ÀàÄ£°åSample
+Problem J: ç±»æ¨¡æ¿Sample
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 1683  Solved: 1502
 [Submit][Status]
 Description
-¶¨ÒåÀàÄ£°åSample£¬ÉèÄ£°å²ÎÊýÎªT£¬ÔòSampleÀàÖ»ÓÐÒ»¸öTÀàÐÍµÄÊôÐÔ¡£¶¨ÒåÆä¹¹Ôìº¯Êý¡¢¿½±´¹¹Ôìº¯Êý£¬Êä³öÓëÑùÀýÀàËÆµÄÐÅÏ¢¡£¶¨Òåshowº¯Êý£¬ÓÃÓÚÏÔÊ¾ÊôÐÔÖµ£¨Ö»Êä³öÊôÐÔÖµ£©¡£¶¨Òåaddº¯Êý£¬½«µ±Ç°¶ÔÏóÓëSampleÀàµÄÁíÒ»¸ö¶ÔÏóµÄÊôÐÔÖµÏà¼Ó£¬ºÍÈÔ´æÈëµ±Ç°¶ÔÏó¡£
+å®šä¹‰ç±»æ¨¡æ¿Sampleï¼Œè®¾æ¨¡æ¿å‚æ•°ä¸ºTï¼Œåˆ™Sampleç±»åªæœ‰ä¸€ä¸ªTç±»åž‹çš„å±žæ€§ã€‚å®šä¹‰å…¶æž„é€ å‡½æ•°ã€æ‹·è´æž„é€ å‡½æ•°ï¼Œè¾“å‡ºä¸Žæ ·ä¾‹ç±»ä¼¼çš„ä¿¡æ¯ã€‚å®šä¹‰showå‡½æ•°ï¼Œç”¨äºŽæ˜¾ç¤ºå±žæ€§å€¼ï¼ˆåªè¾“å‡ºå±žæ€§å€¼ï¼‰ã€‚å®šä¹‰addå‡½æ•°ï¼Œå°†å½“å‰å¯¹è±¡ä¸ŽSampleç±»çš„å¦ä¸€ä¸ªå¯¹è±¡çš„å±žæ€§å€¼ç›¸åŠ ï¼Œå’Œä»å­˜å…¥å½“å‰å¯¹è±¡ã€‚
 
 Input
-ÊäÈë2¸öintÀàÐÍÕûÊý¡¢2¸ödoubleÀàÐÍÊµÊý¡£
+è¾“å…¥2ä¸ªintç±»åž‹æ•´æ•°ã€2ä¸ªdoubleç±»åž‹å®žæ•°ã€‚
 
 Output
-¼ûÑùÀý¡£
+è§æ ·ä¾‹ã€‚
 
 Sample Input
 1

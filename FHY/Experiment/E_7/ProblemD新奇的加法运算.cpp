@@ -61,28 +61,28 @@ int main()
 }
 
 
-/* Problem D: ÐÂÆæµÄ¼Ó·¨ÔËËã
+/* Problem D: æ–°å¥‡çš„åŠ æ³•è¿ç®—
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 3858  Solved: 2479
 [Submit][Status]
 Description
-¶¨ÒåÀànewInt£¬°üÀ¨£º
+å®šä¹‰ç±»newIntï¼ŒåŒ…æ‹¬ï¼š
 
-1. intÀàÐÍµÄÊý¾Ý³ÉÔ±¡£
+1. intç±»åž‹çš„æ•°æ®æˆå‘˜ã€‚
 
-2. ÖØÔØÔËËã·û¡°+¡±¡£¼ÆËã¹æÔòÎª£º½«A¡¢B¶ÔÓ¦Î»ÖÃÉÏµÄÊý×ÖÏà¼Ó£¬Ö»±£Áô¸öÎ»Êý×÷Îª½á¹ûµÄ¶ÔÓ¦Î»ÖÃÉÏµÄÊý×Ö¡£±ÈÈç£º876 + 543 = 319¡£×¢Òâ£º¸ÃÔËËã²»¸Ä±äÁ½¸ö²Ù×÷ÊýµÄÖµ¡£
+2. é‡è½½è¿ç®—ç¬¦â€œ+â€ã€‚è®¡ç®—è§„åˆ™ä¸ºï¼šå°†Aã€Bå¯¹åº”ä½ç½®ä¸Šçš„æ•°å­—ç›¸åŠ ï¼Œåªä¿ç•™ä¸ªä½æ•°ä½œä¸ºç»“æžœçš„å¯¹åº”ä½ç½®ä¸Šçš„æ•°å­—ã€‚æ¯”å¦‚ï¼š876 + 543 = 319ã€‚æ³¨æ„ï¼šè¯¥è¿ç®—ä¸æ”¹å˜ä¸¤ä¸ªæ“ä½œæ•°çš„å€¼ã€‚
 
-3. ÖØÔØÊäÈëºÍÊä³öÔËËã·û£¬ÓÃÓÚÊäÈëºÍÊä³ö¶ÔÏóµÄÊôÐÔÖµ¡£
+3. é‡è½½è¾“å…¥å’Œè¾“å‡ºè¿ç®—ç¬¦ï¼Œç”¨äºŽè¾“å…¥å’Œè¾“å‡ºå¯¹è±¡çš„å±žæ€§å€¼ã€‚
 
-4. ÎÞ²Î¹¹Ôìº¯ÊýºÍ´ø²Î¹¹Ôìº¯Êý¡£
+4. æ— å‚æž„é€ å‡½æ•°å’Œå¸¦å‚æž„é€ å‡½æ•°ã€‚
 
 Input
-µÚ1ÐÐN>0£¬±íÊ¾²âÊÔÓÃÀýÊýÁ¿¡£
+ç¬¬1è¡ŒN>0ï¼Œè¡¨ç¤ºæµ‹è¯•ç”¨ä¾‹æ•°é‡ã€‚
 
-Ã¿¸ö²âÊÔÓÃÀý°üÀ¨2¸ö·Ç¸ºÕûÊý£¬ÓÃ¿Õ¸ñ¸ô¿ª¡£
+æ¯ä¸ªæµ‹è¯•ç”¨ä¾‹åŒ…æ‹¬2ä¸ªéžè´Ÿæ•´æ•°ï¼Œç”¨ç©ºæ ¼éš”å¼€ã€‚
 
 Output
-¼ûÑùÀý¡£
+è§æ ·ä¾‹ã€‚
 
 Sample Input
 4
@@ -96,7 +96,7 @@ Sample Output
 9 + 1999 = 1998
 199 + 88 = 177
 HINT
- ²»ÄÜÊ¹ÓÃstring¡¢charµÈ×Ö·û»ò×Ö·û´®ÀàÐÍ¡£
+ ä¸èƒ½ä½¿ç”¨stringã€charç­‰å­—ç¬¦æˆ–å­—ç¬¦ä¸²ç±»åž‹ã€‚
 
 Append Code
 append.cc, */

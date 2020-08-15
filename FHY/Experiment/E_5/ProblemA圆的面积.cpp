@@ -36,18 +36,18 @@ int main()
 }
 
 
-/* Problem A: Բ�����
+/* Problem A: 圆的面积
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 1579  Solved: 1138
 [Submit][Status]
 Description
-����Circle�࣬��һ��˽�еġ�double���͵�����radius����ʾԲ�İ뾶����һ�����еġ�double���͵ĳ���̬���ݳ�ԱPI=3.14����ʾԲ���ʡ�����getArea()��getRadius()����������Բ������Ͱ뾶��ע�⣺�ڶ���������������ʱ��Ҫ��֤��������ȷִ�С�
+定义Circle类，有一个私有的、double类型的属性radius，表示圆的半径。有一个公有的、double类型的常静态数据成员PI=3.14，表示圆周率。定义getArea()和getRadius()方法，返回圆的面积和半径。注意：在定义上述两个方法时，要保证程序能正确执行。
 
 Input
-һ��double���͵����ݡ�
+一个double类型的数据。
 
 Output
-��������
+见样例。
 
 Sample Input
 3.15

@@ -39,23 +39,23 @@ inline int Circle::JudgeRelation(const Circle &another)
     if (fabs(dcsq - sumrsq) <= 0.0000001)
     {
         return 3;
-    } //ÍâÇÐ
+    } //å¤–åˆ‡
     else if (fabs(dcsq - drsq) <= 0.0000001)
     {
         return 4;
-    } //ÄÚÇÐ
+    } //å†…åˆ‡
     else if (dcsq - drsq < -0.0000001)
     {
         return 2;
-    } //ÄÚº¬
+    } //å†…å«
     else if (dcsq - sumrsq > 0.0000001)
     {
         return 1;
-    } //ÍâÀë
+    } //å¤–ç¦»
     else
     {
         return 5;
-    } //Ïà½»
+    } //ç›¸äº¤
 }
 
 int main()
@@ -92,26 +92,26 @@ int main()
 }
 
 
-/* Problem C: ÅÐ¶ÏÁ½¸öÔ²Ö®¼äµÄ¹ØÏµ
+/* Problem C: åˆ¤æ–­ä¸¤ä¸ªåœ†ä¹‹é—´çš„å…³ç³»
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 2854  Solved: 2359
 [Submit][Status]
 Description
-¶¨ÒåPointÀà£¬°üÀ¨doubleÀàÐÍµÄÁ½¸öÊôÐÔ£¬·Ö±ð±íÊ¾¶þÎ¬¿Õ¼äÖÐÒ»¸öµãµÄºá×Ý×ø±ê£»¶¨ÒåÆä±ØÒªµÄ¹¹Ôìº¯ÊýºÍ¿½±´¹¹Ôìº¯Êý¡£
+å®šä¹‰Pointç±»ï¼ŒåŒ…æ‹¬doubleç±»åž‹çš„ä¸¤ä¸ªå±žæ€§ï¼Œåˆ†åˆ«è¡¨ç¤ºäºŒç»´ç©ºé—´ä¸­ä¸€ä¸ªç‚¹çš„æ¨ªçºµåæ ‡ï¼›å®šä¹‰å…¶å¿…è¦çš„æž„é€ å‡½æ•°å’Œæ‹·è´æž„é€ å‡½æ•°ã€‚
 
-¶¨ÒåCircleÀà£¬°üÀ¨PointÀàµÄ¶ÔÏóºÍÒ»¸ödoubleÀàÐÍµÄÊý¾Ý×÷ÎªÆäÊôÐÔ£¬·Ö±ð±íÊ¾Ô²ÐÄ×ø±ê¼°°ë¾¶£»¶¨ÒåÆä±ØÒªµÄ¹¹Ôìº¯Êý¡¢¿½±´¹¹Ôìº¯Êý¡£¶¨ÒåCircleÀàµÄ³ÉÔ±º¯Êý£º
+å®šä¹‰Circleç±»ï¼ŒåŒ…æ‹¬Pointç±»çš„å¯¹è±¡å’Œä¸€ä¸ªdoubleç±»åž‹çš„æ•°æ®ä½œä¸ºå…¶å±žæ€§ï¼Œåˆ†åˆ«è¡¨ç¤ºåœ†å¿ƒåæ ‡åŠåŠå¾„ï¼›å®šä¹‰å…¶å¿…è¦çš„æž„é€ å‡½æ•°ã€æ‹·è´æž„é€ å‡½æ•°ã€‚å®šä¹‰Circleç±»çš„æˆå‘˜å‡½æ•°ï¼š
 
 int JudgeRelation(const Circle& another)
 
-ÓÃÓÚÅÐ¶Ïµ±Ç°Ô²ÓëanotherÖ®¼äµÄÎ»ÖÃ¹ØÏµ¡£¸Ãº¯ÊýµÄ·µ»ØÖµ¸ù¾ÝÒÔÏÂ¹æÔòÈ·¶¨£ºµ±Á½¸öÔ²ÍâÀëÊ±·µ»Ø1£»µ±Á½¸öÔ²ÄÚº¬Ê±·µ»Ø2£»µ±Á½¸öÔ²ÍâÇÐÊ±·µ»Ø3£» µ±Á½¸öÔ²ÄÚÇÒÊ±·µ»Ø4£»µ±Á½¸öÔ²Ïà½»Ê±·µ»Ø5¡£
+ç”¨äºŽåˆ¤æ–­å½“å‰åœ†ä¸Žanotherä¹‹é—´çš„ä½ç½®å…³ç³»ã€‚è¯¥å‡½æ•°çš„è¿”å›žå€¼æ ¹æ®ä»¥ä¸‹è§„åˆ™ç¡®å®šï¼šå½“ä¸¤ä¸ªåœ†å¤–ç¦»æ—¶è¿”å›ž1ï¼›å½“ä¸¤ä¸ªåœ†å†…å«æ—¶è¿”å›ž2ï¼›å½“ä¸¤ä¸ªåœ†å¤–åˆ‡æ—¶è¿”å›ž3ï¼› å½“ä¸¤ä¸ªåœ†å†…ä¸”æ—¶è¿”å›ž4ï¼›å½“ä¸¤ä¸ªåœ†ç›¸äº¤æ—¶è¿”å›ž5ã€‚
 
 Input
-µÚ1ÐÐN>0±íÊ¾²âÊÔÓÃÀý¸öÊý¡£
+ç¬¬1è¡ŒN>0è¡¨ç¤ºæµ‹è¯•ç”¨ä¾‹ä¸ªæ•°ã€‚
 
-Ã¿¸ö²âÊÔÓÃÀý°üÀ¨2ÐÐ£¬µÚ1ÐÐÊÇµÚ1¸öÔ²µÄÎ»ÖÃ¼°°ë¾¶£»µÚ2ÐÐÊÇµÚ2¸öÔ²µÄÎ»ÖÃºÍ°ë¾¶¡£
+æ¯ä¸ªæµ‹è¯•ç”¨ä¾‹åŒ…æ‹¬2è¡Œï¼Œç¬¬1è¡Œæ˜¯ç¬¬1ä¸ªåœ†çš„ä½ç½®åŠåŠå¾„ï¼›ç¬¬2è¡Œæ˜¯ç¬¬2ä¸ªåœ†çš„ä½ç½®å’ŒåŠå¾„ã€‚
 
 Output
-Ã¿¸ö²âÊÔÓÃÀý¶ÔÓ¦Ò»ÐÐÊä³ö£¬Êä³öÁ½¸öÔ²Ö®¼äµÄÎ»ÖÃ¹ØÏµ¡£¼ûÑùÀý¡£
+æ¯ä¸ªæµ‹è¯•ç”¨ä¾‹å¯¹åº”ä¸€è¡Œè¾“å‡ºï¼Œè¾“å‡ºä¸¤ä¸ªåœ†ä¹‹é—´çš„ä½ç½®å…³ç³»ã€‚è§æ ·ä¾‹ã€‚
 
 Sample Input
 5
@@ -132,7 +132,7 @@ Externally tangent
 Internally tangent
 Intersection
 HINT
-ÍâÀëÓëÄÚº¬¾ùÖ¸Á½¸öÔ²Ã»ÓÐÈÎºÎ½»µã£¬µ«ÄÚº¬ÊÇÖ¸Ò»¸öÔ²ÍêÈ«°üº¬ÔÚÁíÒ»¸öµÄÄÚ²¿£¬·ñÔò±ãÊÇÍâÀë¡£
+å¤–ç¦»ä¸Žå†…å«å‡æŒ‡ä¸¤ä¸ªåœ†æ²¡æœ‰ä»»ä½•äº¤ç‚¹ï¼Œä½†å†…å«æ˜¯æŒ‡ä¸€ä¸ªåœ†å®Œå…¨åŒ…å«åœ¨å¦ä¸€ä¸ªçš„å†…éƒ¨ï¼Œå¦åˆ™ä¾¿æ˜¯å¤–ç¦»ã€‚
 
 
 Append Code

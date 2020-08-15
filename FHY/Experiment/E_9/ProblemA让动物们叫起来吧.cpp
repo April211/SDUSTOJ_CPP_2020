@@ -66,20 +66,20 @@ int main()
 
 
 /* 
-Problem A: ÈÃ¶¯ÎïÃÇ½ÐÆðÀ´°É£¡
+Problem A: è®©åŠ¨ç‰©ä»¬å«èµ·æ¥å§ï¼
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 4116  Solved: 3255
 [Submit][Status]
 Description
-Tom¼ÒÀïÑøÁËºÜ¶à¶¯Îï£¬±ÈÈçÓÐÑ¼×Ó¡¢»ð¼¦ºÍ¹«¼¦¡£ËüÃÇµÄ½ÐÉù¶¼²»ÏàÍ¬¡£ÏÖÔÚ£¬Çë±àÐ´ÀàAnimal¡¢Cock¡¢TurkeyºÍDuck£¬¸ù¾Ý¸ø³öµÄmain()º¯Êý¼°ÑùÀý·ÖÎöÃ¿¸öÀàµÄÊôÐÔ¡¢ÐÐÎª¼°Ïà»¥¹ØÏµ£¬ÒÔÄ£·ÂTom¼ÒµÄÇé¿ö¡£
+Tomå®¶é‡Œå…»äº†å¾ˆå¤šåŠ¨ç‰©ï¼Œæ¯”å¦‚æœ‰é¸­å­ã€ç«é¸¡å’Œå…¬é¸¡ã€‚å®ƒä»¬çš„å«å£°éƒ½ä¸ç›¸åŒã€‚çŽ°åœ¨ï¼Œè¯·ç¼–å†™ç±»Animalã€Cockã€Turkeyå’ŒDuckï¼Œæ ¹æ®ç»™å‡ºçš„main()å‡½æ•°åŠæ ·ä¾‹åˆ†æžæ¯ä¸ªç±»çš„å±žæ€§ã€è¡Œä¸ºåŠç›¸äº’å…³ç³»ï¼Œä»¥æ¨¡ä»¿Tomå®¶çš„æƒ…å†µã€‚
 
-ÌáÊ¾£º¶¯ÎïÃÇ¶¼ÓÐ×Ô¼ºµÄÃû×Ö¡£
+æç¤ºï¼šåŠ¨ç‰©ä»¬éƒ½æœ‰è‡ªå·±çš„åå­—ã€‚
 
 Input
-ÊäÈëÓÐ¶àÐÐ¡£µÚÒ»ÐÐÕýÕûÊýM±íÊ¾Ö®ºóÓÐM¸ö²âÊÔÓÃÀý£¬Ã¿¸ö²âÊÔÓÃÀý°üÀ¨2²¿·Ö£ºÇ°Ò»²¿·ÖÊÇ¶¯ÎïµÄÃû×Ö£¬ºóÒ»²¿·ÖÊÇ¶¯ÎïµÄÀàÐÍ£¨ÓÃA¡¢B¡¢C·Ö±ð±íÊ¾Ñ¼×Ó¡¢»ð¼¦ºÍ¹«¼¦£©¡£
+è¾“å…¥æœ‰å¤šè¡Œã€‚ç¬¬ä¸€è¡Œæ­£æ•´æ•°Mè¡¨ç¤ºä¹‹åŽæœ‰Mä¸ªæµ‹è¯•ç”¨ä¾‹ï¼Œæ¯ä¸ªæµ‹è¯•ç”¨ä¾‹åŒ…æ‹¬2éƒ¨åˆ†ï¼šå‰ä¸€éƒ¨åˆ†æ˜¯åŠ¨ç‰©çš„åå­—ï¼ŒåŽä¸€éƒ¨åˆ†æ˜¯åŠ¨ç‰©çš„ç±»åž‹ï¼ˆç”¨Aã€Bã€Cåˆ†åˆ«è¡¨ç¤ºé¸­å­ã€ç«é¸¡å’Œå…¬é¸¡ï¼‰ã€‚
 
 Output
-Êä³öÓÐMÐÐ£¬Ã¿¸ö²âÊÔÓÃÀý¶ÔÓ¦Ò»Ñù¡£¼ûÑùÀý¡£
+è¾“å‡ºæœ‰Mè¡Œï¼Œæ¯ä¸ªæµ‹è¯•ç”¨ä¾‹å¯¹åº”ä¸€æ ·ã€‚è§æ ·ä¾‹ã€‚
 
 Sample Input
 3

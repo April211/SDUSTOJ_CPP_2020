@@ -8,7 +8,7 @@ private:
     int radix$;
 
 public:
-    Integer(int tt) : num$(tt), radix$(10) {} //µ¥²ÎÊýÊ®½øÖÆ
+    Integer(int tt) : num$(tt), radix$(10) {} //å•å‚æ•°åè¿›åˆ¶
     Integer(const char *num, int radix) : radix$(radix), num$(0)
     {
         if (num[0] == '-' || num[0] == '+')
@@ -109,36 +109,36 @@ int main()
 }
 
 
-/* Problem A: ÕûÊýµÄ·â×°
+/* Problem A: æ•´æ•°çš„å°è£…
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 5050  Solved: 1968
 [Submit][Status]
 Description
-ÏÖÔÚ£¬Çë±àÐ´Ò»¸öIntegerÀà£¬½«ÕûÊý·â×°ÆðÀ´¡£Ä¿Ç°£¬Ö»ÐèÒªÄãÀ´ÊµÏÖ×î»ù±¾µÄ¹¦ÄÜ£º
+çŽ°åœ¨ï¼Œè¯·ç¼–å†™ä¸€ä¸ªIntegerç±»ï¼Œå°†æ•´æ•°å°è£…èµ·æ¥ã€‚ç›®å‰ï¼Œåªéœ€è¦ä½ æ¥å®žçŽ°æœ€åŸºæœ¬çš„åŠŸèƒ½ï¼š
 
-1. ¾ßÓÐ2¸ö¹¹Ôìº¯Êý£º
+1. å…·æœ‰2ä¸ªæž„é€ å‡½æ•°ï¼š
 
-£¨1£©Integer::Integer(int)£º¸ù¾Ý²ÎÊý¹¹½¨Ò»¸öÕûÊý¶ÔÏó¡£
+ï¼ˆ1ï¼‰Integer::Integer(int)ï¼šæ ¹æ®å‚æ•°æž„å»ºä¸€ä¸ªæ•´æ•°å¯¹è±¡ã€‚
 
-£¨2£©Integer::Integer(char*, int)£º¸ù¾Ý¸ø¶¨µÄ×Ö·û´®ºÍ½øÖÆÀ´¹¹½¨Ò»¸öÕûÊý¶ÔÏó¡£
+ï¼ˆ2ï¼‰Integer::Integer(char*, int)ï¼šæ ¹æ®ç»™å®šçš„å­—ç¬¦ä¸²å’Œè¿›åˆ¶æ¥æž„å»ºä¸€ä¸ªæ•´æ•°å¯¹è±¡ã€‚
 
-2. ¾ßÓÐÒ»¸öint Integer::getValue()·½·¨£¬ÓÃÓÚ·µ»ØIntegerÀàÖÐËù·â×°µÄÕûÊýµÄ¾ßÌåÊýÖµ¡£
+2. å…·æœ‰ä¸€ä¸ªint Integer::getValue()æ–¹æ³•ï¼Œç”¨äºŽè¿”å›žIntegerç±»ä¸­æ‰€å°è£…çš„æ•´æ•°çš„å…·ä½“æ•°å€¼ã€‚
 
 Input
-ÊäÈë·ÖÎª¶àÐÐ¡£
+è¾“å…¥åˆ†ä¸ºå¤šè¡Œã€‚
 
-µÚÒ»ÐÐÊÇÒ»¸öÕýÕûÊýM£¬±íÊ¾ÆäºóÃæµÄMÐÐÎªM¸öÕûÊý£¬Ã¿ÐÐÒ»¸öÕûÊý¡£
+ç¬¬ä¸€è¡Œæ˜¯ä¸€ä¸ªæ­£æ•´æ•°Mï¼Œè¡¨ç¤ºå…¶åŽé¢çš„Mè¡Œä¸ºMä¸ªæ•´æ•°ï¼Œæ¯è¡Œä¸€ä¸ªæ•´æ•°ã€‚
 
-µÚM+2ÐÐÊÇÒ»¸öÕýÕûÊýN£¬±íÊ¾ÆäºóÓÐNÐÐ¡£Ã¿ÐÐÓÉÀûÓÃÒ»¸ö¿Õ¸ñ¸ô¿ªµÄ2²¿·Ö×é³É£ºÇ°°ë²¿·ÖÊÇÒ»¸ö×Ö·û´®£¬ºó°ë²¿·ÖÊÇ¸Ã×Ö·û´®ËùÊ¹ÓÃµÄ½øÖÆ¡£
+ç¬¬M+2è¡Œæ˜¯ä¸€ä¸ªæ­£æ•´æ•°Nï¼Œè¡¨ç¤ºå…¶åŽæœ‰Nè¡Œã€‚æ¯è¡Œç”±åˆ©ç”¨ä¸€ä¸ªç©ºæ ¼éš”å¼€çš„2éƒ¨åˆ†ç»„æˆï¼šå‰åŠéƒ¨åˆ†æ˜¯ä¸€ä¸ªå­—ç¬¦ä¸²ï¼ŒåŽåŠéƒ¨åˆ†æ˜¯è¯¥å­—ç¬¦ä¸²æ‰€ä½¿ç”¨çš„è¿›åˆ¶ã€‚
 
-×¢Òâ£º
+æ³¨æ„ï¼š
 
-1. ËùÓÐµÄÊäÈë£¬¾ùÔÚintÀàÐÍµÄ±íÊ¾·¶Î§ÄÚ£¬ÇÒËùÓÐµÄÊäÈë¾ùÎªºÏ·¨ÊäÈë¡£
+1. æ‰€æœ‰çš„è¾“å…¥ï¼Œå‡åœ¨intç±»åž‹çš„è¡¨ç¤ºèŒƒå›´å†…ï¼Œä¸”æ‰€æœ‰çš„è¾“å…¥å‡ä¸ºåˆæ³•è¾“å…¥ã€‚
 
-2. ÀûÓÃ0~9ºÍa~z¿É×î´ó¿ÉÒÔ±íÊ¾36½øÖÆµÄÊýÖµ¡£
+2. åˆ©ç”¨0~9å’Œa~zå¯æœ€å¤§å¯ä»¥è¡¨ç¤º36è¿›åˆ¶çš„æ•°å€¼ã€‚
 
 Output
-Êä³öÎªM+NÐÐ£¬Ã¿ÐÐÎªÒ»¸öÊ®½øÖÆÕûÊý£¬ÇÒÊä³öË³ÐòÓ¦ÓëÊäÈëË³ÐòÏàÍ¬¡£
+è¾“å‡ºä¸ºM+Nè¡Œï¼Œæ¯è¡Œä¸ºä¸€ä¸ªåè¿›åˆ¶æ•´æ•°ï¼Œä¸”è¾“å‡ºé¡ºåºåº”ä¸Žè¾“å…¥é¡ºåºç›¸åŒã€‚
 
 Sample Input
  2

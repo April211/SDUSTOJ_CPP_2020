@@ -61,27 +61,27 @@ int main()
 
 /* 
 
-Problem F: Ò»°ïÑ§Éú
+Problem F: ä¸€å¸®å­¦ç”Ÿ
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 2334  Solved: 1459
 [Submit][Status]
 Description
-Ñ§ÉúStudentÀàÊÇPersonÀàµÄ×ÓÀà£¬¶øÇÒÃ¿¸öÈË¶¼ÓÐÉúÈÕ£¬ÉúÈÕÊÇDateÀàµÄ¶ÔÏó¡£ËùÒÔ£¬ÐèÒª¶¨ÒåÈçÏÂÀà£º
+å­¦ç”ŸStudentç±»æ˜¯Personç±»çš„å­ç±»ï¼Œè€Œä¸”æ¯ä¸ªäººéƒ½æœ‰ç”Ÿæ—¥ï¼Œç”Ÿæ—¥æ˜¯Dateç±»çš„å¯¹è±¡ã€‚æ‰€ä»¥ï¼Œéœ€è¦å®šä¹‰å¦‚ä¸‹ç±»ï¼š
 
-1. DateÀà£ºÓµÓÐÄê¡¢ÔÂ¡¢ÈÕÈý¸öintÀàÐÍµÄÊôÐÔ¡£
+1. Dateç±»ï¼šæ‹¥æœ‰å¹´ã€æœˆã€æ—¥ä¸‰ä¸ªintç±»åž‹çš„å±žæ€§ã€‚
 
-2. PersonÀà£ºÓÐÒ»¸öDateÀàÐÍ¶ÔÏóµÄÊôÐÔ£¨±íÊ¾ÉúÈÕ£©¡¢stringÀàÐÍÊôÐÔ£¨±íÊ¾Ãû×Ö£©£¬ÒÔ¼°Ò»¸öintÀàÐÍµÄ¾²Ì¬ÊôÐÔnumOfPersons£¨¶ÔÏó¸öÊý£©¡£
+2. Personç±»ï¼šæœ‰ä¸€ä¸ªDateç±»åž‹å¯¹è±¡çš„å±žæ€§ï¼ˆè¡¨ç¤ºç”Ÿæ—¥ï¼‰ã€stringç±»åž‹å±žæ€§ï¼ˆè¡¨ç¤ºåå­—ï¼‰ï¼Œä»¥åŠä¸€ä¸ªintç±»åž‹çš„é™æ€å±žæ€§numOfPersonsï¼ˆå¯¹è±¡ä¸ªæ•°ï¼‰ã€‚
 
-3. StudentÀà£ºÊÇPersonÀàµÄ×ÓÀà£¬²¢ÓµÓÐÒ»¸öintÀàÐÍÊôÐÔ£¨±íÃ÷Ñ§ÉúÑ§ºÅ£©£¬Ò»¸öintÀàÐÍµÄ¾²Ì¬ÊôÐÔnumOfStudents£¨¶ÔÏó¸öÊý£©¡£
-¶¨ÒåÉÏÊöÀàµÄ¹¹Ôì¡¢Îö¹¹º¯Êý£¬²¢¸ù¾ÝÑùÀýÊä³ö¸ñÊ½Êä³öÏàÓ¦µÄÐÅÏ¢¡£
+3. Studentç±»ï¼šæ˜¯Personç±»çš„å­ç±»ï¼Œå¹¶æ‹¥æœ‰ä¸€ä¸ªintç±»åž‹å±žæ€§ï¼ˆè¡¨æ˜Žå­¦ç”Ÿå­¦å·ï¼‰ï¼Œä¸€ä¸ªintç±»åž‹çš„é™æ€å±žæ€§numOfStudentsï¼ˆå¯¹è±¡ä¸ªæ•°ï¼‰ã€‚
+å®šä¹‰ä¸Šè¿°ç±»çš„æž„é€ ã€æžæž„å‡½æ•°ï¼Œå¹¶æ ¹æ®æ ·ä¾‹è¾“å‡ºæ ¼å¼è¾“å‡ºç›¸åº”çš„ä¿¡æ¯ã€‚
 
 Input
-µÚÒ»ÐÐÕûÊýN>0±íÊ¾Ö®ºóÓÐNÐÐÊäÈë¡£
+ç¬¬ä¸€è¡Œæ•´æ•°N>0è¡¨ç¤ºä¹‹åŽæœ‰Nè¡Œè¾“å…¥ã€‚
 
-Ö®ºóµÄNÐÐ£¬Ã¿ÐÐ°üÀ¨4¸öÕûÊý¡¢1¸ö×Ö·û´®£¬·Ö±ð±íÊ¾Äê¡¢ÔÂ¡¢ÈÕ¡¢Ñ§ºÅºÍÐÕÃû¡£
+ä¹‹åŽçš„Nè¡Œï¼Œæ¯è¡ŒåŒ…æ‹¬4ä¸ªæ•´æ•°ã€1ä¸ªå­—ç¬¦ä¸²ï¼Œåˆ†åˆ«è¡¨ç¤ºå¹´ã€æœˆã€æ—¥ã€å­¦å·å’Œå§“åã€‚
 
 Output
-¼ûÑùÀý~
+è§æ ·ä¾‹~
 
 Sample Input
 3

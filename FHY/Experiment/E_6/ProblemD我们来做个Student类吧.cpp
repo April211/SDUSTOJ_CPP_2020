@@ -62,42 +62,42 @@ int main()
 
 
 /* 
-Problem D: ÎÒÃÇÀ´×ö¸öStudentÀà°É£¡
+Problem D: æˆ‘ä»¬æ¥åšä¸ªStudentç±»å§ï¼
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 3438  Solved: 1769
 [Submit][Status]
 Description
-Çë¶¨ÒåÒ»¸öStudentÀà£¬ÓÐ4¸öÊôÐÔ£º
+è¯·å®šä¹‰ä¸€ä¸ªStudentç±»ï¼Œæœ‰4ä¸ªå±žæ€§ï¼š
 
-1.char *name£ºÐÕÃû¡£
+1.char *nameï¼šå§“åã€‚
 
-2.int numOfScores£º¿Î³ÌÊýÁ¿
+2.int numOfScoresï¼šè¯¾ç¨‹æ•°é‡
 
-3.int *scores£ºËùÓÐ¿Î³ÌµÄ³É¼¨¡£
+3.int *scoresï¼šæ‰€æœ‰è¯¾ç¨‹çš„æˆç»©ã€‚
 
-4.int id£ºÑ§ÉúµÄ±àºÅ¡£
+4.int idï¼šå­¦ç”Ÿçš„ç¼–å·ã€‚
 
-Ö»ÓÐ3¸ö·½·¨£º
+åªæœ‰3ä¸ªæ–¹æ³•ï¼š
 
-1. ¹¹Ôìº¯Êý
+1. æž„é€ å‡½æ•°
 
-2.Îö¹¹º¯Êý
+2.æžæž„å‡½æ•°
 
-3.void Student::showStudent()·½·¨£ºÓÃÓÚÊä³öÑ§ÉúµÄÐÅÏ¢¡£
+3.void Student::showStudent()æ–¹æ³•ï¼šç”¨äºŽè¾“å‡ºå­¦ç”Ÿçš„ä¿¡æ¯ã€‚
 
-Çë¸ù¾ÝÑùÀýÊä³ö£¬Ð´³ö¸ÃÀàµÄÊµÏÖ¡£
+è¯·æ ¹æ®æ ·ä¾‹è¾“å‡ºï¼Œå†™å‡ºè¯¥ç±»çš„å®žçŽ°ã€‚
 
 Input
-ÊäÈë·ÖÎª¶àÐÐ¡£
+è¾“å…¥åˆ†ä¸ºå¤šè¡Œã€‚
 
-µÚÒ»ÐÐ°üº¬3¸öÕýÕûÊýM£¬NºÍP£ºÆäÖÐM±íÃ÷Ö®ºóÊäÈëµÄ²âÊÔÓÃÀýÊýÁ¿£»N±íÊ¾Ã¿¸öÈËÐÕÃûµÄ×î´ó³¤¶È£»P±íÊ¾Ñ§ÉúÑ§Ï°µÄ¿Î³ÌµÄÊýÁ¿¡£
+ç¬¬ä¸€è¡ŒåŒ…å«3ä¸ªæ­£æ•´æ•°Mï¼ŒNå’ŒPï¼šå…¶ä¸­Mè¡¨æ˜Žä¹‹åŽè¾“å…¥çš„æµ‹è¯•ç”¨ä¾‹æ•°é‡ï¼›Nè¡¨ç¤ºæ¯ä¸ªäººå§“åçš„æœ€å¤§é•¿åº¦ï¼›Pè¡¨ç¤ºå­¦ç”Ÿå­¦ä¹ çš„è¯¾ç¨‹çš„æ•°é‡ã€‚
 
-Ö®ºóÓÐMÐÐ£¬°üº¬Ò»¸öÑ§ÉúÐÕÃû£¨Ã»ÓÐÈÎºÎ¿Õ°×·û£©¡¢PÃÅ¿Î³ÌµÄ³É¼¨¡£
+ä¹‹åŽæœ‰Mè¡Œï¼ŒåŒ…å«ä¸€ä¸ªå­¦ç”Ÿå§“åï¼ˆæ²¡æœ‰ä»»ä½•ç©ºç™½ç¬¦ï¼‰ã€Pé—¨è¯¾ç¨‹çš„æˆç»©ã€‚
 
 Output
-¼ûÑùÀý¡£
+è§æ ·ä¾‹ã€‚
 
-×¢Òâ£ºËùÓÐµÄÊä³öÁ½Á½Ö®¼äÓÃÒ»¸ö¿Õ¸ñ¸ô¿ª£¬ÇÒÃ¿ÐÐÊä³öµÄÊ×Î²¶¼Ã»ÓÐ¿Õ¸ñ¡£
+æ³¨æ„ï¼šæ‰€æœ‰çš„è¾“å‡ºä¸¤ä¸¤ä¹‹é—´ç”¨ä¸€ä¸ªç©ºæ ¼éš”å¼€ï¼Œä¸”æ¯è¡Œè¾“å‡ºçš„é¦–å°¾éƒ½æ²¡æœ‰ç©ºæ ¼ã€‚
 
 Sample Input
 3 10 5

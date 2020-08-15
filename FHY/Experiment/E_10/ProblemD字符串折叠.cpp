@@ -63,22 +63,22 @@ int main()
 
 /* 
 
-Problem D: ×Ö·û´®ÕÛµþ
+Problem D: å­—ç¬¦ä¸²æŠ˜å 
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 1938  Solved: 1437
 [Submit][Status]
 Description
-¶¨ÒåMyStringÀà£¬°üÀ¨£º
-1. Ò»¸ö×Ö·ûÊý×é»ò×Ö·ûÖ¸Õë£¬ÓÃÓÚ´æ´¢×Ö·û´®ÄÚÈÝ¡£
-2. void input()£º¶ÁÈ¡Ò»¸ö²»º¬¿Õ°×·ûµÄ×Ö·û´®¡£
-3. void output()£ºÊä³ö×Ö·û´®¡£Èç¹û×Ö·û´®²»ÊÇ»ØÎÄ´®£¬ÔòÊä³öÔ­´®¡£Èç¹ûÊÇ»ØÎÄ´®£¬Ôò½öÊä³öÇ°°ë²¿·Ö¡£Èç£º
-Ô­´®£ºabccba£¬ÔòÊä³öabc
-Ô­´®£ºabcdcba£¬ÔòÊä³öabcd
-Ô­´®£ºabcd£¬ÔòÊä³öabcd
+å®šä¹‰MyStringç±»ï¼ŒåŒ…æ‹¬ï¼š
+1. ä¸€ä¸ªå­—ç¬¦æ•°ç»„æˆ–å­—ç¬¦æŒ‡é’ˆï¼Œç”¨äºŽå­˜å‚¨å­—ç¬¦ä¸²å†…å®¹ã€‚
+2. void input()ï¼šè¯»å–ä¸€ä¸ªä¸å«ç©ºç™½ç¬¦çš„å­—ç¬¦ä¸²ã€‚
+3. void output()ï¼šè¾“å‡ºå­—ç¬¦ä¸²ã€‚å¦‚æžœå­—ç¬¦ä¸²ä¸æ˜¯å›žæ–‡ä¸²ï¼Œåˆ™è¾“å‡ºåŽŸä¸²ã€‚å¦‚æžœæ˜¯å›žæ–‡ä¸²ï¼Œåˆ™ä»…è¾“å‡ºå‰åŠéƒ¨åˆ†ã€‚å¦‚ï¼š
+åŽŸä¸²ï¼šabccbaï¼Œåˆ™è¾“å‡ºabc
+åŽŸä¸²ï¼šabcdcbaï¼Œåˆ™è¾“å‡ºabcd
+åŽŸä¸²ï¼šabcdï¼Œåˆ™è¾“å‡ºabcd
 Input
-µÚÒ»ÐÐÊÇÕûÊýN>0£¬±íÊ¾Ö®ºóÓÐN¸ö²âÊÔÓÃÀý¡£Ã¿¸ö²âÊÔÓÃÀýÕ¼Ò»ÐÐ£¬ÊÇÒ»¸ö²»º¬¿Õ°×·ûµÄ×Ö·û´®¡£Ã¿¸ö´®²»³¬¹ý1000¸ö×Ö·û¡£
+ç¬¬ä¸€è¡Œæ˜¯æ•´æ•°N>0ï¼Œè¡¨ç¤ºä¹‹åŽæœ‰Nä¸ªæµ‹è¯•ç”¨ä¾‹ã€‚æ¯ä¸ªæµ‹è¯•ç”¨ä¾‹å ä¸€è¡Œï¼Œæ˜¯ä¸€ä¸ªä¸å«ç©ºç™½ç¬¦çš„å­—ç¬¦ä¸²ã€‚æ¯ä¸ªä¸²ä¸è¶…è¿‡1000ä¸ªå­—ç¬¦ã€‚
 Output
-¼ûÑùÀý¡£
+è§æ ·ä¾‹ã€‚
 
 Sample Input
 4

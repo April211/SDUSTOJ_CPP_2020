@@ -80,24 +80,24 @@ int main()
 
 
 
-Problem B: н����� ֮��
+Problem B: 薪酬计算 之二
 Time Limit: 1 Sec  Memory Limit: 128 MB
 Submit: 1992  Solved: 1419
 [Submit][Status]
 Description
-ĳ��˾�о�����Manager�������ۣ�Sales�������۾�����SalesManager�������Ա��Employee�������ǵ�н����㷽������һ����
-ÿ����Ա��Employee������ÿ�µĻ������ʣ�
-������Manager�����˻�������֮�⻹�����շֺ죻
-���ۣ�Sales�����˻�������֮�⣬ÿ�»���Ӫ����ɣ�
-���۾�����SalesManager���������ۣ�Sales����ԱҲ�Ǿ�����Manager�������������ÿ�µ�Ӫ����ɣ�Ҳ�����շֺ졣
-ÿ���Ա����н���㷽ʽ��һ�������ʹ�ö�̬��ʵ�֡�
+某公司有经理（Manager）、销售（Sales）、销售经理（SalesManager）四类雇员（Employee），他们的薪酬计算方法各不一样：
+每个雇员（Employee）都有每月的基本工资；
+经理（Manager）除了基本工资之外还有年终分红；
+销售（Sales）除了基本工资之外，每月还有营销提成；
+销售经理（SalesManager）既是销售（Sales）人员也是经理（Manager），因此他既有每月的营销提成，也有年终分红。
+每类雇员的年薪计算方式不一样，因此使用多态来实现。
 -----------------------------------------------------------------------------
-����ϸ�Ķ�append.cc���룬����Ʋ�ʵ�����Ա�����������ϵ��ʹmain()�����ܹ����в��õ���ȷ�������
+请仔细阅读append.cc代码，并设计并实现这个员工类的派生体系，使main()函数能够运行并得到正确的输出。
 Input
-�����һ������n����ʾ������n����Ա��ÿ����Առ��һ�����롣�ֱ���Ա�����͡��������»������ʡ���Ӫ����ɣ����ۣ������շֺ죨����������������۾��������߶��С�
+输入第一个整数n，表示后面有n个雇员。每个雇员占用一行输入。分别是员工类型、姓名、月基本工资、月营销提成（销售）、年终分红（经理），如果是销售经理则两者都有。
 
 Output
-������ĵڶ��п�ʼ��ÿ�ж�Ӧ���һ����Ա�����͡���������н��
+从输入的第二行开始，每行对应输出一个雇员的类型、姓名和年薪。
 
 Sample Input
 6
