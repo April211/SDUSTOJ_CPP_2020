@@ -73,30 +73,30 @@ int main()
     }
 }
 
-/* Problem A: Ê±¼äÀàµÄ¿½±´ºÍÕûÌå¶ÁÐ´
+/* Problem A: æ—¶é—´ç±»çš„æ‹·è´å’Œæ•´ä½“è¯»å†™
 Time Limit: 4 Sec  Memory Limit: 128 MB
 Submit: 5733  Solved: 4214
 [Submit][Status]
 Description
-·â×°Ò»¸öÊ±¼äÀàTime£¬ÓÃÓÚÊ±¼ä´¦ÀíµÄÏà¹Ø¹¦ÄÜ£¬Ö§³ÖÒÔÏÂ²Ù×÷£º
-1. Time::Time()ÎÞ²Î¹¹Ôì·½·¨¡£
-2. Time::Time(int,int,int)¹¹Ôì·½·¨£º´«µÝÊ±·ÖÃëµÄÈý¸ö²ÎÊý¹¹Ôì¶ÔÏó¡£
-3. Time::Time(const T&)¿½±´¹¹Ôì·½·¨¡£¿½±´¹¹Ôìº¯Êýµ÷ÓÃÊ±Êä³ö¡°There was a call to the copy constructor : h,m,s¡±£¬¡°h,m,s¡±ÎªËù¹¹Ôì¶ÔÏóµÄÊ±·ÖÃëÊýÖµ£¬ÎÞÐè²¹0¡£
-4. ¶ÔÏóÕûÌå¶ÁÐ´·½·¨£º
-   Time::setTime(int,int,int)·½·¨£º´«µÝÊ±·ÖÃëÈý¸ö²ÎÊýÐÞ¸ÄTime¶ÔÏóµÄÊ±·ÖÃëÊý¡£¸Ã·½·¨·µ»ØÐÞ¸ÄºóµÄ¶ÔÏó¡£
-   Time::setTime(const T&)·½·¨£º´«µÝÒ»¸ö²ÎÊýÐÞ¸ÄTime¶ÔÏóµÄÊ±·ÖÃëÊý¡£¸Ã·½·¨·µ»ØÐÞ¸ÄºóµÄ¶ÔÏó¡£
-   Time::getTime()·½·¨£º·µ»Ø¶ÔÏó×ÔÉíµÄÒýÓÃ¡£ÆäÊµ£¬t.getTime()¼´t¡£
-   ½öÔÚTimeÀàÖÐµÄTime::getTime()·½·¨ÊµÔÚÊÇ¶àÓà£¬ÔÚ×éºÏ»òÕß¼Ì³Ð¹ØÏµÊ±²Å»áÓÐ»ú»áÓÃµ½¡£
-5. Time::showTime()·½·¨£ºÊä³ö¡°hh:mm:ss¡±£¬²»×ãÁ½Î»µÄÒªÇ°Ãæ²¹0¡£
-×¢Òâ£ºÔÚÓÃTime¶ÔÏó´«µÝ²ÎÊýÊ±Ó¦´«¶ÔÏóµÄÒýÓÃ¶ø²»ÊÇÖ±½Ó´«¶ÔÏó£¬·µ»Ø¶ÔÏóÊ±Í¬Ñù·µ»ØÒýÓÃ£¬ÒÔÃâ²úÉú¶àÓàµÄ¶ÔÏó¿½±´¡£
-ÄãÉè¼ÆÒ»¸öÊ±¼äÀàTime£¬Ê¹µÃmain()º¯ÊýÄÜ¹»ÕýÈ·ÔËÐÐ¡£
-º¯Êýµ÷ÓÃ¸ñÊ½¼ûappend.cc¡£
-append.ccÖÐÒÑ¸ø³ömain()º¯Êý¡£main()º¯ÊýÄÚÈÝÉÔÎ¢·±¸´£¬½öÎª²âÊÔ¶ÔÏóµÄ¸÷ÖÖµ÷ÓÃÇé¿ö¡£
+å°è£…ä¸€ä¸ªæ—¶é—´ç±»Timeï¼Œç”¨äºŽæ—¶é—´å¤„ç†çš„ç›¸å…³åŠŸèƒ½ï¼Œæ”¯æŒä»¥ä¸‹æ“ä½œï¼š
+1. Time::Time()æ— å‚æž„é€ æ–¹æ³•ã€‚
+2. Time::Time(int,int,int)æž„é€ æ–¹æ³•ï¼šä¼ é€’æ—¶åˆ†ç§’çš„ä¸‰ä¸ªå‚æ•°æž„é€ å¯¹è±¡ã€‚
+3. Time::Time(const T&)æ‹·è´æž„é€ æ–¹æ³•ã€‚æ‹·è´æž„é€ å‡½æ•°è°ƒç”¨æ—¶è¾“å‡ºâ€œThere was a call to the copy constructor : h,m,sâ€ï¼Œâ€œh,m,sâ€ä¸ºæ‰€æž„é€ å¯¹è±¡çš„æ—¶åˆ†ç§’æ•°å€¼ï¼Œæ— éœ€è¡¥0ã€‚
+4. å¯¹è±¡æ•´ä½“è¯»å†™æ–¹æ³•ï¼š
+   Time::setTime(int,int,int)æ–¹æ³•ï¼šä¼ é€’æ—¶åˆ†ç§’ä¸‰ä¸ªå‚æ•°ä¿®æ”¹Timeå¯¹è±¡çš„æ—¶åˆ†ç§’æ•°ã€‚è¯¥æ–¹æ³•è¿”å›žä¿®æ”¹åŽçš„å¯¹è±¡ã€‚
+   Time::setTime(const T&)æ–¹æ³•ï¼šä¼ é€’ä¸€ä¸ªå‚æ•°ä¿®æ”¹Timeå¯¹è±¡çš„æ—¶åˆ†ç§’æ•°ã€‚è¯¥æ–¹æ³•è¿”å›žä¿®æ”¹åŽçš„å¯¹è±¡ã€‚
+   Time::getTime()æ–¹æ³•ï¼šè¿”å›žå¯¹è±¡è‡ªèº«çš„å¼•ç”¨ã€‚å…¶å®žï¼Œt.getTime()å³tã€‚
+   ä»…åœ¨Timeç±»ä¸­çš„Time::getTime()æ–¹æ³•å®žåœ¨æ˜¯å¤šä½™ï¼Œåœ¨ç»„åˆæˆ–è€…ç»§æ‰¿å…³ç³»æ—¶æ‰ä¼šæœ‰æœºä¼šç”¨åˆ°ã€‚
+5. Time::showTime()æ–¹æ³•ï¼šè¾“å‡ºâ€œhh:mm:ssâ€ï¼Œä¸è¶³ä¸¤ä½çš„è¦å‰é¢è¡¥0ã€‚
+æ³¨æ„ï¼šåœ¨ç”¨Timeå¯¹è±¡ä¼ é€’å‚æ•°æ—¶åº”ä¼ å¯¹è±¡çš„å¼•ç”¨è€Œä¸æ˜¯ç›´æŽ¥ä¼ å¯¹è±¡ï¼Œè¿”å›žå¯¹è±¡æ—¶åŒæ ·è¿”å›žå¼•ç”¨ï¼Œä»¥å…äº§ç”Ÿå¤šä½™çš„å¯¹è±¡æ‹·è´ã€‚
+ä½ è®¾è®¡ä¸€ä¸ªæ—¶é—´ç±»Timeï¼Œä½¿å¾—main()å‡½æ•°èƒ½å¤Ÿæ­£ç¡®è¿è¡Œã€‚
+å‡½æ•°è°ƒç”¨æ ¼å¼è§append.ccã€‚
+append.ccä¸­å·²ç»™å‡ºmain()å‡½æ•°ã€‚main()å‡½æ•°å†…å®¹ç¨å¾®ç¹å¤ï¼Œä»…ä¸ºæµ‹è¯•å¯¹è±¡çš„å„ç§è°ƒç”¨æƒ…å†µã€‚
 Input
-ÊäÈëµÄµÚÒ»¸öÕûÊýn£¬±íÊ¾ÓÐn×é²âÊÔÊý¾Ý£¬Ã¿×é3¸öÕûÊý£ºhh,mm,ss£¬·Ö±ð±íÊ¾Ê±¡¢·Ö¡¢Ãë£¬ÆäÖµ¶¼ÔÚºÏ·¨µÄÊ±¼ä·¶Î§ÄÚ¡£
+è¾“å…¥çš„ç¬¬ä¸€ä¸ªæ•´æ•°nï¼Œè¡¨ç¤ºæœ‰nç»„æµ‹è¯•æ•°æ®ï¼Œæ¯ç»„3ä¸ªæ•´æ•°ï¼šhh,mm,ssï¼Œåˆ†åˆ«è¡¨ç¤ºæ—¶ã€åˆ†ã€ç§’ï¼Œå…¶å€¼éƒ½åœ¨åˆæ³•çš„æ—¶é—´èŒƒå›´å†…ã€‚
 Output
-¿ªÊ¼²¿·ÖÎªÓÉmain()º¯Êý²úÉúµÄ¹Ì¶¨Êä³ö£¬ÓÃÓÚ²âÊÔ¶ÔÏóµÄÄ³Ð©·½·¨µÄµ÷ÓÃÇé¿ö¡£Êä³ö¡°Test data output :¡±Ö®ºóÎª²âÊÔÊý¾Ý¶ÔÓ¦µÄÊä³ö£º
-Ã¿×é²âÊÔÊý¾Ý¶ÔÓ¦Ò»×éÊä³ö¡°hh:mm:ss¡±£¬²»×ãÁ½Î»µÄÊä³öÐèÒªÇ°Ãæ²¹0£¬¸ñÊ½¼ûsample¡£
+å¼€å§‹éƒ¨åˆ†ä¸ºç”±main()å‡½æ•°äº§ç”Ÿçš„å›ºå®šè¾“å‡ºï¼Œç”¨äºŽæµ‹è¯•å¯¹è±¡çš„æŸäº›æ–¹æ³•çš„è°ƒç”¨æƒ…å†µã€‚è¾“å‡ºâ€œTest data output :â€ä¹‹åŽä¸ºæµ‹è¯•æ•°æ®å¯¹åº”çš„è¾“å‡ºï¼š
+æ¯ç»„æµ‹è¯•æ•°æ®å¯¹åº”ä¸€ç»„è¾“å‡ºâ€œhh:mm:ssâ€ï¼Œä¸è¶³ä¸¤ä½çš„è¾“å‡ºéœ€è¦å‰é¢è¡¥0ï¼Œæ ¼å¼è§sampleã€‚
 Sample Input
 5
 0 0 1
@@ -116,11 +116,11 @@ Test data output :
 23:00:00
 23:59:59
 HINT
-Êä³ö¸ñÊ½ÓÃÍ·ÎÄ¼þ<iomanip>ÖÐÁ÷²Ù×÷Ëã×Ó£º
+è¾“å‡ºæ ¼å¼ç”¨å¤´æ–‡ä»¶<iomanip>ä¸­æµæ“ä½œç®—å­ï¼š
 
-setw(w)   £ºÉèÖÃÊý¾ÝµÄÊä³ö¿í¶ÈÎªw¸ö×Ö·û
+setw(w)   ï¼šè®¾ç½®æ•°æ®çš„è¾“å‡ºå®½åº¦ä¸ºwä¸ªå­—ç¬¦
 
-setfill(c)£ºÉèÖÃÓÃ×Ö·ûc×÷ÎªÌî³ä×Ö·û
+setfill(c)ï¼šè®¾ç½®ç”¨å­—ç¬¦cä½œä¸ºå¡«å……å­—ç¬¦
 
 Append Code
 append.cc, */

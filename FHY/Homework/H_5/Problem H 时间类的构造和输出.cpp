@@ -30,21 +30,21 @@ int main()
 
 
 
-//Problem H: Ê±¼äÀàµÄ¹¹ÔìºÍÊä³ö
+//Problem H: æ—¶é—´ç±»çš„æž„é€ å’Œè¾“å‡º
 //Time Limit: 4 Sec  Memory Limit: 128 MB
 //Submit: 6223  Solved: 4974
 //[Submit][Status]
 //Description
-//·â×°Ò»¸öÊ±¼äÀàTime£¬ÓÃÓÚÊ±¼ä´¦ÀíµÄÏà¹Ø¹¦ÄÜ£¬Ö§³ÖÒÔÏÂ²Ù×÷£º
-//1. Time::Time(int,int,int)¹¹Ôì·½·¨£º´«µÝÊ±·ÖÃëµÄÈý¸ö²ÎÊý¹¹Ôì¶ÔÏó¡£
-//2. Time::showTime()·½·¨£ºÊä³ö¡°hh:mm:ss¡±£¬²»×ãÁ½Î»µÄÒªÇ°Ãæ²¹0¡£
-//ÄãÉè¼ÆÒ»¸öÊ±¼äÀàTime£¬Ê¹µÃmain()º¯ÊýÄÜ¹»ÕýÈ·ÔËÐÐ¡£
-//º¯Êýµ÷ÓÃ¸ñÊ½¼ûappend.cc¡£
-//append.ccÖÐÒÑ¸ø³ömain()º¯Êý¡£
+//å°è£…ä¸€ä¸ªæ—¶é—´ç±»Timeï¼Œç”¨äºŽæ—¶é—´å¤„ç†çš„ç›¸å…³åŠŸèƒ½ï¼Œæ”¯æŒä»¥ä¸‹æ“ä½œï¼š
+//1. Time::Time(int,int,int)æž„é€ æ–¹æ³•ï¼šä¼ é€’æ—¶åˆ†ç§’çš„ä¸‰ä¸ªå‚æ•°æž„é€ å¯¹è±¡ã€‚
+//2. Time::showTime()æ–¹æ³•ï¼šè¾“å‡ºâ€œhh:mm:ssâ€ï¼Œä¸è¶³ä¸¤ä½çš„è¦å‰é¢è¡¥0ã€‚
+//ä½ è®¾è®¡ä¸€ä¸ªæ—¶é—´ç±»Timeï¼Œä½¿å¾—main()å‡½æ•°èƒ½å¤Ÿæ­£ç¡®è¿è¡Œã€‚
+//å‡½æ•°è°ƒç”¨æ ¼å¼è§append.ccã€‚
+//append.ccä¸­å·²ç»™å‡ºmain()å‡½æ•°ã€‚
 //Input
-//ÊäÈëµÄµÚÒ»¸öÕûÊýn£¬±íÊ¾ÓÐn×é²âÊÔÊý¾Ý£¬Ã¿×é3¸öÕûÊý£ºhh,mm,ss£¬·Ö±ð±íÊ¾Ê±¡¢·Ö¡¢Ãë£¬ÆäÖµ¶¼ÔÚºÏ·¨µÄÊ±¼ä·¶Î§ÄÚ¡£
+//è¾“å…¥çš„ç¬¬ä¸€ä¸ªæ•´æ•°nï¼Œè¡¨ç¤ºæœ‰nç»„æµ‹è¯•æ•°æ®ï¼Œæ¯ç»„3ä¸ªæ•´æ•°ï¼šhh,mm,ssï¼Œåˆ†åˆ«è¡¨ç¤ºæ—¶ã€åˆ†ã€ç§’ï¼Œå…¶å€¼éƒ½åœ¨åˆæ³•çš„æ—¶é—´èŒƒå›´å†…ã€‚
 //Output
-//Ã¿×é²âÊÔÊý¾Ý¶ÔÓ¦Ò»×éÊä³ö¡°hh:mm:ss¡±£¬²»×ãÁ½Î»µÄÊä³öÐèÒªÇ°Ãæ²¹0£¬¸ñÊ½¼ûsample¡£
+//æ¯ç»„æµ‹è¯•æ•°æ®å¯¹åº”ä¸€ç»„è¾“å‡ºâ€œhh:mm:ssâ€ï¼Œä¸è¶³ä¸¤ä½çš„è¾“å‡ºéœ€è¦å‰é¢è¡¥0ï¼Œæ ¼å¼è§sampleã€‚
 //Sample Input
 //5
 //0 0 1
@@ -59,11 +59,11 @@ int main()
 //23:00:00
 //23:59:59
 //HINT
-//Êä³ö¸ñÊ½ÓÃÍ·ÎÄ¼þ<iomanip>ÖÐÁ÷²Ù×÷Ëã×Ó£º
+//è¾“å‡ºæ ¼å¼ç”¨å¤´æ–‡ä»¶<iomanip>ä¸­æµæ“ä½œç®—å­ï¼š
 //
-//setw(w)   £ºÉèÖÃÊý¾ÝµÄÊä³ö¿í¶ÈÎªw¸ö×Ö·û
+//setw(w)   ï¼šè®¾ç½®æ•°æ®çš„è¾“å‡ºå®½åº¦ä¸ºwä¸ªå­—ç¬¦
 //
-//setfill(c)£ºÉèÖÃÓÃ×Ö·ûc×÷ÎªÌî³ä×Ö·û
+//setfill(c)ï¼šè®¾ç½®ç”¨å­—ç¬¦cä½œä¸ºå¡«å……å­—ç¬¦
 //
 //Append Code
 //append.cc,

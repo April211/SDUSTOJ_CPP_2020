@@ -60,35 +60,35 @@ int main()
 }
 
 
-/* Problem H: Ê±¼äºÍÈÕÆÚÀà£¨I£©
+/* Problem H: æ—¶é—´å’Œæ—¥æœŸç±»ï¼ˆIï¼‰
 Time Limit: 4 Sec  Memory Limit: 128 MB
 Submit: 7325  Solved: 4203
 [Submit][Status]
 Description
-Éè¼ÆÒ»¸öÊ±¼äÀàºÍÒ»¸öÈÕÆÚÀà£¬ÓÃÓÚ¶ÁÈ¡ÊäÈëµÄÊý¾Ý£¬°´¸ñÊ½Êä³öÈÕÆÚºÍÊ±¼ä¡£
+è®¾è®¡ä¸€ä¸ªæ—¶é—´ç±»å’Œä¸€ä¸ªæ—¥æœŸç±»ï¼Œç”¨äºŽè¯»å–è¾“å…¥çš„æ•°æ®ï¼ŒæŒ‰æ ¼å¼è¾“å‡ºæ—¥æœŸå’Œæ—¶é—´ã€‚
 
-Éè¼ÆÈÕÆÚÀàDateÐèÖ§³ÖÒÔÏÂ²Ù×÷£º
-Date::Date(int,int,int)¹¹Ôì·½·¨£º´«ÈëµÄ²ÎÊýÒÀ´ÎÎªÄêÔÂÈÕ£¬ÓÃ²ÎÊý½«ÈÕÆÚ³õÊ¼»¯¡£
-Date::showDate()°´¸ñÊ½Êä³öDate¶ÔÏó¡£
+è®¾è®¡æ—¥æœŸç±»Dateéœ€æ”¯æŒä»¥ä¸‹æ“ä½œï¼š
+Date::Date(int,int,int)æž„é€ æ–¹æ³•ï¼šä¼ å…¥çš„å‚æ•°ä¾æ¬¡ä¸ºå¹´æœˆæ—¥ï¼Œç”¨å‚æ•°å°†æ—¥æœŸåˆå§‹åŒ–ã€‚
+Date::showDate()æŒ‰æ ¼å¼è¾“å‡ºDateå¯¹è±¡ã€‚
 
-Éè¼ÆÊ±¼äÀàTimeÐèÖ§³ÖÒÔÏÂ²Ù×÷£º
-Time::Time(int,int,int)¹¹Ôì·½·¨£º´«ÈëµÄ²ÎÊýÒÀ´ÎÎªÊ±·ÖÃë£¬ÓÃ²ÎÊý½«Ê±¼ä³õÊ¼»¯¡£
-Time::showTime()°´¸ñÊ½Êä³öTime¶ÔÏó¡£
+è®¾è®¡æ—¶é—´ç±»Timeéœ€æ”¯æŒä»¥ä¸‹æ“ä½œï¼š
+Time::Time(int,int,int)æž„é€ æ–¹æ³•ï¼šä¼ å…¥çš„å‚æ•°ä¾æ¬¡ä¸ºæ—¶åˆ†ç§’ï¼Œç”¨å‚æ•°å°†æ—¶é—´åˆå§‹åŒ–ã€‚
+Time::showTime()æŒ‰æ ¼å¼è¾“å‡ºTimeå¯¹è±¡ã€‚
 
 -----------------------------------------------------------------------------
 
-ÄãÉè¼ÆDateÀàºÍTimeÀà£¬Ê¹µÃmain()º¯ÊýÄÜ¹»ÕýÈ·ÔËÐÐ¡£
+ä½ è®¾è®¡Dateç±»å’ŒTimeç±»ï¼Œä½¿å¾—main()å‡½æ•°èƒ½å¤Ÿæ­£ç¡®è¿è¡Œã€‚
 
-º¯Êýµ÷ÓÃ¸ñÊ½¼ûappend.cc¡£
+å‡½æ•°è°ƒç”¨æ ¼å¼è§append.ccã€‚
 
-append.ccÖÐÒÑ¸ø³ömain()º¯Êý¡£
+append.ccä¸­å·²ç»™å‡ºmain()å‡½æ•°ã€‚
 Input
-ÊäÈëµÄµÚÒ»¸öÕûÊýn£¬±íÊ¾ÓÐn×é²âÊÔÊý¾Ý¡£
+è¾“å…¥çš„ç¬¬ä¸€ä¸ªæ•´æ•°nï¼Œè¡¨ç¤ºæœ‰nç»„æµ‹è¯•æ•°æ®ã€‚
 
-ºóÃæµÄÊäÈëÃ¿ÐÐÎªÒ»×é²âÊÔÊý¾Ý¡£Ã¿×é²âÊÔÊý¾ÝµÄÇ°3¸öÕûÊýÊÇÈÕÆÚµÄÄêÔÂÈÕ£¬ºó3¸öÕûÊýÊÇÊ±¼äµÄÊ±·ÖÃë¡£
+åŽé¢çš„è¾“å…¥æ¯è¡Œä¸ºä¸€ç»„æµ‹è¯•æ•°æ®ã€‚æ¯ç»„æµ‹è¯•æ•°æ®çš„å‰3ä¸ªæ•´æ•°æ˜¯æ—¥æœŸçš„å¹´æœˆæ—¥ï¼ŒåŽ3ä¸ªæ•´æ•°æ˜¯æ—¶é—´çš„æ—¶åˆ†ç§’ã€‚
 
 Output
-Ã¿×é²âÊÔÊý¾Ý¶ÔÓ¦Ò»ÐÐÊä³ö¡£ÈÕÆÚµÄÊä³ö¸ñÊ½Îª¡°yyyy-mm-dd¡±£¬Ê±¼äµÄÊä³ö¸ñÊ½Îª¡°hh:mm:ss¡±£¬ÖÐ¼äÓÃÒ»¸ö¿Õ¸ñ·Ö¿ª¡£
+æ¯ç»„æµ‹è¯•æ•°æ®å¯¹åº”ä¸€è¡Œè¾“å‡ºã€‚æ—¥æœŸçš„è¾“å‡ºæ ¼å¼ä¸ºâ€œyyyy-mm-ddâ€ï¼Œæ—¶é—´çš„è¾“å‡ºæ ¼å¼ä¸ºâ€œhh:mm:ssâ€ï¼Œä¸­é—´ç”¨ä¸€ä¸ªç©ºæ ¼åˆ†å¼€ã€‚
 
 Sample Input
 3
@@ -100,11 +100,11 @@ Sample Output
 2000-02-28 23:59:59
 2014-07-02 13:30:01
 HINT
-Êä³ö¸ñÊ½ÓÃÍ·ÎÄ¼þ<iomanip>ÖÐÁ÷²Ù×÷Ëã×Ó£º
+è¾“å‡ºæ ¼å¼ç”¨å¤´æ–‡ä»¶<iomanip>ä¸­æµæ“ä½œç®—å­ï¼š
 
-setw(w)   £ºÉèÖÃÊý¾ÝµÄÊä³ö¿í¶ÈÎªw¸ö×Ö·û
+setw(w)   ï¼šè®¾ç½®æ•°æ®çš„è¾“å‡ºå®½åº¦ä¸ºwä¸ªå­—ç¬¦
 
-setfill(c)£ºÉèÖÃÓÃ×Ö·ûc×÷ÎªÌî³ä×Ö·û
+setfill(c)ï¼šè®¾ç½®ç”¨å­—ç¬¦cä½œä¸ºå¡«å……å­—ç¬¦
 
 Append Code
 append.cc, */

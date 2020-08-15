@@ -105,37 +105,37 @@ int main()
 }
 
 
-/* Problem B: Ê±¼äÀàµÄ´íÎóÊý¾Ý´¦Àí
+/* Problem B: æ—¶é—´ç±»çš„é”™è¯¯æ•°æ®å¤„ç†
 Time Limit: 4 Sec  Memory Limit: 128 MB
 Submit: 5565  Solved: 3789
 [Submit][Status]
 Description
-·â×°Ò»¸öÊ±¼äÀàTime£¬ÓÃÓÚÊ±¼ä´¦ÀíµÄÏà¹Ø¹¦ÄÜ£¬Ö§³ÖÒÔÏÂ²Ù×÷£º
-1. Time::Time()ÎÞ²Î¹¹Ôì·½·¨¡£
-2. Time::Time(int,int,int)¹¹Ôì·½·¨£º´«µÝÊ±·ÖÃëµÄÈý¸ö²ÎÊý¹¹Ôì¶ÔÏó¡£
-3. Time::Time(const T&)¿½±´¹¹Ôì·½·¨¡£
-4. ³ÉÔ±¶Áº¯Êý£º
-   Time::hour()  £º·µ»ØTimeµÄÐ¡Ê±Êý£»
-   Time::minute()£º·µ»ØTimeµÄ·ÖÖÓÊý£»
-   Time::second()£º·µ»ØTimeµÄÃëÊý¡£
-5. ³ÉÔ±Ð´º¯Êý£º
-   Time::hour(int)  £º´«²ÎÐÞ¸ÄTimeµÄÐ¡Ê±Êý£»
-   Time::minute(int)£º´«²ÎÐÞ¸ÄTimeµÄ·ÖÖÓÊý£»
-   Time::second(int)£º´«²ÎÐÞ¸ÄTimeµÄÃëÊý¡£
-6. ¶ÔÏóÕûÌå¶ÁÐ´·½·¨£º
-   Time::setTime(int,int,int)·½·¨£º´«µÝÊ±·ÖÃëÈý¸ö²ÎÊýÐÞ¸ÄTime¶ÔÏóµÄÊ±·ÖÃëÊý¡£¸Ã·½·¨·µ»ØÐÞ¸ÄºóµÄ¶ÔÏó¡£
-   Time::setTime(const T&)·½·¨£º´«µÝÒ»¸ö²ÎÊýÐÞ¸ÄTime¶ÔÏóµÄÊ±·ÖÃëÊý¡£¸Ã·½·¨·µ»ØÐÞ¸ÄºóµÄ¶ÔÏó¡£
-   Time::getTime()·½·¨£º·µ»Ø¶ÔÏó×ÔÉíµÄÒýÓÃ¡£ÆäÊµ£¬t.getTime()¼´t¡£
-   ½öÔÚTimeÀàÖÐµÄTime::getTime()·½·¨ÊµÔÚÊÇ¶àÓà£¬ÔÚ×éºÏ»òÕß¼Ì³Ð¹ØÏµÊ±²Å»áÓÐ»ú»áÓÃµ½¡£
-7. Time::inputTime()·½·¨£º°´¸ñÊ½´Ó±ê×¼ÊäÈë¶ÁÈ¡Êý¾ÝÐÞ¸ÄTime¶ÔÏóµÄÊ±·ÖÃëÊýÖµ¡£¸Ã·½·¨·µ»ØÐÞ¸ÄºóµÄ¶ÔÏó¡£
-8. Time::showTime()·½·¨£ºÊä³ö¡°hh:mm:ss¡±£¬²»×ãÁ½Î»µÄÒªÇ°Ãæ²¹0¡£Èç¹û¶ÔÏó²»ÊÇºÏ·¨µÄÊ±¼ä£¬ÔòÊä³ö¡°Time error¡±¡£
-ÄãÉè¼ÆÒ»¸öÊ±¼äÀàTime£¬Ê¹µÃmain()º¯ÊýÄÜ¹»ÕýÈ·ÔËÐÐ¡£
-º¯Êýµ÷ÓÃ¸ñÊ½¼ûappend.cc¡£
-append.ccÖÐÒÑ¸ø³ömain()º¯Êý¡£main()º¯ÊýÄÚÈÝÉÔÎ¢·±¸´£¬½öÎª²âÊÔ¶ÔÏóµÄ¸÷ÖÖµ÷ÓÃÇé¿ö¡£
+å°è£…ä¸€ä¸ªæ—¶é—´ç±»Timeï¼Œç”¨äºŽæ—¶é—´å¤„ç†çš„ç›¸å…³åŠŸèƒ½ï¼Œæ”¯æŒä»¥ä¸‹æ“ä½œï¼š
+1. Time::Time()æ— å‚æž„é€ æ–¹æ³•ã€‚
+2. Time::Time(int,int,int)æž„é€ æ–¹æ³•ï¼šä¼ é€’æ—¶åˆ†ç§’çš„ä¸‰ä¸ªå‚æ•°æž„é€ å¯¹è±¡ã€‚
+3. Time::Time(const T&)æ‹·è´æž„é€ æ–¹æ³•ã€‚
+4. æˆå‘˜è¯»å‡½æ•°ï¼š
+   Time::hour()  ï¼šè¿”å›žTimeçš„å°æ—¶æ•°ï¼›
+   Time::minute()ï¼šè¿”å›žTimeçš„åˆ†é’Ÿæ•°ï¼›
+   Time::second()ï¼šè¿”å›žTimeçš„ç§’æ•°ã€‚
+5. æˆå‘˜å†™å‡½æ•°ï¼š
+   Time::hour(int)  ï¼šä¼ å‚ä¿®æ”¹Timeçš„å°æ—¶æ•°ï¼›
+   Time::minute(int)ï¼šä¼ å‚ä¿®æ”¹Timeçš„åˆ†é’Ÿæ•°ï¼›
+   Time::second(int)ï¼šä¼ å‚ä¿®æ”¹Timeçš„ç§’æ•°ã€‚
+6. å¯¹è±¡æ•´ä½“è¯»å†™æ–¹æ³•ï¼š
+   Time::setTime(int,int,int)æ–¹æ³•ï¼šä¼ é€’æ—¶åˆ†ç§’ä¸‰ä¸ªå‚æ•°ä¿®æ”¹Timeå¯¹è±¡çš„æ—¶åˆ†ç§’æ•°ã€‚è¯¥æ–¹æ³•è¿”å›žä¿®æ”¹åŽçš„å¯¹è±¡ã€‚
+   Time::setTime(const T&)æ–¹æ³•ï¼šä¼ é€’ä¸€ä¸ªå‚æ•°ä¿®æ”¹Timeå¯¹è±¡çš„æ—¶åˆ†ç§’æ•°ã€‚è¯¥æ–¹æ³•è¿”å›žä¿®æ”¹åŽçš„å¯¹è±¡ã€‚
+   Time::getTime()æ–¹æ³•ï¼šè¿”å›žå¯¹è±¡è‡ªèº«çš„å¼•ç”¨ã€‚å…¶å®žï¼Œt.getTime()å³tã€‚
+   ä»…åœ¨Timeç±»ä¸­çš„Time::getTime()æ–¹æ³•å®žåœ¨æ˜¯å¤šä½™ï¼Œåœ¨ç»„åˆæˆ–è€…ç»§æ‰¿å…³ç³»æ—¶æ‰ä¼šæœ‰æœºä¼šç”¨åˆ°ã€‚
+7. Time::inputTime()æ–¹æ³•ï¼šæŒ‰æ ¼å¼ä»Žæ ‡å‡†è¾“å…¥è¯»å–æ•°æ®ä¿®æ”¹Timeå¯¹è±¡çš„æ—¶åˆ†ç§’æ•°å€¼ã€‚è¯¥æ–¹æ³•è¿”å›žä¿®æ”¹åŽçš„å¯¹è±¡ã€‚
+8. Time::showTime()æ–¹æ³•ï¼šè¾“å‡ºâ€œhh:mm:ssâ€ï¼Œä¸è¶³ä¸¤ä½çš„è¦å‰é¢è¡¥0ã€‚å¦‚æžœå¯¹è±¡ä¸æ˜¯åˆæ³•çš„æ—¶é—´ï¼Œåˆ™è¾“å‡ºâ€œTime errorâ€ã€‚
+ä½ è®¾è®¡ä¸€ä¸ªæ—¶é—´ç±»Timeï¼Œä½¿å¾—main()å‡½æ•°èƒ½å¤Ÿæ­£ç¡®è¿è¡Œã€‚
+å‡½æ•°è°ƒç”¨æ ¼å¼è§append.ccã€‚
+append.ccä¸­å·²ç»™å‡ºmain()å‡½æ•°ã€‚main()å‡½æ•°å†…å®¹ç¨å¾®ç¹å¤ï¼Œä»…ä¸ºæµ‹è¯•å¯¹è±¡çš„å„ç§è°ƒç”¨æƒ…å†µã€‚
 Input
-ÊäÈëµÄµÚÒ»¸öÕûÊýn£¬±íÊ¾ÓÐn×é²âÊÔÊý¾Ý£¬Ã¿×é3¸öÕûÊý£ºhh,mm,ss£¬·Ö±ð±íÊ¾Ê±¡¢·Ö¡¢Ãë£¬ÆäÖµ¶¼ÔÚint·¶Î§ÄÚ¡£
+è¾“å…¥çš„ç¬¬ä¸€ä¸ªæ•´æ•°nï¼Œè¡¨ç¤ºæœ‰nç»„æµ‹è¯•æ•°æ®ï¼Œæ¯ç»„3ä¸ªæ•´æ•°ï¼šhh,mm,ssï¼Œåˆ†åˆ«è¡¨ç¤ºæ—¶ã€åˆ†ã€ç§’ï¼Œå…¶å€¼éƒ½åœ¨intèŒƒå›´å†…ã€‚
 Output
-Ã¿×é²âÊÔÊý¾Ý¶ÔÓ¦Ò»×éÊä³ö¡°hh:mm:ss¡±£¬²»×ãÁ½Î»µÄÊä³öÐèÒªÇ°Ãæ²¹0¡£Èç¹ûÊäÈëµÄÊ±¼ä²»ºÏ·¨£¬ÔòÊä³ö¡°Time error¡±¡£¸ñÊ½¼ûsample¡£
+æ¯ç»„æµ‹è¯•æ•°æ®å¯¹åº”ä¸€ç»„è¾“å‡ºâ€œhh:mm:ssâ€ï¼Œä¸è¶³ä¸¤ä½çš„è¾“å‡ºéœ€è¦å‰é¢è¡¥0ã€‚å¦‚æžœè¾“å…¥çš„æ—¶é—´ä¸åˆæ³•ï¼Œåˆ™è¾“å‡ºâ€œTime errorâ€ã€‚æ ¼å¼è§sampleã€‚
 Sample Input
 6
 0 0 1
@@ -152,11 +152,11 @@ Time error
 23:59:59
 Time error
 HINT
-Êä³ö¸ñÊ½ÓÃÍ·ÎÄ¼þ<iomanip>ÖÐÁ÷²Ù×÷Ëã×Ó£º
+è¾“å‡ºæ ¼å¼ç”¨å¤´æ–‡ä»¶<iomanip>ä¸­æµæ“ä½œç®—å­ï¼š
 
-setw(w)   £ºÉèÖÃÊý¾ÝµÄÊä³ö¿í¶ÈÎªw¸ö×Ö·û
+setw(w)   ï¼šè®¾ç½®æ•°æ®çš„è¾“å‡ºå®½åº¦ä¸ºwä¸ªå­—ç¬¦
 
-setfill(c)£ºÉèÖÃÓÃ×Ö·ûc×÷ÎªÌî³ä×Ö·û
+setfill(c)ï¼šè®¾ç½®ç”¨å­—ç¬¦cä½œä¸ºå¡«å……å­—ç¬¦
 
 Append Code
 append.cc, */

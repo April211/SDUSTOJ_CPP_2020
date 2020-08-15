@@ -107,24 +107,24 @@ int main()
     Memory:1272 kb
 ****************************************************************/
 
-//Problem D: Æ½ÃæÉÏµÄµãºÍÏß¡ª¡ªPointÀà¡¢LineÀà (IV)
+//Problem D: å¹³é¢ä¸Šçš„ç‚¹å’Œçº¿â€”â€”Pointç±»ã€Lineç±» (IV)
 //Time Limit: 1 Sec  Memory Limit: 128 MB
 //Submit: 6633  Solved: 4461
 //[Submit][Status]
 //Description
-//ÔÚÊýÑ§ÉÏ£¬Æ½ÃæÖ±½Ç×ø±êÏµÉÏµÄµãÓÃXÖáºÍYÖáÉÏµÄÁ½¸ö×ø±êÖµÎ¨Ò»È·¶¨£¬Á½µãÈ·¶¨Ò»ÌõÏß¶Î¡£ÏÖÔÚÎÒÃÇ·â×°Ò»¸ö¡°PointÀà¡±ºÍ¡°LineÀà¡±À´ÊµÏÖÆ½ÃæÉÏµÄµãµÄ²Ù×÷¡£
-//¸ù¾Ý¡°append.cc¡±£¬Íê³ÉPointÀàºÍLineÀàµÄ¹¹Ôì·½·¨ºÍshow()·½·¨£¬Êä³ö¸÷Line¶ÔÏóºÍPoint¶ÔÏóµÄ¹¹ÔìºÍÎö¹¹´ÎÐò¡£
-//½Ó¿ÚÃèÊö£º
-//Point::show()·½·¨£º°´¸ñÊ½Êä³öPoint¶ÔÏó¡£
-//Line::show()·½·¨£º°´¸ñÊ½Êä³öLine¶ÔÏó¡£
+//åœ¨æ•°å­¦ä¸Šï¼Œå¹³é¢ç›´è§’åæ ‡ç³»ä¸Šçš„ç‚¹ç”¨Xè½´å’ŒYè½´ä¸Šçš„ä¸¤ä¸ªåæ ‡å€¼å”¯ä¸€ç¡®å®šï¼Œä¸¤ç‚¹ç¡®å®šä¸€æ¡çº¿æ®µã€‚çŽ°åœ¨æˆ‘ä»¬å°è£…ä¸€ä¸ªâ€œPointç±»â€å’Œâ€œLineç±»â€æ¥å®žçŽ°å¹³é¢ä¸Šçš„ç‚¹çš„æ“ä½œã€‚
+//æ ¹æ®â€œappend.ccâ€ï¼Œå®ŒæˆPointç±»å’ŒLineç±»çš„æž„é€ æ–¹æ³•å’Œshow()æ–¹æ³•ï¼Œè¾“å‡ºå„Lineå¯¹è±¡å’ŒPointå¯¹è±¡çš„æž„é€ å’Œæžæž„æ¬¡åºã€‚
+//æŽ¥å£æè¿°ï¼š
+//Point::show()æ–¹æ³•ï¼šæŒ‰æ ¼å¼è¾“å‡ºPointå¯¹è±¡ã€‚
+//Line::show()æ–¹æ³•ï¼šæŒ‰æ ¼å¼è¾“å‡ºLineå¯¹è±¡ã€‚
 //Input
-//ÊäÈëµÄµÚÒ»ÐÐÎªN£¬±íÊ¾ºóÃæÓÐNÐÐ²âÊÔÑùÀý¡£
+//è¾“å…¥çš„ç¬¬ä¸€è¡Œä¸ºNï¼Œè¡¨ç¤ºåŽé¢æœ‰Nè¡Œæµ‹è¯•æ ·ä¾‹ã€‚
 //
-//Ã¿ÐÐÎªÁ½×é×ø±ê¡°x,y¡±£¬·Ö±ð±íÊ¾Ïß¶ÎÆðµãºÍÖÕµãµÄx×ø±êºÍy×ø±ê£¬Á½×é×ø±ê¼äÓÃÒ»¸ö¿Õ¸ñ·Ö¿ª£¬xºÍyµÄÖµ¶¼ÔÚdoubleÊý¾Ý·¶Î§ÄÚ¡£
+//æ¯è¡Œä¸ºä¸¤ç»„åæ ‡â€œx,yâ€ï¼Œåˆ†åˆ«è¡¨ç¤ºçº¿æ®µèµ·ç‚¹å’Œç»ˆç‚¹çš„xåæ ‡å’Œyåæ ‡ï¼Œä¸¤ç»„åæ ‡é—´ç”¨ä¸€ä¸ªç©ºæ ¼åˆ†å¼€ï¼Œxå’Œyçš„å€¼éƒ½åœ¨doubleæ•°æ®èŒƒå›´å†…ã€‚
 //
 //Output
-//Êä³öÎª¶àÐÐ£¬Ã¿ÐÐÎªÒ»ÌõÏß¶Î£¬Æðµã×ø±êÔÚÇ°ÖÕµã×ø±êÔÚºó£¬Ã¿¸öµãµÄX×ø±êÔÚÇ°£¬Y×ø±êÔÚºó£¬Y×ø±êÇ°Ãæ¶àÊä³öÒ»¸ö¿Õ¸ñ£¬ÓÃÀ¨ºÅ°ü¹üÆðÀ´¡£Êä³ö¸ñÊ½¼ûsample¡£
-//CÓïÑÔµÄÊäÈëÊä³ö±»½ûÓÃ¡£
+//è¾“å‡ºä¸ºå¤šè¡Œï¼Œæ¯è¡Œä¸ºä¸€æ¡çº¿æ®µï¼Œèµ·ç‚¹åæ ‡åœ¨å‰ç»ˆç‚¹åæ ‡åœ¨åŽï¼Œæ¯ä¸ªç‚¹çš„Xåæ ‡åœ¨å‰ï¼ŒYåæ ‡åœ¨åŽï¼ŒYåæ ‡å‰é¢å¤šè¾“å‡ºä¸€ä¸ªç©ºæ ¼ï¼Œç”¨æ‹¬å·åŒ…è£¹èµ·æ¥ã€‚è¾“å‡ºæ ¼å¼è§sampleã€‚
+//Cè¯­è¨€çš„è¾“å…¥è¾“å‡ºè¢«ç¦ç”¨ã€‚
 //Sample Input
 //4
 //0,0 1,1

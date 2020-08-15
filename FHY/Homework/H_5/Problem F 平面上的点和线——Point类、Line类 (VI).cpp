@@ -42,29 +42,29 @@ public:
     Line& setLine(double, double, double, double);
     Line& setLine(const Point &, const Point &);
     Line& setLine(const Line&);
-    const Point& start()const;//·½·¨£ºÈ¡LineµÄÆğµã
-    const Point& end()const;//·½·¨£ºÈ¡LineµÄÖÕµã
-    void setStart(Point&);//·½·¨£ºÉèÖÃLineµÄÆğµã
-    void setEnd(Point&);//·½·¨£ºÉèÖÃLineµÄÖÕµã
+    const Point& start()const;//æ–¹æ³•ï¼šå–Lineçš„èµ·ç‚¹
+    const Point& end()const;//æ–¹æ³•ï¼šå–Lineçš„ç»ˆç‚¹
+    void setStart(Point&);//æ–¹æ³•ï¼šè®¾ç½®Lineçš„èµ·ç‚¹
+    void setEnd(Point&);//æ–¹æ³•ï¼šè®¾ç½®Lineçš„ç»ˆç‚¹
     void readLine();
     friend class Point;
 
 
 };
 
-inline const Point& Line::start()const//·½·¨£ºÈ¡LineµÄÆğµã
+inline const Point& Line::start()const//æ–¹æ³•ï¼šå–Lineçš„èµ·ç‚¹
 {
     return pt1$;
 }
-inline const Point& Line::end()const//·½·¨£ºÈ¡LineµÄÖÕµã
+inline const Point& Line::end()const//æ–¹æ³•ï¼šå–Lineçš„ç»ˆç‚¹
 {
     return pt2$;
 }
-inline void Line::setStart(Point& tt)//·½·¨£ºÉèÖÃLineµÄÆğµã
+inline void Line::setStart(Point& tt)//æ–¹æ³•ï¼šè®¾ç½®Lineçš„èµ·ç‚¹
 {
     pt1$.x$ = tt.x$; pt1$.y$ = tt.y$;
 }
-inline void Line::setEnd(Point& tt)//·½·¨£ºÉèÖÃLineµÄÖÕµã
+inline void Line::setEnd(Point& tt)//æ–¹æ³•ï¼šè®¾ç½®Lineçš„ç»ˆç‚¹
 {
     pt2$.x$ = tt.x$; pt2$.y$ = tt.y$;
 }
@@ -156,36 +156,36 @@ int main()
 
 
 
-//Problem F: Æ½ÃæÉÏµÄµãºÍÏß¡ª¡ªPointÀà¡¢LineÀà (VI)
+//Problem F: å¹³é¢ä¸Šçš„ç‚¹å’Œçº¿â€”â€”Pointç±»ã€Lineç±» (VI)
 //Time Limit: 1 Sec  Memory Limit: 128 MB
 //Submit: 7459  Solved: 3414
 //[Submit][Status]
 //Description
-//ÔÚÊıÑ§ÉÏ£¬Æ½ÃæÖ±½Ç×ø±êÏµÉÏµÄµãÓÃXÖáºÍYÖáÉÏµÄÁ½¸ö×ø±êÖµÎ¨Ò»È·¶¨£¬Á½µãÈ·¶¨Ò»ÌõÏß¶Î¡£ÏÖÔÚÎÒÃÇ·â×°Ò»¸ö¡°PointÀà¡±ºÍ¡°LineÀà¡±À´ÊµÏÖÆ½ÃæÉÏµÄµãµÄ²Ù×÷¡£
-//¸ù¾İ¡°append.cc¡±£¬Íê³ÉPointÀàºÍLineÀàµÄ¹¹Ôì·½·¨ºÍshow()·½·¨£¬Êä³ö¸÷Line¶ÔÏóºÍPoint¶ÔÏóµÄ¹¹ÔìºÍÎö¹¹´ÎĞò¡£
-//½Ó¿ÚÃèÊö£º
-//Point::show()·½·¨£º°´¸ñÊ½Êä³öPoint¶ÔÏó¡£
-//Point::x()·½·¨£ºÈ¡x×ø±ê¡£
-//Point::y()·½·¨£ºÈ¡y×ø±ê¡£
-//Line::show()·½·¨£º°´¸ñÊ½Êä³öLine¶ÔÏó¡£
-//Line::SetLine(double, double, double, double)·½·¨£ºÉèÖÃLine¶ÔÏóÆğµãµÄx,y×ø±ê£¨µÚÒ»¸öºÍµÚ¶ş²ÎÊı£©ºÍÖÕµãµÄx,y×ø±ê£¨µÚÈı¸öºÍµÚËÄ¸ö×ø±ê£©£¬²¢·µ»Ø±¾¶ÔÏó
-//Line::SetLine(const Point &, const Point &)·½·¨£ºÉèÖÃLine¶ÔÏóµÄÆğµã£¨µÚÒ»¸ö²ÎÊı£©ºÍÖÕµã£¨µÚ¶ş¸ö×ø±ê£©£¬²¢·µ»Ø±¾¶ÔÏó
-//Line::SetLine(const Line&)·½·¨£ºÉèÖÃLine¶ÔÏó£¬¸´ÖÆ²ÎÊıµÄ×ø±ê£¬²¢·µ»Ø±¾¶ÔÏó
-//Line::readLine()·½·¨£º´Ó±ê×¼ÊäÈëÉÏ¶ÁÈë×ø±ê£¬¸ñÊ½¼ûSample
-//Line::start()·½·¨£ºÈ¡LineµÄÆğµã
-//Line::end()·½·¨£ºÈ¡LineµÄÖÕµã
-//Line::setStart()·½·¨£ºÉèÖÃLineµÄÆğµã
-//Line::setEnd()·½·¨£ºÉèÖÃLineµÄÖÕµã
-//ÒÔÏÂÈı¸öº¯ÊıÓÃÓÚÊä³öLine¶ÔÏó£¬¸ñÊ½Í¬sample
+//åœ¨æ•°å­¦ä¸Šï¼Œå¹³é¢ç›´è§’åæ ‡ç³»ä¸Šçš„ç‚¹ç”¨Xè½´å’ŒYè½´ä¸Šçš„ä¸¤ä¸ªåæ ‡å€¼å”¯ä¸€ç¡®å®šï¼Œä¸¤ç‚¹ç¡®å®šä¸€æ¡çº¿æ®µã€‚ç°åœ¨æˆ‘ä»¬å°è£…ä¸€ä¸ªâ€œPointç±»â€å’Œâ€œLineç±»â€æ¥å®ç°å¹³é¢ä¸Šçš„ç‚¹çš„æ“ä½œã€‚
+//æ ¹æ®â€œappend.ccâ€ï¼Œå®ŒæˆPointç±»å’ŒLineç±»çš„æ„é€ æ–¹æ³•å’Œshow()æ–¹æ³•ï¼Œè¾“å‡ºå„Lineå¯¹è±¡å’ŒPointå¯¹è±¡çš„æ„é€ å’Œææ„æ¬¡åºã€‚
+//æ¥å£æè¿°ï¼š
+//Point::show()æ–¹æ³•ï¼šæŒ‰æ ¼å¼è¾“å‡ºPointå¯¹è±¡ã€‚
+//Point::x()æ–¹æ³•ï¼šå–xåæ ‡ã€‚
+//Point::y()æ–¹æ³•ï¼šå–yåæ ‡ã€‚
+//Line::show()æ–¹æ³•ï¼šæŒ‰æ ¼å¼è¾“å‡ºLineå¯¹è±¡ã€‚
+//Line::SetLine(double, double, double, double)æ–¹æ³•ï¼šè®¾ç½®Lineå¯¹è±¡èµ·ç‚¹çš„x,yåæ ‡ï¼ˆç¬¬ä¸€ä¸ªå’Œç¬¬äºŒå‚æ•°ï¼‰å’Œç»ˆç‚¹çš„x,yåæ ‡ï¼ˆç¬¬ä¸‰ä¸ªå’Œç¬¬å››ä¸ªåæ ‡ï¼‰ï¼Œå¹¶è¿”å›æœ¬å¯¹è±¡
+//Line::SetLine(const Point &, const Point &)æ–¹æ³•ï¼šè®¾ç½®Lineå¯¹è±¡çš„èµ·ç‚¹ï¼ˆç¬¬ä¸€ä¸ªå‚æ•°ï¼‰å’Œç»ˆç‚¹ï¼ˆç¬¬äºŒä¸ªåæ ‡ï¼‰ï¼Œå¹¶è¿”å›æœ¬å¯¹è±¡
+//Line::SetLine(const Line&)æ–¹æ³•ï¼šè®¾ç½®Lineå¯¹è±¡ï¼Œå¤åˆ¶å‚æ•°çš„åæ ‡ï¼Œå¹¶è¿”å›æœ¬å¯¹è±¡
+//Line::readLine()æ–¹æ³•ï¼šä»æ ‡å‡†è¾“å…¥ä¸Šè¯»å…¥åæ ‡ï¼Œæ ¼å¼è§Sample
+//Line::start()æ–¹æ³•ï¼šå–Lineçš„èµ·ç‚¹
+//Line::end()æ–¹æ³•ï¼šå–Lineçš„ç»ˆç‚¹
+//Line::setStart()æ–¹æ³•ï¼šè®¾ç½®Lineçš„èµ·ç‚¹
+//Line::setEnd()æ–¹æ³•ï¼šè®¾ç½®Lineçš„ç»ˆç‚¹
+//ä»¥ä¸‹ä¸‰ä¸ªå‡½æ•°ç”¨äºè¾“å‡ºLineå¯¹è±¡ï¼Œæ ¼å¼åŒsample
 //showLineCoordinate(const Line&)
 //showLinePoint(const Line&)
 //showLine(const Line&)
 //Input
-//ÊäÈëµÄµÚÒ»ĞĞÎªN£¬±íÊ¾ºóÃæÓĞNĞĞ²âÊÔÑùÀı¡£
-//Ã¿ĞĞÎªÁ½×é×ø±ê¡°x,y¡±£¬·Ö±ğ±íÊ¾Ïß¶ÎÆğµãºÍÖÕµãµÄx×ø±êºÍy×ø±ê£¬Á½×é×ø±ê¼äÓÃÒ»¸ö¿Õ¸ñ·Ö¿ª£¬xºÍyµÄÖµ¶¼ÔÚdoubleÊı¾İ·¶Î§ÄÚ¡£
+//è¾“å…¥çš„ç¬¬ä¸€è¡Œä¸ºNï¼Œè¡¨ç¤ºåé¢æœ‰Nè¡Œæµ‹è¯•æ ·ä¾‹ã€‚
+//æ¯è¡Œä¸ºä¸¤ç»„åæ ‡â€œx,yâ€ï¼Œåˆ†åˆ«è¡¨ç¤ºçº¿æ®µèµ·ç‚¹å’Œç»ˆç‚¹çš„xåæ ‡å’Œyåæ ‡ï¼Œä¸¤ç»„åæ ‡é—´ç”¨ä¸€ä¸ªç©ºæ ¼åˆ†å¼€ï¼Œxå’Œyçš„å€¼éƒ½åœ¨doubleæ•°æ®èŒƒå›´å†…ã€‚
 //Output
-//Êä³öÎª¶àĞĞ£¬Ã¿ĞĞÎªÒ»ÌõÏß¶Î£¬Æğµã×ø±êÔÚÇ°ÖÕµã×ø±êÔÚºó£¬Ã¿¸öµãµÄX×ø±êÔÚÇ°£¬Y×ø±êÔÚºó£¬Y×ø±êÇ°Ãæ¶àÊä³öÒ»¸ö¿Õ¸ñ£¬ÓÃÀ¨ºÅ°ü¹üÆğÀ´¡£Êä³ö¸ñÊ½¼ûsample¡£
-//CÓïÑÔµÄÊäÈëÊä³ö±»½ûÓÃ¡£
+//è¾“å‡ºä¸ºå¤šè¡Œï¼Œæ¯è¡Œä¸ºä¸€æ¡çº¿æ®µï¼Œèµ·ç‚¹åæ ‡åœ¨å‰ç»ˆç‚¹åæ ‡åœ¨åï¼Œæ¯ä¸ªç‚¹çš„Xåæ ‡åœ¨å‰ï¼ŒYåæ ‡åœ¨åï¼ŒYåæ ‡å‰é¢å¤šè¾“å‡ºä¸€ä¸ªç©ºæ ¼ï¼Œç”¨æ‹¬å·åŒ…è£¹èµ·æ¥ã€‚è¾“å‡ºæ ¼å¼è§sampleã€‚
+//Cè¯­è¨€çš„è¾“å…¥è¾“å‡ºè¢«ç¦ç”¨ã€‚
 //Sample Input
 //4
 //0,0 1,1
