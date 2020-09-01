@@ -15,3 +15,10 @@ int main()
     cout << t.size() << endl;
     return 0;
 }
+
+/* The value of the 30th element: 1
+30
+30
+The value of the 31st element: 5
+60
+31 */
