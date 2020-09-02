@@ -8,13 +8,15 @@ bool lib[MAX_SIZE] = {
 }; //0 and 1 are both not primes.
 int flag = 0;
 
+//判断 int 类型的数字是否为 “回文数”
 bool isRenum(int num)
 {
     int k = num, j = 0;
     while (k)
     {
-        j = j * 10 + k % 10;
-        k = k / 10;
+        j *= 10;
+        j += k % 10;
+        k  = k / 10;
     }
     if (num == j) return true;
     else return false;
@@ -26,6 +28,7 @@ public:
     static bool judge(int);
 };
 
+//判断是否是素数，并利用打表加快判断效率
 bool SpecialPrime::judge(int num)
 {
     if (lib[num] == 1 || isRenum(num) == false)
@@ -45,13 +48,18 @@ bool SpecialPrime::judge(int num)
                 }
             }
         }
-        flag++;
+        flag++;     //执行一遍打表操作
     }
 
     if (lib[num] == 0)
     {
         return true;
     }
+    else
+    {
+        return false;
+    }
+    
 }
 
 int main()
