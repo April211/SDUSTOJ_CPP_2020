@@ -9,7 +9,7 @@ int bubble_sort(double* tt, int len)
     {
         for(int j = 0; j< len - i - 1; j++)
         {
-            if(tt[j] > tt[j+1])   //这里由小到大排列
+            if(tt[j] > tt[j+1])   //杩欓噷鐢卞皬鍒板ぇ鎺掑垪
             {
                 double temp;
                 temp    =  tt[j];
