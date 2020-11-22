@@ -1,5 +1,5 @@
-# SDUSTOJ_CPP_2020_FH
-SDUSTOJ 2020年上半年OJ题目整理收集
+# SDUSTOJ_CPP_2020
+SDUSTOJ 2020年OJ题目整理收集
 
 除极少数题目以外，每道题目的代码后都以注释的形式附加了题目信息。
 
