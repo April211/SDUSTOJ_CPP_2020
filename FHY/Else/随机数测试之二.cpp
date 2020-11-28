@@ -28,34 +28,32 @@
 #define population_size 30         // 种群规模
 using namespace std;
 
-void f1()
+vector<unsigned> good_randVec()
 {
-    /*     // 下面的 4行不可以放到 for循环中
-    static default_random_engine e1, e2;
-    e1.seed((unsigned int)time(NULL)), e2.seed((unsigned int)time(NULL));
-    static uniform_real_distribution<double> u1(x1min, x1max); //随机数分布对象
-    static uniform_real_distribution<double> u2(x2min, x2max); */
-    // 下面的 4行不可以放到 for循环中
-    static int ik = 0;
-    ik++;
-    static mt19937 e1, e2;
-    e1.seed((unsigned int)time(NULL)* ik), e2.seed((unsigned int)time(NULL)* ik);
-    uniform_real_distribution<double> u1(x1min, x1max); //随机数分布对象
-    uniform_real_distribution<double> u2(x2min, x2max);
-
-    for (int i = 0; i < 5; i++)
+    static default_random_engine e;
+    static uniform_int_distribution<unsigned> u(0, 9);
+    vector<unsigned> ret;
+    for (size_t i = 0; i < 5; ++i)
     {
-        double tt1 = u1(e1);
-        double tt2 = u2(e2);
-        printf("%lf %lf\n", tt1, tt2);
+        ret.push_back(u(e));
     }
+    return ret;
 }
 
 int main()
 {
-    f1();
-    f1();
-    f1();
+    vector<unsigned> rt1(good_randVec()), rt2(good_randVec());
+    for(int i = 0; i< rt1.size(); i++)
+    {
+        printf("%u\n", rt1[i]);
+    }
+
+    printf("---------------------\n");
+
+    for(int i = 0; i< rt1.size(); i++)
+    {
+        printf("%u\n", rt2[i]);
+    }
 
     return 0;
 }

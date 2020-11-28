@@ -14,9 +14,10 @@ int main()
     cout << c <<endl;
     cout << d <<endl;
     cout << endl;
-    cout << fixed << showpoint << setprecision(3) << d << endl ;//实际上，showpoint在这里不是必须的
+    cout << fixed << showpoint << setprecision(3) << d << endl ;//瀹為檯涓婏紝showpoint鍦ㄨ繖閲屼笉鏄繀椤荤殑
     cout << noshowpoint;
     cout << fixed << b << endl ;
+    printf("%.3lf", a);         // 鍥涜垗浜斿叆
 //    cout << setprecision(3) << b << endl ;
 //    cout <<endl;
 //    cout << setprecision(3) << a << endl ;
